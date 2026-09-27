@@ -5,7 +5,7 @@
     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Future Human Daily</title>
-    <link>http://localhost:8085</link>
+    <link>https://vipvan-ai.github.io/podcasts</link>
     <language>en-us</language>
     <copyright>© 2026 Future Human Daily</copyright>
     <itunes:subtitle>Daily deep dives into science, emerging technology, and human evolution.</itunes:subtitle>
@@ -16,14 +16,14 @@
       <itunes:name>Future Human Daily</itunes:name>
       <itunes:email>contact@futurehumandaily.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="http://localhost:8085/assets/cover.jpg" />
+    <itunes:image href="https://vipvan-ai.github.io/podcasts/assets/cover.jpg" />
     <itunes:category text="Technology">
       <itunes:category text="Tech News"/>
     </itunes:category>
     <itunes:category text="Science"/>
     <itunes:explicit>no</itunes:explicit>
     
-    <atom:link href="http://localhost:8085/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
     <!-- EPISODE 002 -->
     <item>
@@ -45,10 +45,10 @@
           <li>Dream-Ad Injections: Why our dreams are the last unmonetized sanctuary of human consciousness.</li>
         </ul>
       ]]></description>
-      <enclosure url="http://localhost:8085/audio/ep-002.mp3" length="17500000" type="audio/mpeg" />
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-002.mp3" length="14679338" type="audio/mpeg" />
       <guid isPermaLink="false">future-human-daily-ep002-20260927</guid>
       <pubDate>Sun, 27 Sep 2026 08:00:00 EST</pubDate>
-      <itunes:duration>06:15</itunes:duration>
+      <itunes:duration>05:05</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 
@@ -71,7 +71,7 @@
           <li>Empathy Without Words: Mind-to-mind intimacy and cognitive privacy.</li>
         </ul>
       ]]></description>
-      <enclosure url="http://localhost:8085/audio/ep-001.mp3" length="16729990" type="audio/mpeg" />
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-001.mp3" length="16729990" type="audio/mpeg" />
       <guid isPermaLink="false">future-human-daily-ep001-20260926</guid>
       <pubDate>Sat, 26 Sep 2026 08:00:00 EST</pubDate>
       <itunes:duration>05:48</itunes:duration>
