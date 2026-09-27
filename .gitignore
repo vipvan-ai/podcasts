@@ -1,0 +1,4 @@
+# Temporary audio cache
+audio/cache_ep001/*.pcm
+__pycache__/
+*.pyc

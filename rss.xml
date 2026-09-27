@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+    xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Future Human Daily</title>
+    <link>http://localhost:8085</link>
+    <language>en-us</language>
+    <copyright>© 2026 Future Human Daily</copyright>
+    <itunes:subtitle>Daily deep dives into science, emerging technology, and human evolution.</itunes:subtitle>
+    <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+    <itunes:summary>Join co-hosts Alex Mercer and Dr. Elena Vance every day as they break down high-level futuristic science, brain-computer interfaces, AI, and emerging tech through warm, intimate, and human conversations.</itunes:summary>
+    <description>Join co-hosts Alex Mercer and Dr. Elena Vance every day as they break down high-level futuristic science, brain-computer interfaces, AI, and emerging tech through warm, intimate, and human conversations.</description>
+    <itunes:owner>
+      <itunes:name>Future Human Daily</itunes:name>
+      <itunes:email>contact@futurehumandaily.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://localhost:8085/assets/cover.jpg" />
+    <itunes:category text="Technology">
+      <itunes:category text="Tech News"/>
+    </itunes:category>
+    <itunes:category text="Science"/>
+    <itunes:explicit>no</itunes:explicit>
+    
+    <atom:link href="http://localhost:8085/rss.xml" rel="self" type="application/rss+xml" />
+
+    <!-- EPISODE 001 -->
+    <item>
+      <title>EP 001: The Age of Synthetic Telepathy</title>
+      <itunes:title>The Age of Synthetic Telepathy</itunes:title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance simplify Brain-Computer Interfaces, neural bandwidth, and mind-to-mind intimacy.</itunes:summary>
+      <description><![CDATA[
+        <p>In this inaugural episode of Future Human Daily, Alex Mercer and Dr. Elena Vance explore how high-bandwidth Brain-Computer Interfaces (BCIs) are ushering in the era of Synthetic Telepathy.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>The Language Bottleneck: Why 40 words per minute squeezes human emotion.</li>
+          <li>Everyday Analogies: Explaining morning coffee dreams &amp; stuck songs.</li>
+          <li>Two-Way Neural Loops: Decoding sub-vocal neural intent.</li>
+          <li>Empathy Without Words: Mind-to-mind intimacy and cognitive privacy.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="http://localhost:8085/audio/ep-001.mp3" length="16729990" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep001-20260926</guid>
+      <pubDate>Sat, 26 Sep 2026 08:00:00 EST</pubDate>
+      <itunes:duration>05:48</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+  </channel>
+</rss>

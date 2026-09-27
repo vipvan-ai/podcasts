@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Human Daily — Daily Tech & Humanity Podcast</title>
+    <meta name="description" content="A daily narration podcast exploring the frontier of Brain-Computer Interfaces, AI, and human evolution.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo-group">
+            <span class="logo-icon"><i class="fa-solid fa-atom"></i></span>
+            <div class="logo-text">
+                <span class="brand-title">FUTURE HUMAN</span>
+                <span class="brand-sub">DAILY PODCAST</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#player-section" class="active"><i class="fa-solid fa-play"></i> Player</a>
+            <a href="#episodes-section"><i class="fa-solid fa-list-ul"></i> Episodes</a>
+            <a href="#about-section"><i class="fa-solid fa-book-open"></i> Show Bible</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="btn-rss" class="btn btn-secondary"><i class="fa-solid fa-rss"></i> RSS Feed</button>
+            <button id="btn-subscribe" class="btn btn-primary"><i class="fa-brands fa-spotify"></i> Listen Free</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero & Featured Player Section -->
+        <section id="player-section" class="hero-player-grid">
+            <!-- Cover Art & Quick Specs -->
+            <div class="cover-card glass-panel">
+                <div class="cover-image-container">
+                    <img src="assets/cover.jpg" alt="Future Human Daily Cover Art" id="main-cover-img">
+                    <div class="live-badge"><span class="pulse-dot"></span> DAILY NARRATION</div>
+                </div>
+                <div class="show-meta">
+                    <span class="meta-tag"><i class="fa-regular fa-clock"></i> 4-6 Min Daily</span>
+                    <span class="meta-tag"><i class="fa-solid fa-headset"></i> Solo Narration</span>
+                    <span class="meta-tag"><i class="fa-solid fa-bolt"></i> Hi-Fi AI Speech</span>
+                </div>
+            </div>
+
+            <!-- Main Audio Player & Active Episode -->
+            <div class="player-card glass-panel">
+                <div class="episode-header">
+                    <span class="ep-badge" id="ep-number">EPISODE 001</span>
+                    <span class="ep-date" id="ep-date">July 31, 2026</span>
+                </div>
+                <h1 class="ep-title" id="ep-title">The Age of Synthetic Telepathy</h1>
+                <p class="ep-subtitle" id="ep-subtitle">How Brain-Computer Interfaces will bypass language and enable direct neural mind-to-mind communication.</p>
+
+                <!-- Native HTML5 Audio Player (Guaranteed Browser Sound) -->
+                <div class="native-audio-box" style="margin: 0.75rem 0;">
+                    <audio id="html-audio-player" controls preload="auto" style="width: 100%; height: 42px; border-radius: 8px; filter: invert(0.88) hue-rotate(170deg);">
+                        <source src="audio/ep-001.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- Audio Visualizer Canvas -->
+                <div class="visualizer-container">
+                    <canvas id="waveform-canvas"></canvas>
+                    <div class="audio-timer">
+                        <span id="current-time">0:00</span>
+                        <span id="total-time">2:15</span>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar-wrapper" id="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+
+                <!-- Player Controls -->
+                <div class="player-controls">
+                    <div class="left-controls">
+                        <button class="control-btn" id="btn-speed" title="Change Playback Speed">1.0x</button>
+                        <div class="voice-selector-box">
+                            <i class="fa-solid fa-microphone-lines voice-icon"></i>
+                            <select id="voice-select" title="Choose Voice Accent & Engine">
+                                <option value="">Loading Voices...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="center-controls">
+                        <button class="control-btn" id="btn-rewind" title="Rewind 10s"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button class="control-btn play-btn" id="btn-play" title="Play Narration"><i class="fa-solid fa-play"></i></button>
+                        <button class="control-btn" id="btn-forward" title="Forward 10s"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+
+                    <div class="right-controls">
+                        <div class="pitch-control-box" title="Voice Energy & Pitch">
+                            <i class="fa-solid fa-bolt pitch-icon"></i>
+                            <input type="range" id="pitch-slider" min="0.8" max="1.5" step="0.1" value="1.1">
+                            <span id="pitch-val">Enthusiastic</span>
+                        </div>
+                        <button class="control-btn" id="btn-like" title="Bookmark Episode"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+
+                <!-- Custom Audio File / Voice Recording Option Banner -->
+                <div class="ai-voice-banner">
+                    <div class="banner-info">
+                        <i class="fa-solid fa-microphone spark-icon"></i>
+                        <span><strong>Your Voice & AI Clone:</strong> Record your own voice live or load custom voiceover MP3 files.</span>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <button id="btn-record-mic" class="btn btn-secondary btn-sm" style="background: rgba(225, 29, 72, 0.15); border-color: rgba(225, 29, 72, 0.4); color: #f43f5e;">
+                            <i class="fa-solid fa-circle" id="rec-dot"></i> <span id="rec-btn-text">Record My Voice</span>
+                        </button>
+                        <label for="audio-file-input" class="btn btn-secondary btn-sm"><i class="fa-solid fa-upload"></i> Load MP3 File</label>
+                        <input type="file" id="audio-file-input" accept="audio/*" style="display: none;">
+                    </div>
+                </div>
+
+                <!-- Active Tab Switcher (Transcript / Show Notes) -->
+                <div class="tab-switcher">
+                    <button class="tab-btn active" id="tab-transcript-btn"><i class="fa-solid fa-align-left"></i> Synchronized Script</button>
+                    <button class="tab-btn" id="tab-notes-btn"><i class="fa-solid fa-circle-info"></i> Show Notes</button>
+                </div>
+
+                <div class="tab-content" id="tab-transcript">
+                    <div class="transcript-box" id="transcript-container">
+                        <!-- Script segments will be dynamically populated and highlighted during narration -->
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="tab-notes">
+                    <div class="notes-box" id="notes-container">
+                        <!-- Show notes -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Episode Library / Season Schedule -->
+        <section id="episodes-section" class="episodes-wrapper">
+            <div class="section-header">
+                <div>
+                    <h2>Season 1 Episode Calendar</h2>
+                    <p>Daily short-form narration on tomorrow's breakthrough tech.</p>
+                </div>
+                <div class="search-bar-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="episode-search" placeholder="Search episodes or topics...">
+                </div>
+            </div>
+
+            <div class="episodes-grid" id="episodes-grid">
+                <!-- Dynamically generated episode cards -->
+            </div>
+        </section>
+
+        <!-- Show Bible & Concept Section -->
+        <section id="about-section" class="about-card glass-panel">
+            <div class="about-grid">
+                <div>
+                    <span class="pill-badge">PRODUCTION BLUEPRINT</span>
+                    <h2>How We Produce Future Human Daily</h2>
+                    <p class="about-desc">
+                        *Future Human Daily* is built specifically for sustainable daily publishing. By combining tight 4-minute narrative scripting with AI voice polish and standardized audio templates, each episode takes under 20 minutes from concept to publication.
+                    </p>
+
+                    <div class="blueprint-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-bullseye feature-icon"></i>
+                            <div>
+                                <h4>High Density Narration</h4>
+                                <p>No fluff or awkward tangents. Every word is scripted for max impact.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-layer-group feature-icon"></i>
+                            <div>
+                                <h4>Batching Workflow</h4>
+                                <p>Write and record a week of daily episodes in a single 2-hour session.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-infinity feature-icon"></i>
+                            <div>
+                                <h4>Free RSS Hosting</h4>
+                                <p>Automated distribution to Spotify, Apple, and YouTube with zero hosting cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hosting-platforms-box">
+                    <h3>Free Hosting & Distribution Stack</h3>
+                    <div class="platform-list">
+                        <div class="platform-card">
+                            <i class="fa-brands fa-spotify platform-icon spotify"></i>
+                            <div>
+                                <strong>Spotify for Podcasters</strong>
+                                <span>Free unlimited storage & 1-click publishing.</span>
+                            </div>
+                        </div>
+                        <div class="platform-card">
+                            <i class="fa-brands fa-apple platform-icon apple"></i>
+                            <div>
+                                <strong>Apple Podcasts</strong>
+                                <span>Automatic distribution via free RSS feed.</span>
+                            </div>
+                        </div>
+                        <div class="platform-card">
+                            <i class="fa-brands fa-youtube platform-icon youtube"></i>
+                            <div>
+                                <strong>YouTube Music & Video</strong>
+                                <span>Free video/audio hosting with built-in reach.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for RSS Feed XML Exporter -->
+    <div id="modal-rss" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-rss"></i> RSS Feed XML Generator</h3>
+                <button class="modal-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p>Here is your auto-generated Podcast RSS 2.0 XML feed. Copy and submit this feed link to Spotify, Apple Podcasts, or RedCircle!</p>
+            <div class="code-box">
+                <pre><code id="rss-xml-content"></code></pre>
+            </div>
+            <div class="modal-actions">
+                <button id="btn-copy-rss" class="btn btn-primary"><i class="fa-regular fa-copy"></i> Copy XML Feed</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 <strong>Future Human Daily</strong>. Built with modern web audio & narration engine.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
