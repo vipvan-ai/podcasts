@@ -1,4 +1,9 @@
+# Secrets & API Keys
+.env
+*.env
+
 # Temporary audio cache
-audio/cache_ep001/*.pcm
+audio/cache_*/*.pcm
+audio/cache_*/*.mp3
 __pycache__/
 *.pyc

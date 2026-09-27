@@ -3,6 +3,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-003',
+            number: 'EPISODE 003',
+            date: 'September 27, 2026',
+            title: 'Cellular Reprogramming & Resetting Biological Age Clocks',
+            subtitle: 'Yamanaka factors, partial epigenetic resets, and extending human healthspan with Dr. Elena Vance & Alex Mercer.',
+            duration: '4:18',
+            durationSeconds: 258,
+            audioUrl: 'audio/ep-003.mp3',
+            tags: ['Biotech', 'Longevity', 'Yamanaka Factors', 'Epigenetics'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is September 27th, and you\'re listening to Future Human Daily. Today we are talking about Cellular Reprogramming.' },
+                { time: '0:45', label: '[Software Reset Analogy]', text: 'Imagine if you could wipe the temporary cache on your body\'s cells, restoring them back to factory settings.' },
+                { time: '1:30', label: '[Yamanaka Factors]', text: 'The four transcription factors (Oct4, Sox2, Klf4, c-Myc) discovered by Shinya Yamanaka in 2006.' },
+                { time: '2:30', label: '[Partial Reprogramming]', text: 'Pulse-dosing cells to reset biological age markers without losing specialized identity.' },
+                { time: '3:30', label: '[Compression of Morbidity]', text: 'Extending healthspan so human beings stay biologically 35 until their nineties.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 003, Alex Mercer and Dr. Elena Vance explore Yamanaka Factors, partial epigenetic resets, and reversing biological cellular age in living tissue.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Yamanaka Factors:</strong> Molecular transcription factors that erase cellular epigenetic marks.</li>
+                    <li><strong>Partial Resetting:</strong> Restoring youthfulness without triggering pluripotency or cancer.</li>
+                    <li><strong>Compression of Morbidity:</strong> Maximizing healthspan over pure numerical lifespan.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-002',
             number: 'EPISODE 002',
             date: 'September 27, 2026',

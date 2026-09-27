@@ -25,6 +25,33 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- EPISODE 003 -->
+    <item>
+      <title>EP 003: Cellular Reprogramming &amp; Resetting Biological Age Clocks</title>
+      <itunes:title>Cellular Reprogramming &amp; Resetting Biological Age Clocks</itunes:title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Can Yamanaka factors turn back your biological clock without turning cells into tumors? Alex Mercer &amp; Dr. Elena Vance debate partial epigenetic resets, rejuvenation science, and extend healthspan vs lifespan.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is September 27th, and you're listening to Future Human Daily. Today we are talking about Cellular Reprogramming & Resetting Biological Age Clocks!</p>
+        <p>In Episode 003, Alex Mercer and Dr. Elena Vance explore Yamanaka Factors, partial epigenetic resets, and reversing biological cellular age in mice and human tissue.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>Yamanaka Factors (Oct4, Sox2, Klf4, c-Myc): The four molecular keys that wipe cellular memory.</li>
+          <li>Partial Reprogramming: Reversing cellular age without losing cell identity or triggering pluripotency.</li>
+          <li>The Career Mobility Debate: Toxic bosses staying in charge for 80 years vs extending healthy workforce years.</li>
+          <li>Compression of Morbidity: Adding health to years, not just years to life.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-003.mp3" length="2049288" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep003-20260927</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 EST</pubDate>
+      <itunes:duration>04:18</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
     <!-- EPISODE 002 -->
     <item>
       <title>EP 002: Targeted Dream Incubation &amp; Neuro-Hacking</title>
