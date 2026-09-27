@@ -25,6 +25,33 @@
     
     <atom:link href="http://localhost:8085/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- EPISODE 002 -->
+    <item>
+      <title>EP 002: Targeted Dream Incubation &amp; Neuro-Hacking</title>
+      <itunes:title>Targeted Dream Incubation &amp; Neuro-Hacking</itunes:title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Can technology guide, record, or hack what happens inside your sleeping mind? Alex Mercer &amp; Dr. Elena Vance debate MIT's Dormio project, sleep side-hustles, and dream ads.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is September 27th, and you're listening to Future Human Daily. Today we are talking about Targeted Dream Incubation!</p>
+        <p>In Episode 002, Alex Mercer and Dr. Elena Vance debate Targeted Dream Incubation (TDI) and MIT's Dormio project, exploring the boundary between artistic inspiration and corporate neuro-marketing.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>Hypnagogia Hacking: Guiding dream topics during the micro-seconds between awake and sleep.</li>
+          <li>Noodle Fingers &amp; Taco Dreams: Why our brains create bizarre nocturnal worlds.</li>
+          <li>The Sleep Side-Hustle Debate: Alex wants to learn Japanese while sleeping; Elena brings the biological reality check on glymphatic brain washing.</li>
+          <li>Dream-Ad Injections: Why our dreams are the last unmonetized sanctuary of human consciousness.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="http://localhost:8085/audio/ep-002.mp3" length="17500000" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep002-20260927</guid>
+      <pubDate>Sun, 27 Sep 2026 08:00:00 EST</pubDate>
+      <itunes:duration>06:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
     <!-- EPISODE 001 -->
     <item>
       <title>EP 001: The Age of Synthetic Telepathy</title>

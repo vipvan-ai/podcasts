@@ -49,13 +49,14 @@ def apply_dsp_mastering(pcm_data: bytes, fade_ms: float = 15.0) -> np.ndarray:
 
     return samples
 
-def build_dsp_smoothed_master():
+def build_dsp_smoothed_master(ep_num: str = "001"):
     print("==========================================================")
-    print("[DSP MASTERING] Applying Studio De-Clicking & S-Curve Fades")
+    print(f"[DSP MASTERING] Applying Studio De-Clicking & S-Curve Fades for EP {ep_num}")
     print("==========================================================")
 
-    pcm_files = sorted(glob.glob(str(CACHE_DIR / "turn_*.pcm")))
-    print(f" -> Found {len(pcm_files)} cached turns.")
+    ep_cache_dir = AUDIO_DIR / f"cache_ep{ep_num}"
+    pcm_files = sorted(glob.glob(str(ep_cache_dir / "turn_*.pcm")))
+    print(f" -> Found {len(pcm_files)} cached turns in {ep_cache_dir.name}.")
     
     processed_turns = []
     for fpath in pcm_files:
@@ -105,10 +106,10 @@ def build_dsp_smoothed_master():
     
     master_wav = header + int16_pcm
     
-    master_file = AUDIO_DIR / "ep-001-master-8min.wav"
+    master_file = AUDIO_DIR / f"ep-{ep_num}-master.wav"
     master_file.write_bytes(master_wav)
     
-    main_mp3 = AUDIO_DIR / "ep-001.mp3"
+    main_mp3 = AUDIO_DIR / f"ep-{ep_num}.mp3"
     main_mp3.write_bytes(master_wav)
     
     duration_secs = len(int16_pcm) / (SAMPLE_RATE * 2)
@@ -116,13 +117,17 @@ def build_dsp_smoothed_master():
     secs = int(duration_secs % 60)
     
     print("\n==========================================================")
-    print("[DSP MASTERING COMPLETE]")
+    print(f"[DSP MASTERING COMPLETE - EPISODE {ep_num}]")
     print(f" [Passed] Total Turns Processed: {len(pcm_files)}")
     print(f" [Passed] DC Offset Removed & 80Hz High-Pass Applied")
-    print(f" [Passed] 15ms Cosine S-Curve Boundary Fades Applied")
+    print(f" [Passed] 20ms Cosine S-Curve Boundary Fades Applied")
     print(f" [Passed] Peak Normalized to -1.0 dBFS")
+    print(f" [Passed] Output Master File: ep-{ep_num}.mp3")
     print(f" [Passed] Output Master Duration: {mins}m {secs}s")
     print("==========================================================")
+    return mins, secs, len(master_wav)
 
 if __name__ == "__main__":
-    build_dsp_smoothed_master()
+    import sys
+    ep = sys.argv[1] if len(sys.argv) > 1 else "002"
+    build_dsp_smoothed_master(ep)

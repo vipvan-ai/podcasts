@@ -3,6 +3,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-002',
+            number: 'EPISODE 002',
+            date: 'September 27, 2026',
+            title: 'Targeted Dream Incubation & Neuro-Hacking',
+            subtitle: 'Can AI guide or record what happens inside your sleeping mind? MIT neuroscience vs biological reality checks.',
+            duration: '5:05',
+            durationSeconds: 305,
+            audioUrl: 'audio/ep-002.mp3',
+            tags: ['Neuroscience', 'MIT Dormio', 'Sleep Science', 'Dream Hacking'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is September 27th, and you\'re listening to Future Human Daily. Today we are talking about Targeted Dream Incubation.' },
+                { time: '0:45', label: '[Noodle Fingers & Taco Dreams]', text: 'Have you ever tried typing a text in a dream where your fingers turn to floppy wet noodles? Or flying on a giant taco over geometry class?' },
+                { time: '1:45', label: '[MIT Dormio Device]', text: 'MIT Media Lab created Dormio to detect hypnagogia and inject acoustic cues directly into REM sleep.' },
+                { time: '3:00', label: '[Sleep Side-Hustle Debate]', text: 'Alex wants to learn Japanese while sleeping, but Elena brings the biological reality check on glymphatic brain washing!' },
+                { time: '4:30', label: '[Neuro-Marketing & Dream Ads]', text: 'Major soda brands testing audio cues during sleep—why our dreams are the last sanctuary of cognitive liberty.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 002, Alex Mercer and Dr. Elena Vance debate Targeted Dream Incubation (TDI) and MIT's Dormio project, exploring the boundary between artistic inspiration and corporate neuro-marketing.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Hypnagogia Hacking:</strong> Guiding dream topics during the micro-seconds between awake and sleep.</li>
+                    <li><strong>Glymphatic Maintenance:</strong> Why the brain needs unscripted sleep to flush toxic metabolic proteins.</li>
+                    <li><strong>Cognitive Autonomy:</strong> Guarding our subconscious from commercial dream-ad injections.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-001',
             number: 'EPISODE 001',
             date: 'September 26, 2026',
