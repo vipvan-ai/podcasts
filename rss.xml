@@ -25,6 +25,33 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- EPISODE 004 -->
+    <item>
+      <title>EP 004: Quantum Biomagnetism &amp; Non-Invasive Brain Mapping</title>
+      <itunes:title>Quantum Biomagnetism &amp; Non-Invasive Brain Mapping</itunes:title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Can optically pumped quantum sensors read tiny femtotesla brain magnetic signals without surgery? Alex Mercer &amp; Dr. Elena Vance break down quantum MEG helmets and real-time AI noise cancellation.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is September 28th, and you're listening to Future Human Daily. Today we are talking about Quantum Biomagnetism!</p>
+        <p>In Episode 004, Alex Mercer and Dr. Elena Vance explore Optically Pumped Magnetometers (OPMs), room-temperature MEG brain helmets, and how AI noise cancellation isolates cortical signals from ambient magnetic noise.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>Femtotesla Sensitivity: Measuring magnetic fields a billion times weaker than Earth's magnetic field.</li>
+          <li>Optically Pumped Magnetometers (OPMs): Replacing liquid-helium cryogenic rooms with room-temperature microchips.</li>
+          <li>Wearable MEG Helmets: Non-invasive functional imaging at the speed of thought.</li>
+          <li>Machine Learning Shielding: AI spatial filters isolating neural signals from subway and elevator noise.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-004.mp3" length="1668984" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep004-20260928</guid>
+      <pubDate>Mon, 28 Sep 2026 11:00:00 +0000</pubDate>
+      <itunes:duration>03:42</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
     <!-- EPISODE 003 -->
     <item>
       <title>EP 003: Cellular Reprogramming &amp; Resetting Biological Age Clocks</title>

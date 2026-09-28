@@ -3,6 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-004',
+            number: 'EPISODE 004',
+            date: 'September 28, 2026',
+            title: 'Quantum Biomagnetism & Non-Invasive Brain Mapping',
+            subtitle: 'Optically pumped quantum sensors, room-temperature MEG helmets, and real-time AI noise cancellation with Dr. Elena Vance & Alex Mercer.',
+            duration: '3:42',
+            durationSeconds: 222,
+            audioUrl: 'audio/ep-004.mp3',
+            tags: ['Neuroscience', 'Quantum Sensors', 'Biomagnetism', 'AI Noise Cancellation'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is September 28th, and you\'re listening to Future Human Daily. Today we are talking about Quantum Biomagnetism.' },
+                { time: '0:45', label: '[Femtotesla Signal Challenge]', text: 'Measuring neural magnetic flux a billion times weaker than Earth\'s magnetic field.' },
+                { time: '1:45', label: '[Optically Pumped Magnetometers]', text: 'Replacing liquid-helium cryogenic MEG rooms with laser-heated rubidium vapor microchips.' },
+                { time: '2:45', label: '[AI Spatial Filtering]', text: 'Generative AI spatial models filtering out subway and elevator magnetic interference in real time.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 004, Alex Mercer and Dr. Elena Vance explore Optically Pumped Magnetometers (OPMs), room-temperature MEG helmets, and non-invasive functional brain imaging.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Femtotesla Sensitivity:</strong> Reading neural magnetic activity down to single millisecond precision.</li>
+                    <li><strong>Room-Temperature Microchips:</strong> Eliminating liquid helium cryogenics for wearable quantum helmets.</li>
+                    <li><strong>AI Spatial Cancellation:</strong> Machine learning models isolating brain signals from urban ambient magnetic noise.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-003',
             number: 'EPISODE 003',
             date: 'September 27, 2026',
