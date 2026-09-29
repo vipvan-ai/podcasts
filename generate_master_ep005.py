@@ -141,6 +141,56 @@ MASTER_EP005_DIALOGUE = [
     }
 ]
 
+from scipy.signal import butter, sosfilt
+
+def clean_turn(x, sr=24000, gap_ms=60, max_artifact_ms=250, flat_thresh=0.3):
+    """Spectral Flatness Measure & Active Energy Run Grouping algorithm."""
+    x = np.asarray(x)
+    if x.dtype == np.int16:
+        x = x.astype(np.float32) / 32768.0
+    x = x.astype(np.float32) - x.mean()                 # remove DC
+
+    hp = sosfilt(butter(4, 80, 'hp', fs=sr, output='sos'), x)
+    fl = int(0.010 * sr)                                # 10 ms frames
+    n = len(hp) // fl
+    if n == 0: return x
+    fr = hp[:n * fl].reshape(n, fl)
+
+    db = 20 * np.log10(np.sqrt((fr ** 2).mean(1)) + 1e-9)
+    active = db > (np.percentile(db, 95) - 35)
+
+    spec = np.abs(np.fft.rfft(fr * np.hanning(fl), axis=1)) + 1e-9
+    flat = np.exp(np.log(spec).mean(1)) / spec.mean(1)  # spectral flatness
+
+    runs, s, last = [], None, None
+    gap = gap_ms // 10
+    for i, a in enumerate(active):
+        if a:
+            if s is None: s = i
+            last = i
+        elif s is not None and i - last > gap:
+            runs.append((s, last + 1)); s = None
+    if s is not None: runs.append((s, last + 1))
+    if not runs: return x
+
+    # drop trailing short, noise-like runs (the "kshhh" / tail burst)
+    while len(runs) > 1:
+        a, b = runs[-1]
+        if (b - a) * 10 < max_artifact_ms and flat[a:b].mean() > flat_thresh:
+            runs.pop()
+        else:
+            break
+
+    start = max(0, runs[0][0] * fl - int(0.03 * sr))
+    end = min(len(x), runs[-1][1] * fl + int(0.06 * sr))  # keep natural vocal decay
+    y = x[start:end].copy()
+
+    fi, fo = int(0.008 * sr), int(0.05 * sr)              # short fade in, longer fade out
+    if len(y) > fi + fo:
+        y[:fi] *= np.linspace(0, 1, fi)
+        y[-fo:] *= np.cos(np.linspace(0, np.pi / 2, fo)) ** 2
+    return y
+
 def apply_alex_studio_warmth_eq(audio_samples, sample_rate=24000):
     """Broadcast Studio Proximity EQ Pass for Alex Mercer (Puck) (+4.0 dB @ 150Hz)."""
     b_highcut, a_highcut = signal.butter(2, 7500 / (sample_rate / 2), btype='low')
@@ -174,7 +224,6 @@ def build_master_ep005_pipeline():
     print("Hosts: Alex Mercer & Dr. Elena Vance | 20 Turns", flush=True)
     print("==========================================================", flush=True)
 
-    b_hp, a_hp = signal.butter(2, 80 / (sample_rate / 2), btype='high')
     audio_chunks = []
     pause_gap = np.zeros(int(sample_rate * 0.35), dtype=np.float32)
 
@@ -228,27 +277,31 @@ def build_master_ep005_pipeline():
                 raw_samples = np.zeros(int(sample_rate * 2.0), dtype=np.float32)
 
         if raw_samples is not None:
-            # 80Hz High Pass
-            samples = signal.filtfilt(b_hp, a_hp, raw_samples)
+            # 1. Clean turn (SFM tail noise drop)
+            cleaned = clean_turn(raw_samples, sample_rate)
 
-            # Apply Alex Mercer Studio Warmth EQ
+            # 2. Apply Alex Mercer Studio Warmth EQ
             if speaker == "Alex":
-                samples = apply_alex_studio_warmth_eq(samples, sample_rate)
+                cleaned = apply_alex_studio_warmth_eq(cleaned, sample_rate)
 
-            # 20ms Cosine boundary fade
-            fade_len = int(sample_rate * 0.02)
-            if len(samples) > 2 * fade_len:
-                fade_in = 0.5 * (1 - np.cos(np.pi * np.arange(fade_len) / fade_len))
-                fade_out = 0.5 * (1 + np.cos(np.pi * np.arange(fade_len) / fade_len))
-                samples[:fade_len] *= fade_in
-                samples[-fade_len:] *= fade_out
-
-            audio_chunks.append(samples)
+            audio_chunks.append(cleaned)
             audio_chunks.append(pause_gap)
 
-    full_audio = np.concatenate(audio_chunks)
+    speech_track = np.concatenate(audio_chunks)
 
-    # Peak normalization to -1.0 dBFS
+    # 3. Create Continuous Studio Room Tone Bed (-52 dBFS noise floor)
+    total_len = len(speech_track)
+    np.random.seed(42)
+    room_noise = np.random.normal(0, 1.0, total_len).astype(np.float32)
+    b_room, a_room = signal.butter(2, [120 / (sample_rate / 2), 3500 / (sample_rate / 2)], btype='band')
+    filtered_room = signal.filtfilt(b_room, a_room, room_noise)
+    room_target_amp = 10 ** (-52.0 / 20.0) # ~0.00251
+    filtered_room = filtered_room * (room_target_amp / (np.max(np.abs(filtered_room)) + 1e-9))
+
+    # Mix speech track with continuous room bed
+    full_audio = speech_track + filtered_room
+
+    # 4. Peak normalization to -1.0 dBFS
     max_peak = np.max(np.abs(full_audio))
     if max_peak > 0:
         target_peak = 10 ** (-1.0 / 20.0) # ~0.89125
