@@ -275,6 +275,25 @@ def build_master_ep005_pipeline():
     # Update Index html
     update_ep005_index()
 
+    # Auto-publish to GitHub Pages & Spotify RSS
+    publish_to_github("Auto-publish Episode 005 (Tuesday, Sept 29, 2026)")
+
+def publish_to_github(commit_message):
+    import subprocess
+    try:
+        print("[GIT PUBLISH] Staging updated RSS feed and episode audio...", flush=True)
+        subprocess.run(["git", "add", "index.html", "rss.xml", "audio/", "*.py"], cwd=str(BASE_DIR), check=True)
+        print(f"[GIT PUBLISH] Committing: {commit_message}", flush=True)
+        subprocess.run(["git", "commit", "-m", commit_message], cwd=str(BASE_DIR), check=False)
+        print("[GIT PUBLISH] Pushing to origin master...", flush=True)
+        res = subprocess.run(["git", "push", "origin", "master"], cwd=str(BASE_DIR), capture_output=True, text=True)
+        if res.returncode == 0:
+            print("[GIT PUBLISH SUCCESS] Weekday Episode published to GitHub Pages & Spotify RSS!", flush=True)
+        else:
+            print(f"[GIT PUBLISH WARNING] Push output: {res.stderr}", flush=True)
+    except Exception as e:
+        print(f"[GIT PUBLISH ERROR] Failed to auto-publish: {e}", flush=True)
+
 def update_ep005_rss(file_size_bytes, duration_str):
     rss_file = BASE_DIR / "rss.xml"
     if not rss_file.exists(): return

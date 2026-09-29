@@ -267,7 +267,26 @@ def build_weekend_recap_pipeline(is_sunday=False):
     file_size = out_mp3.stat().st_size if out_mp3.exists() else 0
     update_weekend_rss(day_name, ep_title, ep_summary, out_mp3_name, duration_str, file_size)
 
+    # Auto-publish to GitHub Pages and Spotify RSS
+    publish_to_github(f"Auto-publish {day_name} Weekend Recap ({date_str})")
+
     return True
+
+def publish_to_github(commit_message):
+    import subprocess
+    try:
+        print("[GIT PUBLISH] Staging updated RSS feed and episode audio...", flush=True)
+        subprocess.run(["git", "add", "index.html", "rss.xml", "audio/", "*.py"], cwd=str(BASE_DIR), check=True)
+        print(f"[GIT PUBLISH] Committing: {commit_message}", flush=True)
+        subprocess.run(["git", "commit", "-m", commit_message], cwd=str(BASE_DIR), check=False)
+        print("[GIT PUBLISH] Pushing to origin master...", flush=True)
+        res = subprocess.run(["git", "push", "origin", "master"], cwd=str(BASE_DIR), capture_output=True, text=True)
+        if res.returncode == 0:
+            print("[GIT PUBLISH SUCCESS] Episode published to GitHub Pages & Spotify RSS!", flush=True)
+        else:
+            print(f"[GIT PUBLISH WARNING] Push output: {res.stderr}", flush=True)
+    except Exception as e:
+        print(f"[GIT PUBLISH ERROR] Failed to auto-publish: {e}", flush=True)
 
 if __name__ == "__main__":
     is_sun = "--sunday" in sys.argv
