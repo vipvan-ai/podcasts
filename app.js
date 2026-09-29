@@ -3,6 +3,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-005',
+            number: 'EPISODE 005',
+            date: 'September 29, 2026',
+            title: 'Neuromorphic Optical Chips & Photonic Brain Computing',
+            subtitle: 'Replacing silicon electrons with laser micro-channels to process artificial intelligence at light speed with Dr. Elena Vance & Alex Mercer.',
+            duration: '3:40',
+            durationSeconds: 220,
+            audioUrl: 'audio/ep-005.mp3',
+            tags: ['Photonic Computing', 'Neuromorphic Chips', 'Laser AI', 'Zero-Heat Compute'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is September 29th, and you\'re listening to Future Human Daily. Today we are talking about Neuromorphic Optical Chips.' },
+                { time: '0:45', label: '[Silicon Thermal Bottleneck]', text: 'Why traditional GPUs are hitting physical heat and power walls during matrix operations.' },
+                { time: '1:30', label: '[Photonic Integrated Circuits]', text: 'Replacing copper interconnects with laser micro-channels to compute at the speed of light.' },
+                { time: '2:30', label: '[Phase-Change Optical Synapses]', text: 'Storing neural weights and computing memory directly inside glass channels.' },
+                { time: '3:20', label: '[Zero-Heat Edge Intelligence]', text: 'Running frontier AI models on lightweight devices without cooling fans or massive power grids.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 005, Alex Mercer and Dr. Elena Vance explore how laser interference, optical waveguides, and phase-change materials enable zero-latency neural network processing without heat dissipation walls.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Photonic Integrated Circuits:</strong> Replacing copper interconnects with micro-laser channels.</li>
+                    <li><strong>Passive Optical Matrix Multiplication:</strong> Computing AI calculations instantaneously as light passes through glass.</li>
+                    <li><strong>Phase-Change Optical Synapses:</strong> Storing weights and memory directly inside optical channels.</li>
+                    <li><strong>Zero-Heat Edge Intelligence:</strong> Running frontier AI models on lightweight devices without cooling fans.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-004',
             number: 'EPISODE 004',
             date: 'September 28, 2026',

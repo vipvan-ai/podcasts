@@ -25,69 +25,6 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
-        <!-- WEEKEND RECAP: SATURDAY -->
-    <item>
-      <title>Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup</title>
-      <itunes:title>Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat.mp3" length="551160" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-saturday-20260928</guid>
-      <pubDate>Tue, 29 Sep 2026 00:28:50 +0000</pubDate>
-      <itunes:duration>01:39</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-    <!-- WEEKEND RECAP: SATURDAY -->
-    <item>
-      <title>Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup</title>
-      <itunes:title>Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat.mp3" length="819912" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-saturday-20260928</guid>
-      <pubDate>Tue, 29 Sep 2026 02:37:57 +0000</pubDate>
-      <itunes:duration>02:11</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-    <!-- EPISODE 005 -->
-    <item>
-      <title>EP 005: Neuromorphic Optical Chips &amp; Photonic Brain Computing</title>
-      <itunes:title>Neuromorphic Optical Chips &amp; Photonic Brain Computing</itunes:title>
-      <itunes:episode>5</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
-      <itunes:summary>Can light replace electricity to compute artificial intelligence at the speed of light? Alex Mercer &amp; Dr. Elena Vance break down optical waveguides, non-volatile optical memory, and zero-heat AI processing.</itunes:summary>
-      <description><![CDATA[
-        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is September 29th, and you're listening to Future Human Daily. Today we are talking about Neuromorphic Optical Chips & Photonic Brain Computing!</p>
-        <p>In Episode 005, Alex Mercer and Dr. Elena Vance explore how laser interference, optical waveguides, and phase-change materials enable zero-latency neural network processing without heat dissipation walls.</p>
-        <p><strong>Key Highlights:</strong></p>
-        <ul>
-          <li>Photonic Integrated Circuits: Replacing copper interconnects with micro-laser channels.</li>
-          <li>Passive Optical Matrix Multiplication: Computing AI calculations instantaneously as light passes through glass.</li>
-          <li>Phase-Change Optical Synapses: Storing weights and memory directly inside optical channels.</li>
-          <li>Zero-Heat Edge Intelligence: Running frontier AI models on lightweight devices without cooling fans.</li>
-        </ul>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-005.mp3" length="1703616" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-ep005-20260929</guid>
-      <pubDate>Tue, 29 Sep 2026 07:03:47 +0000</pubDate>
-      <itunes:duration>03:48</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
     <!-- EPISODE 005 -->
     <item>
       <title>EP 005: Neuromorphic Optical Chips &amp; Photonic Brain Computing</title>
