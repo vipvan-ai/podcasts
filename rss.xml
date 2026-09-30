@@ -25,7 +25,34 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
-    <!-- EPISODE 005 -->
+        <!-- EPISODE 006 -->
+    <item>
+      <title>EP 006: Ambient Energy Harvesting &amp; Battery-Free Electronics</title>
+      <itunes:title>Ambient Energy Harvesting &amp; Battery-Free Electronics</itunes:title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Can everyday footsteps, indoor lighting, and ambient Wi-Fi energy power our electronics forever without charging cables? Alex Mercer &amp; Dr. Elena Vance break down piezoelectric crystals, triboelectric nanogenerators, and battery-free pacemakers.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is September 30th, and you're listening to Future Human Daily. Today we are talking about Ambient Energy Harvesting & Battery-Free Electronics!</p>
+        <p>In Episode 006, Alex Mercer and Dr. Elena Vance explore piezoelectric shoe insoles, triboelectric clothing, ambient radio-frequency harvesting, and solid-state supercapacitors that never wear out.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>Kinetic Piezoelectric Harvesting: Converting footstep pressure and micro-vibrations into usable electrical voltage.</li>
+          <li>Triboelectric Nanogenerators (TENGs): Capturing friction static electricity from clothing motion.</li>
+          <li>Ambient RF Wave Harvesting: Pulling micro-watt power directly out of background Wi-Fi and 5G signals.</li>
+          <li>Battery-Free Medical Implants: Pacemakers operating for 30 years without surgical battery replacement.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-006.mp3" length="3101544" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep006-20260930</guid>
+      <pubDate>Wed, 30 Sep 2026 07:05:15 +0000</pubDate>
+      <itunes:duration>06:29</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+<!-- EPISODE 005 -->
     <item>
       <title>EP 005: Neuromorphic Optical Chips &amp; Photonic Brain Computing</title>
       <itunes:title>Neuromorphic Optical Chips &amp; Photonic Brain Computing</itunes:title>

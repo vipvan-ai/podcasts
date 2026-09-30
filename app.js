@@ -3,6 +3,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-006',
+            number: 'EPISODE 006',
+            date: 'September 30, 2026',
+            title: 'Ambient Energy Harvesting & Battery-Free Electronics',
+            subtitle: 'Powering smartwatches, medical sensors, and gadgets forever without ever plugging them into a wall outlet with Dr. Elena Vance & Alex Mercer.',
+            duration: '5:45',
+            durationSeconds: 345,
+            audioUrl: 'audio/ep-006.mp3',
+            tags: ['Energy Harvesting', 'Piezoelectric', 'Battery-Free', 'Green Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is September 30th, and you're listening to Future Human Daily. Today we are talking about Ambient Energy Harvesting.' },
+                { time: '0:45', label: '[Low-Battery Anxiety Hook]', text: 'The modern panic of dead smartwatch batteries and tangled charging cables.' },
+                { time: '1:30', label: '[Micro-Watt Harvesting Analogies]', text: 'Self-winding mechanical watches scaled to micro-electronics.' },
+                { time: '2:45', label: '[Piezoelectric & TENG Mechanics]', text: 'Piezoelectric shoe insoles, clothing friction, and ambient Wi-Fi wave capture.' },
+                { time: '4:15', label: '[Battery-Free Medical Implants]', text: 'Pacemakers and health monitors running 30 years without surgical battery replacement.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 006, Alex Mercer and Dr. Elena Vance explore piezoelectric shoe insoles, triboelectric clothing, ambient radio-frequency harvesting, and solid-state supercapacitors that never wear out.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Kinetic Piezoelectric Harvesting:</strong> Converting footstep pressure into electrical voltage.</li>
+                    <li><strong>Triboelectric Nanogenerators (TENGs):</strong> Capturing friction static electricity from movement.</li>
+                    <li><strong>Ambient RF Harvesting:</strong> Pulling power out of background Wi-Fi and 5G signals.</li>
+                    <li><strong>Battery-Free Pacemakers:</strong> Medical devices operating 30 years without battery swap surgeries.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-005',
             number: 'EPISODE 005',
             date: 'September 29, 2026',
