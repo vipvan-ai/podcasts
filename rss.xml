@@ -25,7 +25,34 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
-        <!-- EPISODE 006 -->
+            <!-- EPISODE 007 -->
+    <item>
+      <title>EP 007: Personalized mRNA Cancer Vaccines &amp; Immune Training</title>
+      <itunes:title>Personalized mRNA Cancer Vaccines &amp; Immune Training</itunes:title>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Can a custom mRNA vaccine train your body's T-cells to hunt down tumor mutations with surgical precision? Alex Mercer &amp; Dr. Elena Vance break down therapeutic cancer vaccines, neoantigen flags, and 18-day bio-printing turnaround times.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 1st, and you're listening to Future Human Daily. Today we are talking about Personalized mRNA Cancer Vaccines!</p>
+        <p>In Episode 007, Alex Mercer and Dr. Elena Vance explore how AI genomic sequencing identifies unique tumor neoantigen flags, teaching killer T-cells to attack cancer while leaving healthy tissue untouched.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>Therapeutic vs Preventative Vaccines: Training immune security guards after a tumor develops.</li>
+          <li>The Cellular Camouflage Problem: Why cancer cells hide behind normal self-proteins.</li>
+          <li>Neoantigen Target Practice: Custom mRNA sequences printing wanted posters for white blood cells.</li>
+          <li>18-Day Bioprinting Turnaround: Bringing personalized mRNA oncology into regional hospitals.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-007.mp3" length="2880024" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep007-20261001</guid>
+      <pubDate>Thu, 01 Oct 2026 07:04:48 +0000</pubDate>
+      <itunes:duration>05:59</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+<!-- EPISODE 006 -->
     <item>
       <title>EP 006: Ambient Energy Harvesting &amp; Battery-Free Electronics</title>
       <itunes:title>Ambient Energy Harvesting &amp; Battery-Free Electronics</itunes:title>

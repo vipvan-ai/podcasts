@@ -3,6 +3,60 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-007',
+            number: 'EPISODE 007',
+            date: 'October 1, 2026',
+            title: 'Personalized mRNA Cancer Vaccines & Immune Training',
+            subtitle: 'Training your body's T-cells to hunt down tumor mutations with surgical precision with Dr. Elena Vance & Alex Mercer.',
+            duration: '6:32',
+            durationSeconds: 392,
+            audioUrl: 'audio/ep-007.mp3',
+            tags: ['mRNA Vaccines', 'Oncology', 'Immune Training', 'Biotech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 1st, and you're listening to Future Human Daily. Today we are talking about Personalized mRNA Cancer Vaccines.' },
+                { time: '0:45', label: '[Therapeutic vs Preventative]', text: 'Why cancer vaccines act like wanted posters for white blood cells after a tumor develops.' },
+                { time: '1:45', label: '[Cellular Camouflage]', text: 'How tumors disguise themselves behind normal self-proteins.' },
+                { time: '3:00', label: '[Neoantigen Target Practice]', text: 'Custom mRNA sequences training killer T-cells to target unique mutant flags.' },
+                { time: '4:45', label: '[18-Day Bioprinting Turnaround]', text: 'Bringing personalized oncology from biopsy to arm injection in regional hospitals.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 007, Alex Mercer and Dr. Elena Vance explore how AI genomic sequencing identifies unique tumor neoantigen flags, teaching killer T-cells to attack cancer while leaving healthy tissue untouched.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Therapeutic Vaccines:</strong> Training T-cells to attack existing tumors.</li>
+                    <li><strong>Cellular Camouflage:</strong> Unmasking cancer cells hiding behind normal self-proteins.</li>
+                    <li><strong>Neoantigen Target Practice:</strong> Printing custom mRNA wanted posters for white blood cells.</li>
+                    <li><strong>18-Day Turnaround:</strong> Accelerating personalized vaccine production from months to weeks.</li>
+                </ul>
+            `
+        },
+        {
+            id: 'pilot-social',
+            number: 'PILOT PREVIEW',
+            date: 'September 30, 2026',
+            title: 'The $2.40 Venmo Invoice & Friendship Etiquette',
+            subtitle: 'Pilot Episode of "The Unwritten Code" featuring Maya & Julian unpacking petty micro-invoices and modern friend etiquette.',
+            duration: '0:48',
+            durationSeconds: 48,
+            audioUrl: 'audio/sample_social_maya_julian.mp3',
+            tags: ['Social Dilemmas', 'Maya & Julian', 'Venmo Etiquette', 'Friendship'],
+            script: [
+                { time: '0:00', label: '[Maya]', text: '[sighs] [playfully] Julian, I need your immediate ruling on something that happened yesterday, because I think modern society might be officially broken.' },
+                { time: '0:10', label: '[Julian]', text: '[chuckles] Oh boy. Whenever you start an episode with that tone, somebody either committed a major social faux pas or ruined a group dinner. What happened?' },
+                { time: '0:22', label: '[Maya]', text: '[laughs] Worse. I went on a coffee run with a friend. She bought a pastry, I grabbed an iced latte. Three hours later, my phone buzzes with a Venmo request for two dollars and forty-seven cents. With a little croissant emoji attached!' },
+                { time: '0:35', label: '[Julian]', text: '[groans] [chuckles] Two dollars and forty-seven cents? See, this is why we have The Unwritten Code! Under five dollars, you do not invoice a friend—you just store it in the universal karma bank and let them buy the next round!' }
+            ],
+            notes: `
+                <h4>Pilot Concept:</h4>
+                <p><strong>The Unwritten Code:</strong> Co-hosted by Maya (empathetic, observational, witty) and Julian (practical, dry humor, opinionated).</p>
+                <br>
+                <h4>The Verdict:</h4>
+                <p>The "Under $5 Rule": Never invoice a friend for under $5. Put it in the universal karma bank and let them cover the next coffee.</p>
+            `
+        },
+        {
             id: 'ep-006',
             number: 'EPISODE 006',
             date: 'September 30, 2026',
