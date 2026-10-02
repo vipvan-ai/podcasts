@@ -2,6 +2,7 @@ import os
 import sys
 import time
 import base64
+import re
 import numpy as np
 import scipy.signal as signal
 from scipy.signal import butter, sosfilt
@@ -160,6 +161,7 @@ def build_weekend_recap_pipeline(is_sunday=False):
         speaker = turn["speaker"]
         voice = turn["voice"]
         text = turn["text"]
+        tts_text = re.sub(r'\[.*?\]', '', text).strip()
         cache_file = cache_dir / f"turn_{idx+1:02d}_{speaker}.npy"
 
         raw_samples = None
@@ -167,14 +169,14 @@ def build_weekend_recap_pipeline(is_sunday=False):
             print(f" -> Turn {idx+1}/{len(script)} [{speaker}] loaded from CACHE", flush=True)
             raw_samples = np.load(str(cache_file))
         else:
-            print(f" -> Synthesizing Turn {idx+1}/{len(script)} [{speaker} ({voice})]: {text[:45]}...", flush=True)
+            print(f" -> Synthesizing Turn {idx+1}/{len(script)} [{speaker} ({voice})]: {tts_text[:45]}...", flush=True)
             success = False
             for attempt in range(10):
                 for model_name in TTS_MODELS:
                     try:
                         resp = client.models.generate_content(
                             model=model_name,
-                            contents=text,
+                            contents=tts_text,
                             config=types.GenerateContentConfig(
                                 response_modalities=["AUDIO"],
                                 speech_config=types.SpeechConfig(

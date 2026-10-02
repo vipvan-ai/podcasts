@@ -25,7 +25,34 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
-            <!-- EPISODE 007 -->
+                <!-- EPISODE 008 -->
+    <item>
+      <title>EP 008: Neuromorphic Acoustic AI Sensors &amp; Ultrasound Diagnostics</title>
+      <itunes:title>Neuromorphic Acoustic AI Sensors &amp; Ultrasound Diagnostics</itunes:title>
+      <itunes:episode>8</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Can micro-acoustic MEMS patches listen to internal blood flow micro-swirls and catch arterial blockages years before a heart attack occurs? Alex Mercer &amp; Dr. Elena Vance break down continuous bio-acoustics, spiking neural microchips, and nocturnal asthma monitoring.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 2nd, and you're listening to Future Human Daily. Today we are talking about Neuromorphic Acoustic AI Sensors!</p>
+        <p>In Episode 008, Alex Mercer and Dr. Elena Vance explore how MEMS ultrasonic sensors and brain-inspired spiking microchips listen to arterial turbulence, pediatric asthma airway constriction, and internal heart sound signatures 24/7.</p>
+        <p><strong>Key Highlights:</strong></p>
+        <ul>
+          <li>The Car Mechanic Metaphor: Listening to internal biological machinery acoustics continuously instead of a 10-second annual checkup.</li>
+          <li>Laminar vs Turbulent Blood Acoustics: Detecting micro-swirls in arterial blood flow 4 years before physical symptoms.</li>
+          <li>Spiking Neural Microchips: Low-power acoustic processing running for months on micro-watts.</li>
+          <li>Nocturnal Pediatric Asthma Monitoring: Catching lung congestion in sleeping children before severe wheezing starts.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-008.mp3" length="2692632" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep008-20261002</guid>
+      <pubDate>Fri, 02 Oct 2026 07:04:54 +0000</pubDate>
+      <itunes:duration>05:31</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+<!-- EPISODE 007 -->
     <item>
       <title>EP 007: Personalized mRNA Cancer Vaccines &amp; Immune Training</title>
       <itunes:title>Personalized mRNA Cancer Vaccines &amp; Immune Training</itunes:title>

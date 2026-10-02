@@ -3,6 +3,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-008',
+            number: 'EPISODE 008',
+            date: 'October 2, 2026',
+            title: 'Neuromorphic Acoustic AI Sensors & Ultrasound Diagnostics',
+            subtitle: 'Using micro-acoustic MEMS chips to listen to your body's internal biological symphony continuously with Dr. Elena Vance & Alex Mercer.',
+            duration: '6:29',
+            durationSeconds: 389,
+            audioUrl: 'audio/ep-008.mp3',
+            tags: ['Acoustic AI', 'Bio-Sensors', 'Cardiovascular', 'Preventive Care'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 2nd, and you're listening to Future Human Daily. Today we are talking about Neuromorphic Acoustic Sensors.' },
+                { time: '0:45', label: '[Car Mechanic Metaphor]', text: 'Listening to internal engine purrs vs a 10-second annual stethoscope check.' },
+                { time: '1:45', label: '[Arterial Micro-Turbulence]', text: 'Detecting swirling blood flow micro-ripples 4 years before physical symptoms.' },
+                { time: '3:15', label: '[Spiking Neural Microchips]', text: 'Low-power acoustic pattern recognition running on micro-watts.' },
+                { time: '4:45', label: '[Nocturnal Pediatric Asthma]', text: 'Monitoring sleeping children to catch lung sound friction before asthma attacks.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>In Episode 008, Alex Mercer and Dr. Elena Vance explore how MEMS ultrasonic sensors and brain-inspired spiking microchips listen to arterial turbulence, pediatric asthma airway constriction, and internal heart sound signatures 24/7.</p>
+                <br>
+                <h4>Key Takeaways:</h4>
+                <ul>
+                    <li><strong>Continuous Bio-Acoustics:</strong> Wearable MEMS patches monitoring arterial blood flow turbulence.</li>
+                    <li><strong>Early Detection:</strong> Spotting cardiovascular narrowing 4 years before symptoms occur.</li>
+                    <li><strong>Spiking Neural Chips:</strong> On-device AI processing consuming micro-watts.</li>
+                    <li><strong>Pediatric Asthma Monitoring:</strong> Preventing nocturnal asthma attacks before wheezing begins.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-007',
             number: 'EPISODE 007',
             date: 'October 1, 2026',
