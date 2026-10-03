@@ -9,7 +9,7 @@ SATURDAY_SCRIPT_30_TURNS = [
     {
         "speaker": "Veda",
         "voice": "Veda",
-        "text": "[upbeat] Happy weekend, everyone! Welcome to the Future Human Daily Weekend Recap. Alex and Elena are off taking a well-deserved break today and will be back bright and early Monday morning—so I am Veda with Rami, and we are kicking back with your Saturday morning coffee."
+        "text": "[upbeat] Happy weekend, everyone! Welcome to the Future Human Daily Weekend Recap. Alex and Elena are taking a well-deserved weekend break—so I am Veda with Rami, and we are kicking back with your Saturday morning coffee."
     },
     {
         "speaker": "Rami",
@@ -159,12 +159,12 @@ SATURDAY_SCRIPT_30_TURNS = [
     {
         "speaker": "Veda",
         "voice": "Veda",
-        "text": "[upbeat] Absolutely! What a fun lineup of stories today. Enjoy the rest of your Saturday, take it easy, and remember—Alex and Elena will be back bright and early Monday morning for your daily deep dive. Until then, stay curious!"
+        "text": "[upbeat] Absolutely! What a fun lineup of stories today. Enjoy the rest of your Saturday, take it easy, and remember—Rami and I will be back tomorrow morning for your Sunday weekend recap! Until then, stay curious!"
     },
     {
         "speaker": "Rami",
         "voice": "Rami",
-        "text": "[warmly] Have a wonderful weekend, everyone! See you Monday!"
+        "text": "[warmly] Have a wonderful Saturday, everyone! See you tomorrow morning for Sunday's recap!"
     }
 ]
 
