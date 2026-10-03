@@ -244,8 +244,9 @@ def build_weekend_recap_pipeline(is_sunday=False):
         target_peak = 10 ** (-1.0 / 20.0)
         mixed_audio = mixed_audio * (target_peak / max_peak)
 
-    out_mp3_name = f"ep-weekend-{tag_suffix}.mp3"
-    out_wav_name = f"ep-weekend-{tag_suffix}.wav"
+    date_tag = datetime.now().strftime("%Y%m%d")
+    out_mp3_name = f"ep-weekend-{tag_suffix}-{date_tag}.mp3"
+    out_wav_name = f"ep-weekend-{tag_suffix}-{date_tag}.wav"
     out_mp3 = AUDIO_DIR / out_mp3_name
     out_wav = AUDIO_DIR / out_wav_name
 

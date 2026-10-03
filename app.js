@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             subtitle: 'Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and continuous studio room tone.',
             duration: '5:42',
             durationSeconds: 342,
-            audioUrl: 'audio/ep-weekend-sat.mp3',
+            audioUrl: 'audio/ep-weekend-sat-20261003.mp3',
             tags: ['Weekend Recap', 'Veda & Rami', 'Tech Catchup', 'Deep Dives'],
             script: [
                 { time: '0:00', label: '[Intro]', text: 'Alex and Elena are off taking a well-deserved break today—so I am Veda with Rami...' },
