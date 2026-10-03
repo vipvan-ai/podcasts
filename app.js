@@ -3,6 +3,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat',
+            number: 'WEEKEND RECAP',
+            date: 'October 3, 2026',
+            title: 'Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup',
+            subtitle: 'Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and continuous studio room tone.',
+            duration: '5:42',
+            durationSeconds: 342,
+            audioUrl: 'audio/ep-weekend-sat.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Tech Catchup', 'Deep Dives'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Alex and Elena are off taking a well-deserved break today—so I am Veda with Rami...' },
+                { time: '1:15', label: '[Weekly Highlights]', text: 'Recapping neuromorphic bio-acoustics, ambient energy harvesting, and mRNA oncology.' },
+                { time: '3:30', label: '[Deep Tech Discussion]', text: 'Unhurried story transitions and deep-dive technical insights.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami! In this Saturday episode, Veda and Rami take a relaxed, unhurried stroll through the week's biggest tech breakthroughs.</p>
+                <br>
+                <h4>Key Highlights:</h4>
+                <ul>
+                    <li><strong>Relaxed Weekend Pacing:</strong> Co-hosted by Veda & Rami.</li>
+                    <li><strong>Continuous Studio Room Tone:</strong> Invisible zero-burst transitions.</li>
+                    <li><strong>Weekly Tech Catchup:</strong> Deep dive into bio-acoustics & ambient energy.</li>
+                </ul>
+            `
+        },
+        {
             id: 'ep-008',
             number: 'EPISODE 008',
             date: 'October 2, 2026',

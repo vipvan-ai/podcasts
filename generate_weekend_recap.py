@@ -278,7 +278,7 @@ def publish_to_github(commit_message):
     import subprocess
     try:
         print("[GIT PUBLISH] Staging updated RSS feed and episode audio...", flush=True)
-        subprocess.run(["git", "add", "index.html", "rss.xml", "audio/", "*.py"], cwd=str(BASE_DIR), check=True)
+        subprocess.run(["git", "add", "index.html", "app.js", "rss.xml", "audio/", "*.py"], cwd=str(BASE_DIR), check=True)
         print(f"[GIT PUBLISH] Committing: {commit_message}", flush=True)
         subprocess.run(["git", "commit", "-m", commit_message], cwd=str(BASE_DIR), check=False)
         print("[GIT PUBLISH] Pushing to origin master...", flush=True)
