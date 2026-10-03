@@ -61,6 +61,24 @@
       <itunes:explicit>no</itunes:explicit>
     </item>
 
+    <!-- WEEKEND RECAP: SATURDAY -->
+    <item>
+      <title>Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup</title>
+      <itunes:title>Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat.mp3" length="2732376" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-saturday-20261003</guid>
+      <pubDate>Sat, 03 Oct 2026 11:52:48 +0000</pubDate>
+      <itunes:duration>05:38</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
 <!-- EPISODE 008 -->
     <item>
       <title>EP 008: Neuromorphic Acoustic AI Sensors &amp; Ultrasound Diagnostics</title>
