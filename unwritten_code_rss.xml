@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+    xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Unwritten Code</title>
+    <link>https://vipvan-ai.github.io/podcasts</link>
+    <language>en-us</language>
+    <copyright>© 2026 The Unwritten Code</copyright>
+    <itunes:subtitle>The survival guide to modern human behavior, etiquette, and life's unspoken rules.</itunes:subtitle>
+    <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+    <itunes:summary>Have you ever received a Venmo request for $2.47 from a close friend? Or wondered who actually owns the middle seat armrests on an airplane? Join co-hosts Maya Lin and Julian Cross every weekday morning as they unpack the unspoken rules, micro-dilemmas, and etiquette nobody taught you in school—plus listener confession trials on The Weekend Docket every Saturday.</itunes:summary>
+    <description>Have you ever received a Venmo request for $2.47 from a close friend? Or wondered who actually owns the middle seat armrests on an airplane? Join co-hosts Maya Lin and Julian Cross every weekday morning as they unpack the unspoken rules, micro-dilemmas, and etiquette nobody taught you in school—plus listener confession trials on The Weekend Docket every Saturday.</description>
+    <itunes:owner>
+      <itunes:name>The Unwritten Code</itunes:name>
+      <itunes:email>contact@futurehumandaily.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://vipvan-ai.github.io/podcasts/assets/unwritten_code_cover.jpg" />
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Personal Journals"/>
+      <itunes:category text="Philosophy"/>
+    </itunes:category>
+    <itunes:category text="Comedy"/>
+    <itunes:explicit>no</itunes:explicit>
+    
+    <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
+
+    <!-- OFFICIAL TRAILER / TEASER (COMING OCTOBER 5TH) -->
+    <item>
+      <title>Welcome to The Unwritten Code! (Official Trailer — Premieres Oct 5)</title>
+      <itunes:title>Welcome to The Unwritten Code! (Official Trailer — Premieres Oct 5)</itunes:title>
+      <itunes:episodeType>trailer</itunes:episodeType>
+      <itunes:season>1</itunes:season>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Have you ever received a Venmo request for $2.47 and wondered if society is broken? Meet Maya Lin &amp; Julian Cross, your guides through modern human awkwardness, group chat politics, and everyday dilemmas. Dropping daily weekday mornings starting Monday, October 5th! Hit follow on Spotify so you never miss an episode.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Welcome to The Unwritten Code!</strong></p>
+        <p>Have you ever received a Venmo request for $2.47 from a friend and wondered if modern society is completely broken? Or sat trapped in a twelve-person family group chat wishing there was an emergency eject button?</p>
+        <p>Join co-hosts <strong>Maya Lin</strong> and <strong>Julian Cross</strong> as they unpack life's unspoken rules—from office Slack anxiety and first-date economics to airport etiquette and roommate wars.</p>
+        <ul>
+          <li><strong>Weekday Mornings:</strong> 6–8 minute quick-hit daily dilemmas with your morning coffee.</li>
+          <li><strong>The Weekend Docket (Saturdays):</strong> 15-minute trials resolving listener-submitted confessions and moral dilemmas.</li>
+        </ul>
+        <p><strong>Official Launch:</strong> Monday, October 5th, 2026. Hit <em>Follow</em> on Spotify or Apple Podcasts right now!</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_trailer.mp3" length="537936" type="audio/mpeg" />
+      <guid isPermaLink="false">the-unwritten-code-official-trailer-20261003</guid>
+      <pubDate>Sat, 03 Oct 2026 18:15:00 +0000</pubDate>
+      <itunes:duration>01:08</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+  </channel>
+</rss>
