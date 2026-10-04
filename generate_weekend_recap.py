@@ -46,26 +46,27 @@ EDGE_VOICES = {
 
 def synth_edge_turn(text, speaker, sample_rate=24000):
     voice = EDGE_VOICES.get(speaker, "en-US-AvaNeural")
-    tmp_path = Path(f"_tmp_edge_{time.time_ns()}.mp3")
-    async def _run():
-        communicate = edge_tts.Communicate(text, voice, rate="+0%", pitch="+0Hz")
-        await communicate.save(str(tmp_path))
-    
-    try:
-        asyncio.run(_run())
-        if tmp_path.exists():
-            data, sr = sf.read(str(tmp_path))
-            tmp_path.unlink(missing_ok=True)
-            if data.ndim > 1:
-                data = np.mean(data, axis=1)
-            if sr != sample_rate:
-                num_samples = int(len(data) * sample_rate / sr)
-                data = signal.resample(data, num_samples)
-            return data.astype(np.float32)
-    except Exception as e:
-        print(f"    [Edge-TTS Exception] {e}", flush=True)
-        if tmp_path.exists():
-            tmp_path.unlink(missing_ok=True)
+    for attempt in range(5):
+        tmp_path = Path(f"_tmp_edge_{time.time_ns()}.mp3")
+        async def _run():
+            communicate = edge_tts.Communicate(text, voice, rate="+0%", pitch="+0Hz")
+            await communicate.save(str(tmp_path))
+        
+        try:
+            asyncio.run(_run())
+            if tmp_path.exists() and tmp_path.stat().st_size > 1000:
+                data, sr = sf.read(str(tmp_path))
+                tmp_path.unlink(missing_ok=True)
+                if data.ndim > 1:
+                    data = np.mean(data, axis=1)
+                if sr != sample_rate:
+                    num_samples = int(len(data) * sample_rate / sr)
+                    data = signal.resample(data, num_samples)
+                return data.astype(np.float32)
+        except Exception as e:
+            if tmp_path.exists():
+                tmp_path.unlink(missing_ok=True)
+            time.sleep(1.5)
     return None
 
 def clean_turn(x, sr=24000, gap_ms=60, max_artifact_ms=250, flat_thresh=0.3):
