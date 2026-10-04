@@ -3,6 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun',
+            number: 'WEEKEND RECAP',
+            date: 'October 4, 2026',
+            title: 'Sunday AI Catchup: Claude Opus 5.5 & Cyber Defense',
+            subtitle: 'Veda & Rami host a relaxed 20-minute weekend recap featuring Claude Opus 5.5, autonomous AI cyber defense agents, and solid-state energy.',
+            duration: '20:51',
+            durationSeconds: 1251,
+            audioUrl: 'audio/ep-weekend-sun-20261004.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday AI Catchup', 'Claude Opus 5.5'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Today we are looking back at the biggest AI & cyber defense stories of the week...' },
+                { time: '2:15', label: '[Claude Opus 5.5]', text: 'Deep dive into Opus 5.5 reasoning, context window stability, and cross-domain synthesis.' },
+                { time: '8:30', label: '[Autonomous Cyber Defense]', text: 'Ethical AI security agents discovering micro-vulnerabilities in real-time.' },
+                { time: '14:00', label: '[Solid State Energy]', text: 'Hybrid quantum battery modeling and 5-minute EV fast charging.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Welcome to the Future Human Daily Sunday Weekend Recap hosted by Veda and Rami! In this 20-minute Sunday edition, Veda and Rami unpack Claude Opus 5.5, autonomous AI cyber defense agents, and ultra-fast solid state battery simulations.</p>
+                <br>
+                <h4>Key Highlights:</h4>
+                <ul>
+                    <li><strong>Claude Opus 5.5 Deep Dive:</strong> Hierarchical reasoning & 2M token context stability.</li>
+                    <li><strong>Autonomous Cyber Defense:</strong> Real-time software patch synthesis and ethical AI auditing.</li>
+                    <li><strong>Solid-State Battery Tech:</strong> Quantum simulation breakthrough for 5-minute EV charging.</li>
+                </ul>
+            `
+        },
+        {
             id: 'unwritten-code-trailer',
             number: 'OFFICIAL TRAILER',
             date: 'October 3, 2026',

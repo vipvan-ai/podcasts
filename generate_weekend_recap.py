@@ -138,13 +138,60 @@ def apply_studio_warmth_eq(audio_samples, sample_rate=24000, low_boost_db=4.0):
 
     return signal.filtfilt(b_eq, a_eq, audio_samples)
 
+def update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration_str):
+    app_js = BASE_DIR / "app.js"
+    if not app_js.exists():
+        return
+    content = app_js.read_text(encoding="utf-8")
+    ep_id = f"ep-weekend-{day_name[:3].lower()}"
+    
+    parts = duration_str.split(":")
+    dur_sec = int(parts[0]) * 60 + int(parts[1]) if len(parts) == 2 else 1200
+    date_str = datetime.now().strftime("%B %d, %Y")
+    
+    entry_code = f"""        {{
+            id: '{ep_id}',
+            number: 'WEEKEND RECAP',
+            date: '{date_str}',
+            title: '{ep_title}',
+            subtitle: '{ep_summary}',
+            duration: '{duration_str}',
+            durationSeconds: {dur_sec},
+            audioUrl: 'audio/{mp3_filename}',
+            tags: ['Weekend Recap', 'Veda & Rami', '{day_name} AI Catchup'],
+            script: [
+                {{ time: '0:00', label: '[Intro]', text: 'Happy {day_name}! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }}
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>{ep_summary}</p>
+            `
+        }},"""
+
+    if f"id: '{ep_id}'" in content:
+        pattern = re.compile(rf"\s*\{{\s*id:\s*'{ep_id}'.*?\}\s*,", re.DOTALL)
+        content = pattern.sub("", content)
+
+    marker = "const episodes = ["
+    if marker in content:
+        pos = content.find(marker) + len(marker)
+        updated = content[:pos] + "\n" + entry_code + content[pos:]
+        app_js.write_text(updated, encoding="utf-8")
+        print(f"[APP.JS UPDATE] Updated {day_name} Weekend Recap in app.js!", flush=True)
+
 def update_weekend_rss(day_name, ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
+    update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration_str)
+
     rss_file = BASE_DIR / "rss.xml"
     if not rss_file.exists():
         print("[Warning] rss.xml not found, skipping RSS update.")
         return
 
     content = rss_file.read_text(encoding="utf-8")
+    # Remove previous recap item for same day if present to prevent duplicates
+    pattern = re.compile(rf"\s*<!-- WEEKEND RECAP: {day_name.upper()} -->\s*<item>.*?</item>", re.DOTALL)
+    content = pattern.sub("", content)
+
     pub_date = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = f"future-human-daily-weekend-{day_name.lower()}-{datetime.now().strftime('%Y%m%d')}"
 
