@@ -114,13 +114,16 @@ def update_weekend_rss(day_name, ep_title, ep_summary, mp3_filename, duration_st
     pub_date = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = f"future-human-daily-weekend-{day_name.lower()}-{datetime.now().strftime('%Y%m%d')}"
 
+    ep_title_xml = ep_title.replace('&', '&amp;') if '&amp;' not in ep_title else ep_title
+    ep_summary_xml = ep_summary.replace('&', '&amp;') if '&amp;' not in ep_summary else ep_summary
+
     item_xml = f"""    <!-- WEEKEND RECAP: {day_name.upper()} -->
     <item>
-      <title>{ep_title}</title>
-      <itunes:title>{ep_title}</itunes:title>
+      <title>{ep_title_xml}</title>
+      <itunes:title>{ep_title_xml}</itunes:title>
       <itunes:episodeType>bonus</itunes:episodeType>
       <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>{ep_summary}</itunes:summary>
+      <itunes:summary>{ep_summary_xml}</itunes:summary>
       <description><![CDATA[
         <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
         <p>{ep_summary}</p>
