@@ -114,8 +114,10 @@ def update_weekend_rss(day_name, ep_title, ep_summary, mp3_filename, duration_st
     pub_date = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
     guid = f"future-human-daily-weekend-{day_name.lower()}-{datetime.now().strftime('%Y%m%d')}"
 
-    ep_title_xml = ep_title.replace('&', '&amp;') if '&amp;' not in ep_title else ep_title
-    ep_summary_xml = ep_summary.replace('&', '&amp;') if '&amp;' not in ep_summary else ep_summary
+    from rss_utils import sanitize_xml_text, validate_and_save_rss
+
+    ep_title_xml = sanitize_xml_text(ep_title)
+    ep_summary_xml = sanitize_xml_text(ep_summary)
 
     item_xml = f"""    <!-- WEEKEND RECAP: {day_name.upper()} -->
     <item>
@@ -136,10 +138,15 @@ def update_weekend_rss(day_name, ep_title, ep_summary, mp3_filename, duration_st
     </item>
 """
 
-    if "<channel>" in content and "<!-- EPISODE" in content:
-        insert_pos = content.find("<!-- EPISODE")
-        updated = content[:insert_pos] + item_xml + "\n" + content[insert_pos:]
-        rss_file.write_text(updated, encoding="utf-8")
+    if "<channel>" in content:
+        insert_marker = "<atom:link"
+        if insert_marker in content:
+            link_end = content.find("/>", content.find(insert_marker)) + 2
+            updated = content[:link_end] + "\n\n" + item_xml + content[link_end:]
+        else:
+            insert_pos = content.find("<!-- EPISODE")
+            updated = content[:insert_pos] + item_xml + "\n" + content[insert_pos:]
+        validate_and_save_rss(rss_file, updated)
         print(f"[RSS UPDATE] Added {day_name} Weekend Recap to rss.xml!")
 
 def build_weekend_recap_pipeline(is_sunday=False):
