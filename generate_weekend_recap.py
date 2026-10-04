@@ -292,5 +292,10 @@ def publish_to_github(commit_message):
         print(f"[GIT PUBLISH ERROR] Failed to auto-publish: {e}", flush=True)
 
 if __name__ == "__main__":
-    is_sun = "--sunday" in sys.argv
+    if "--sunday" in sys.argv:
+        is_sun = True
+    elif "--saturday" in sys.argv:
+        is_sun = False
+    else:
+        is_sun = (datetime.now().weekday() == 6)
     build_weekend_recap_pipeline(is_sunday=is_sun)

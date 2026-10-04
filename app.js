@@ -3,6 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'unwritten-code-trailer',
+            number: 'OFFICIAL TRAILER',
+            date: 'October 3, 2026',
+            title: 'Welcome to The Unwritten Code! (Premieres Monday, Oct 5)',
+            subtitle: 'Meet Maya Lin & Julian Cross as they introduce the survival guide to modern human behavior, etiquette, and everyday micro-dilemmas.',
+            duration: '1:08',
+            durationSeconds: 68,
+            audioUrl: 'audio/unwritten_code_trailer.mp3',
+            tags: ['Official Trailer', 'Maya & Julian', 'Premieres Oct 5', 'Society & Etiquette'],
+            script: [
+                { time: '0:00', label: '[Maya]', text: '[warmly] [playfully] Have you ever received a Venmo request from a friend for two dollars and forty-seven cents... and wondered if modern society is completely broken?' },
+                { time: '0:10', label: '[Julian]', text: '[chuckles] Or sat trapped in a twelve-person group chat wishing there was an eject button that didn\'t start an entire family war?' },
+                { time: '0:20', label: '[Maya]', text: '[laughs] Welcome to The Unwritten Code—the survival guide to modern human behavior, etiquette, and life\'s weirdest everyday dilemmas.' },
+                { time: '0:30', label: '[Julian]', text: '[warmly] I am Julian Cross...' },
+                { time: '0:35', label: '[Maya]', text: '...and I am Maya Lin. Every weekday morning, we unpack the unspoken rules nobody taught you in school—from office Slack anxiety and first-date politics, to who actually owns the middle seat armrests on an airplane.' },
+                { time: '0:50', label: '[Julian]', text: '[chuckles] Plus, every Saturday on The Weekend Docket, we put your wildest real-life dilemmas on trial and hand down the definitive verdict.' },
+                { time: '0:58', label: '[Maya]', text: '[excitedly] Our daily drops start this Monday, October 5th! Hit the follow button right now on Spotify and Apple Podcasts so you never miss an episode.' },
+                { time: '1:06', label: '[Julian]', text: '[warmly] See you Monday morning. Don\'t break the code!' }
+            ],
+            notes: `
+                <h4>The Unwritten Code: Official Launch Trailer</h4>
+                <p><strong>Premiering:</strong> Monday, October 5th, 2026.</p>
+                <p>Join co-hosts <strong>Maya Lin</strong> & <strong>Julian Cross</strong> every weekday morning for 6–8 minute deep dives into the hilarious, awkward, and unwritten rules of modern life—plus <strong>The Weekend Docket</strong> every Saturday resolving listener dilemmas!</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat',
             number: 'WEEKEND RECAP',
             date: 'October 3, 2026',

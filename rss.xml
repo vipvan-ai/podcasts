@@ -43,6 +43,24 @@
       <itunes:explicit>no</itunes:explicit>
     </item>
 
+    <!-- WEEKEND RECAP: SUNDAY -->
+    <item>
+      <title>Sunday AI Catchup: Claude Opus 5.5 & Cyber Defense</title>
+      <itunes:title>Sunday AI Catchup: Claude Opus 5.5 & Cyber Defense</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261004.mp3" length="2263248" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sunday-20261004</guid>
+      <pubDate>Sun, 04 Oct 2026 11:17:19 +0000</pubDate>
+      <itunes:duration>04:32</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
 <!-- EPISODE 008 -->
     <item>
       <title>EP 008: Neuromorphic Acoustic AI Sensors &amp; Ultrasound Diagnostics</title>
