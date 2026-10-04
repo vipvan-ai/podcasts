@@ -3,6 +3,8 @@ import sys
 import time
 import base64
 import re
+import asyncio
+import edge_tts
 import numpy as np
 import scipy.signal as signal
 from scipy.signal import butter, sosfilt
@@ -34,6 +36,37 @@ TTS_MODELS = [
     'gemini-3.1-flash-tts-preview',
     'gemini-2.5-flash-preview-tts'
 ]
+
+EDGE_VOICES = {
+    "Veda": "en-US-AvaNeural",
+    "Rami": "en-US-AndrewNeural",
+    "Alex": "en-US-GuyNeural",
+    "Elena": "en-US-AriaNeural"
+}
+
+def synth_edge_turn(text, speaker, sample_rate=24000):
+    voice = EDGE_VOICES.get(speaker, "en-US-AvaNeural")
+    tmp_path = Path(f"_tmp_edge_{time.time_ns()}.mp3")
+    async def _run():
+        communicate = edge_tts.Communicate(text, voice, rate="+0%", pitch="+0Hz")
+        await communicate.save(str(tmp_path))
+    
+    try:
+        asyncio.run(_run())
+        if tmp_path.exists():
+            data, sr = sf.read(str(tmp_path))
+            tmp_path.unlink(missing_ok=True)
+            if data.ndim > 1:
+                data = np.mean(data, axis=1)
+            if sr != sample_rate:
+                num_samples = int(len(data) * sample_rate / sr)
+                data = signal.resample(data, num_samples)
+            return data.astype(np.float32)
+    except Exception as e:
+        print(f"    [Edge-TTS Exception] {e}", flush=True)
+        if tmp_path.exists():
+            tmp_path.unlink(missing_ok=True)
+    return None
 
 def clean_turn(x, sr=24000, gap_ms=60, max_artifact_ms=250, flat_thresh=0.3):
     """Spectral Flatness Measure & Active Energy Run Grouping algorithm."""
@@ -181,7 +214,7 @@ def build_weekend_recap_pipeline(is_sunday=False):
         else:
             print(f" -> Synthesizing Turn {idx+1}/{len(script)} [{speaker} ({voice})]: {tts_text[:45]}...", flush=True)
             success = False
-            for attempt in range(10):
+            for attempt in range(1):
                 for model_name in TTS_MODELS:
                     try:
                         resp = client.models.generate_content(
@@ -202,17 +235,22 @@ def build_weekend_recap_pipeline(is_sunday=False):
                             if isinstance(data, str): data = base64.b64decode(data)
                             raw_samples = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
                             np.save(str(cache_file), raw_samples)
-                            print(f"    [Success ({model_name})] Cached {len(raw_samples)} samples.", flush=True)
+                            print(f"    [Success (Gemini {model_name})] Cached {len(raw_samples)} samples.", flush=True)
                             success = True
-                            time.sleep(2)
+                            time.sleep(1)
                             break
                     except Exception as e:
-                        print(f"    [Model Fallback ({model_name})] Quota/Rate limit, waiting 4s...", flush=True)
-                        time.sleep(4)
+                        pass
                 if success:
                     break
-                print(f"    [Retry Attempt {attempt+1}/10] All models rate limited. Sleeping 10s...", flush=True)
-                time.sleep(10)
+
+            if not success:
+                print(f"    [Fallback Edge-TTS] Synthesizing {speaker} with Edge-TTS HD Voice...", flush=True)
+                raw_samples = synth_edge_turn(tts_text, speaker, sample_rate)
+                if raw_samples is not None:
+                    np.save(str(cache_file), raw_samples)
+                    print(f"    [Success (Edge-TTS)] Cached {len(raw_samples)} samples.", flush=True)
+                    success = True
 
             if not success:
                 print(f"    [Warning] All models exhausted for turn {idx+1}. Using synthetic zero pad.", flush=True)
