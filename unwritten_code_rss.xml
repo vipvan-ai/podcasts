@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+        <!-- EPISODE 001 -->
+    <item>
+      <title>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</title>
+      <itunes:title>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</itunes:title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian settle the great workplace messaging war: why does a simple thumbs-up emoji on Slack feel passive-aggressive, and who is hitting reply-all to company emails?</itunes:summary>
+      <description><![CDATA[
+        <p><strong>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</strong></p>
+        <p>Maya & Julian settle the great workplace messaging war: why does a simple thumbs-up emoji on Slack feel passive-aggressive, and who is hitting reply-all to company emails?</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_ep001_preview_20261004.mp3" length="386616" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-ep-001-20261004</guid>
+      <pubDate>Sun, 04 Oct 2026 08:44:48 +0000</pubDate>
+      <itunes:duration>00:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
     <!-- OFFICIAL TRAILER / TEASER (COMING OCTOBER 5TH) -->
     <item>
       <title>Welcome to The Unwritten Code! (Official Trailer - Premieres Oct 5)</title>
