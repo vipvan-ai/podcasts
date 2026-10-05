@@ -169,7 +169,7 @@ def update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration
         }},"""
 
     if f"id: '{ep_id}'" in content:
-        pattern = re.compile(rf"\s*\{{\s*id:\s*'{ep_id}'.*?\}\s*,", re.DOTALL)
+        pattern = re.compile(r"\s*\{\s*id:\s*'" + re.escape(ep_id) + r"'.*?\}\s*,", re.DOTALL)
         content = pattern.sub("", content)
 
     marker = "const episodes = ["

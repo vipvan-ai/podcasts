@@ -63,6 +63,26 @@
       <itunes:explicit>no</itunes:explicit>
     </item>
 
+    <!-- EPISODE 009 -->
+    <item>
+      <title>EP 009: Photonic Neural Chips &amp; Light-Speed Optical Computing</title>
+      <itunes:title>Photonic Neural Chips &amp; Light-Speed Optical Computing</itunes:title>
+      <itunes:episode>9</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Replacing copper wires with laser beams! Alex Mercer &amp; Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 5th, and you're listening to Future Human Daily. Today we are talking about Photonic Neural Computing!</p>
+        <p>Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-009.mp3" length="2540256" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep009-20261005</guid>
+      <pubDate>Mon, 05 Oct 2026 07:48:49 +0000</pubDate>
+      <itunes:duration>05:01</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
 <!-- EPISODE 008 -->
     <item>
       <title>EP 008: Neuromorphic Acoustic AI Sensors &amp; Ultrasound Diagnostics</title>

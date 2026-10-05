@@ -3,6 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-009',
+            number: 'EPISODE 009',
+            date: 'October 5, 2026',
+            title: 'Photonic Neural Chips & Light-Speed Optical Computing',
+            subtitle: 'Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.',
+            duration: '05:01',
+            durationSeconds: 301,
+            audioUrl: 'audio/ep-009.mp3',
+            tags: ['Photonic Computing', 'Optical AI', 'Light-Speed Math', 'Next-Gen Chips'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 5th, and you're listening to Future Human Daily. Today we are talking about Photonic Neural Computing.' },
+                { time: '1:00', label: '[Highway Metaphor]', text: 'Electrical copper congestion vs laser light beams.' },
+                { time: '2:30', label: '[Optical Interference Math]', text: 'Calculating matrix multiplication at light speed.' },
+                { time: '4:15', label: '[Energy Breakthrough]', text: 'Operating AI models at 100x lower energy consumption.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.</p>
+            `
+        },
+
+        {
             id: 'ep-weekend-sun',
             number: 'WEEKEND RECAP',
             date: 'October 4, 2026',
