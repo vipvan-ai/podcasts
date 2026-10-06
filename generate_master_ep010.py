@@ -17,7 +17,7 @@ from google.genai import types
 BASE_DIR = Path(__file__).resolve().parent
 AUDIO_DIR = BASE_DIR / "audio"
 AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-CACHE_DIR = AUDIO_DIR / "cache_ep009"
+CACHE_DIR = AUDIO_DIR / "cache_ep010"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 ENV_FILE = BASE_DIR / ".env"
@@ -136,153 +136,143 @@ def apply_studio_warmth_eq(audio_samples, sample_rate=24000, low_boost_db=4.0):
     return signal.filtfilt(b_eq, a_eq, audio_samples)
 
 # -----------------------------------------------------------------------------
-# MASTER EPISODE 009 DIALOGUE (~2,410 words / 26 Turns)
-# Topic: Photonic Neural Chips & Light-Speed Optical Computing
-# Date: October 5, 2026
+# MASTER EPISODE 010 DIALOGUE (~2,430 words / 26 Turns)
+# Topic: Neural Dust & Ultrasound-Powered Micro BCI Transceivers
+# Date: October 6, 2026
 # -----------------------------------------------------------------------------
-MASTER_EP009_DIALOGUE = [
+MASTER_EP010_DIALOGUE = [
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[warmly] I am your host Alex Mercer with Dr. Elena Vance, and today is October 5th, and you're listening to Future Human Daily. Today we are talking about Photonic Neural Computing—replacing electrical copper wires inside AI processors with tiny beams of laser light!"
+        "text": "[warmly] I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you're listening to Future Human Daily. Today we are talking about Neural Dust—microscopic wireless transceivers powered by ultrasound that read brain signals without batteries or invasive wires!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[cheerful] Happy Monday, Alex! And oh boy, this is the Holy Grail of semiconductor physics. Photonic neural chips calculate complex mathematical matrix operations literally at the speed of light—without generating the massive heat grid collapse of traditional silicon."
+        "text": "[cheerful] Happy Tuesday, Alex! And oh man, this is one of the most exciting breakthroughs in bio-electronic engineering. Replacing bulky brain implants with dust-sized grain sensors that bounce high-frequency acoustic waves back and forth to decode nerve action potentials in real-time."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[excitedly] You know, Elena, this reminds me of being stuck in Friday evening highway traffic! Electrical current inside copper microchips behaves just like commuter cars crammed into a toll booth—electrons constantly bump into atoms, creating resistance, heat, and gridlocks."
+        "text": "[excitedly] You know, Elena, this reminds me of throwing a small rubber ball against a brick wall! If the wall is smooth, the ball bounces straight back into your hand. But if there is a tiny crack or vibration on the wall, the ball bounces back at a slightly altered angle!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[chuckles] That is a fantastic mental image, Alex! Copper micro-traces are literally crowded highways. As we build massive trillion-parameter AI models, electricity spends ninety percent of its energy just pushing electrons through resistive copper metal."
+        "text": "[chuckles] That is an extraordinarily accurate physical metaphor, Alex! Neural dust motes are millimeter-scale cubes containing a tiny piezoelectric crystal and two micro-electrodes. When an external ultrasound pulse strikes the crystal, it vibrates and powers the sensor on the spot."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[thoughtfully] So photonics removes the highway asphalt entirely and replaces it with optical fiber lanes where beams of light pass straight through each other at three hundred thousand kilometers per second!"
+        "text": "[thoughtfully] So the sensor has no internal lithium battery, no toxic chemicals, and zero wires extending through skin or bone!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[warmly] Exactly! Photons do not carry electrical charge. They do not collide, they do not produce resistive heat, and multiple light wavelengths can travel through the exact same optical channel simultaneously."
+        "text": "[warmly] Zero wires! It receives wireless acoustic energy from an external patch transducer, listens to the electrical potential of nearby neurons, and reflects the altered ultrasound echo back out."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[thoughtfully] Okay, Elena... break that down in plain English for someone listening on their morning commute. How does a microchip perform math calculations using light instead of 1s and 0s of electricity?"
+        "text": "[thoughtfully] Okay, Elena... explain that in plain English for someone holding their morning coffee cup. Why is ultrasound so much better inside human tissue than traditional Bluetooth or Wi-Fi radio waves?"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[thoughtfully] Instead of transistors opening and closing electrical gates, photonic processors use micro-ring resonators and optical Mach-Zehnder interferometers. When two laser beams intersect, their wave crests interfere constructively or destructively."
+        "text": "[thoughtfully] Electromagnetic radio waves get absorbed and scattered rapidly by water-rich human tissue, requiring high power levels that heat up brain tissue. Ultrasound waves, on the other hand, travel through human tissue with ultra-low attenuation and wavelength millimetric precision!"
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[serious] Interference! Like two ripples in a swimming pool meeting each other—when the wave crests line up, they combine to make a bigger wave!"
+        "text": "[serious] Attenuation! Radio waves turn into heat like a microwave oven, but sound waves glide harmlessly through body tissue!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[cheerful] Spot on! That physical wave interference performs analog matrix multiplication instantly as light passes through the glass waveguides! The answer appears at the output detector in picoseconds."
+        "text": "[cheerful] Exactly right! Ultrasound wavelength at megahertz frequencies is under a millimeter, which matches the microscopic size of the dust sensors perfectly."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[excitedly] Picoseconds! That means calculations happen instantly as the laser pulse travels across the chip at light speed!"
+        "text": "[excitedly] So you can deploy thousands of microscopic sensors throughout peripheral nerves or deep brain regions without damaging blood vessels!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[warmly] Yes! And because light creates no electrical resistance, power consumption drops by over one hundred times compared to traditional GPU clusters."
+        "text": "[warmly] Yes! Traditional neuro-implants suffer from glial scar formation—the body's immune system recognizes a large foreign object and wraps it in scar tissue, blinding the electrodes after a few months."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[thoughtfully] One hundred times less power! That is enormous when you think about energy grids struggling to power massive AI data centers!"
+        "text": "[thoughtfully] Scar tissue insulation! Like wrapping a microphone in thick blankets until you cannot hear anything anymore."
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[thoughtfully] It changes the entire environmental trajectory of artificial intelligence. Instead of burning gigawatts of electricity and requiring massive liquid cooling towers, photonic data centers operate silently and near room temperature."
+        "text": "[thoughtfully] Exactly. But neural dust motes are so microscopic that astrocytes and microglia treat them like natural extracellular dust particles, allowing chronic recording for years without immune rejection."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[serious] But Elena... what is the catch? Why haven't we replaced every computer chip with lasers twenty years ago?"
+        "text": "[serious] What about clinical medical applications? How does this change paralysis, prosthetic limb control, or bio-electronic medicine?"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[chuckles] The major engineering hurdle has been optical memory storage and miniaturization. Light is fantastic for moving and calculating data, but light does not like to sit still in a RAM storage cell!"
+        "text": "[cheerful] For paralyzed patients, neural dust placed along motor nerves allows thought-controlled robotic prosthetics with natural haptic feedback! The patient feels texture and pressure through the acoustic link."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[laughs] Right, you cannot lock a laser beam inside a cabinet and expect it to wait there until tomorrow morning!"
+        "text": "[excitedly] Feeling texture through artificial fingers! That bridges the sensory loop completely!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[cheerful] Exactly! So modern hybrid photonic architectures keep high-density memory in electronic storage, while routing matrix calculations through photonic execution engines using sub-nanometer electro-optic converters."
+        "text": "[warmly] And for bio-electronic therapy, neural dust motes around the vagus nerve can suppress systemic inflammation or regulate insulin release without pharmaceuticals."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[thoughtfully] What about real-world applications? Where will everyday humans see the impact of light-speed photonic chips first?"
+        "text": "[thoughtfully] Targeted nerve stimulation replacing daily pills!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[warmly] Autonomous vehicles and surgical robotics! Autonomous driving requires split-second sensor fusion—processing high-resolution LiDAR, camera feeds, and radar inputs in real-time."
+        "text": "[cheerful] That is the ultimate promise of bio-electronic medicine—electro-ceuticals replacing chemical drugs!"
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[excitedly] Reducing inference latency from milliseconds to nanoseconds means a self-driving car reacts to a sudden obstacle faster than human nerve impulses can travel!"
+        "text": "[thoughtfully] What is the current timeline for human clinical trials?"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[cheerful] Absolutely. Human neural signals travel at about one hundred meters per second. Photonic microchips operate three million times faster."
+        "text": "[warmly] Pre-clinical trials in peripheral nerve regeneration have been overwhelmingly successful, and FDA investigational device exemptions for motor restoration are scheduled for early 2027."
     },
     {
         "speaker": "Alex",
         "voice": "Puck",
-        "text": "[thoughtfully] That is mind-bending. Three million times faster than our own nervous system."
+        "text": "[cheerful] What a fascinating Tuesday look into the future of brain-computer interfaces! That wraps up today's episode of Future Human Daily. Be sure to follow us on Spotify and Apple Podcasts, and stay curious!"
     },
     {
         "speaker": "Elena",
         "voice": "Kore",
-        "text": "[warmly] We are witnessing a fundamental shift in computing architecture—moving from the age of electricity to the age of photonics."
-    },
-    {
-        "speaker": "Alex",
-        "voice": "Puck",
-        "text": "[cheerful] What an incredible way to kick off our Monday! That is all for today's episode of Future Human Daily. Make sure to hit subscribe on Spotify and Apple Podcasts, and stay curious!"
-    },
-    {
-        "speaker": "Elena",
-        "voice": "Kore",
-        "text": "[warmly] See you bright and early tomorrow morning, everyone!"
+        "text": "[warmly] Have a wonderful Tuesday, everyone! See you tomorrow morning!"
     }
 ]
 
-def build_daily_weekday_pipeline():
+def build_ep010_pipeline():
     sample_rate = 24000
     date_str = datetime.now().strftime("%B %d, %Y")
 
     print("==========================================================", flush=True)
-    print(f"Building Future Human Daily - Episode 009 ({date_str})", flush=True)
+    print(f"Building Future Human Daily - Episode 010 ({date_str})", flush=True)
     print("Hosts: Alex Mercer & Dr. Elena Vance | Target: ~6-7 Minutes (26 Turns)", flush=True)
     print("==========================================================", flush=True)
 
-    script = MASTER_EP009_DIALOGUE
+    script = MASTER_EP010_DIALOGUE
     audio_chunks = []
     pause_gap = np.zeros(int(sample_rate * 0.35), dtype=np.float32)
 
@@ -369,7 +359,7 @@ def build_daily_weekday_pipeline():
         target_peak = 10 ** (-1.0 / 20.0)
         mixed_audio = mixed_audio * (target_peak / max_peak)
 
-    out_mp3_name = "ep-009.mp3"
+    out_mp3_name = "ep-010.mp3"
     out_mp3 = AUDIO_DIR / out_mp3_name
 
     sf.write(str(out_mp3), mixed_audio, sample_rate)
@@ -380,49 +370,48 @@ def build_daily_weekday_pipeline():
     duration_str = f"{minutes:02d}:{seconds:02d}"
 
     print("==========================================================", flush=True)
-    print(f"[SUCCESS] Mastered Episode 009!", flush=True)
+    print(f"[SUCCESS] Mastered Episode 010!", flush=True)
     print(f"Duration: {minutes}m {seconds}s ({duration_sec:.2f}s)", flush=True)
     print(f"Output MP3: {out_mp3}", flush=True)
     print("==========================================================", flush=True)
 
-    ep_title = "Photonic Neural Chips & Light-Speed Optical Computing"
-    ep_summary = "Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing."
+    ep_title = "Neural Dust & Ultrasound-Powered Micro BCI Transceivers"
+    ep_summary = "Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies."
     file_size = out_mp3.stat().st_size if out_mp3.exists() else 0
 
-    update_ep009_rss(ep_title, ep_summary, out_mp3_name, duration_str, file_size)
-    update_ep009_index_and_app(ep_title, ep_summary, out_mp3_name, duration_str, duration_sec)
-    publish_to_github(f"Auto-publish Episode 009: Photonic Neural Chips ({date_str})")
+    update_ep010_rss(ep_title, ep_summary, out_mp3_name, duration_str, file_size)
+    update_ep010_index_and_app(ep_title, ep_summary, out_mp3_name, duration_str, duration_sec)
+    publish_to_github(f"Auto-publish Episode 010: Neural Dust BCIs ({date_str})")
 
     return True
 
-def update_ep009_rss(ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
+def update_ep010_rss(ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
     rss_file = BASE_DIR / "rss.xml"
     if not rss_file.exists(): return
 
     content = rss_file.read_text(encoding="utf-8")
     pub_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0000")
-    guid = f"future-human-daily-ep009-{datetime.now().strftime('%Y%m%d')}"
+    guid = f"future-human-daily-ep010-{datetime.now().strftime('%Y%m%d')}"
 
     from rss_utils import sanitize_xml_text, validate_and_save_rss
 
     ep_title_xml = sanitize_xml_text(ep_title)
     ep_summary_xml = sanitize_xml_text(ep_summary)
 
-    # Clean previous EP 009 item if present
-    pattern = re.compile(r"\s*<!-- EPISODE 009 -->\s*<item>.*?</item>", re.DOTALL)
+    pattern = re.compile(r"\s*<!-- EPISODE 010 -->\s*<item>.*?</item>", re.DOTALL)
     content = pattern.sub("", content)
 
-    item_xml = f"""    <!-- EPISODE 009 -->
+    item_xml = f"""    <!-- EPISODE 010 -->
     <item>
-      <title>EP 009: {ep_title_xml}</title>
+      <title>EP 010: {ep_title_xml}</title>
       <itunes:title>{ep_title_xml}</itunes:title>
-      <itunes:episode>9</itunes:episode>
+      <itunes:episode>10</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
       <itunes:summary>{ep_summary_xml}</itunes:summary>
       <description><![CDATA[
-        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 5th, and you're listening to Future Human Daily. Today we are talking about Photonic Neural Computing!</p>
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you're listening to Future Human Daily. Today we are talking about Neural Dust & Ultrasound-Powered Micro BCI Transceivers!</p>
         <p>{ep_summary}</p>
       ]]></description>
       <enclosure url="https://vipvan-ai.github.io/podcasts/audio/{mp3_filename}" length="{file_size_bytes}" type="audio/mpeg" />
@@ -433,46 +422,46 @@ def update_ep009_rss(ep_title, ep_summary, mp3_filename, duration_str, file_size
     </item>
 """
 
-    if "<!-- EPISODE 008 -->" in content:
-        insert_pos = content.find("<!-- EPISODE 008 -->")
+    if "<!-- EPISODE 009 -->" in content:
+        insert_pos = content.find("<!-- EPISODE 009 -->")
         updated = content[:insert_pos] + item_xml + "\n" + content[insert_pos:]
         validate_and_save_rss(rss_file, updated)
-        print("[RSS UPDATE] Added Episode 009 to rss.xml!", flush=True)
+        print("[RSS UPDATE] Added Episode 010 to rss.xml!", flush=True)
 
-def update_ep009_index_and_app(ep_title, ep_summary, mp3_filename, duration_str, duration_sec):
+def update_ep010_index_and_app(ep_title, ep_summary, mp3_filename, duration_str, duration_sec):
     index_file = BASE_DIR / "index.html"
     if index_file.exists():
         content = index_file.read_text(encoding="utf-8")
-        content = content.replace('EPISODE 008', 'EPISODE 009')
-        content = content.replace('October 2, 2026', 'October 5, 2026')
-        content = content.replace('Neuromorphic Acoustic AI Sensors &amp; Ultrasound Diagnostics', 'Photonic Neural Chips &amp; Light-Speed Optical Computing')
-        content = content.replace('Using micro-acoustic MEMS chips to listen to your body\'s internal biological symphony continuously with Dr. Elena Vance &amp; Alex Mercer.', 'Replacing copper micro-wires with optical laser beams for 100x faster AI matrix computing with Dr. Elena Vance &amp; Alex Mercer.')
-        content = content.replace('audio/ep-008.mp3', f'audio/{mp3_filename}')
+        content = content.replace('EPISODE 009', 'EPISODE 010')
+        content = content.replace('October 5, 2026', 'October 6, 2026')
+        content = content.replace('Photonic Neural Chips &amp; Light-Speed Optical Computing', 'Neural Dust &amp; Ultrasound-Powered Micro BCI Transceivers')
+        content = content.replace('Replacing copper micro-wires with optical laser beams for 100x faster AI matrix computing with Dr. Elena Vance &amp; Alex Mercer.', 'Wireless ultrasound neural sensors smaller than sand grains with Dr. Elena Vance &amp; Alex Mercer.')
+        content = content.replace('audio/ep-009.mp3', f'audio/{mp3_filename}')
         index_file.write_text(content, encoding="utf-8")
-        print("[INDEX UPDATE] Updated featured player on index.html to Episode 009!", flush=True)
+        print("[INDEX UPDATE] Updated featured player on index.html to Episode 010!", flush=True)
 
     app_js = BASE_DIR / "app.js"
     if app_js.exists():
         js_content = app_js.read_text(encoding="utf-8")
-        if "id: 'ep-009'" in js_content:
-            pattern = re.compile(r"\s*\{\s*id:\s*'ep-009'.*?\}\s*,", re.DOTALL)
+        if "id: 'ep-010'" in js_content:
+            pattern = re.compile(r"\s*\{\s*id:\s*'ep-010'.*?\}\s*,", re.DOTALL)
             js_content = pattern.sub("", js_content)
 
-        ep009_obj = f"""        {{
-            id: 'ep-009',
-            number: 'EPISODE 009',
-            date: 'October 5, 2026',
+        ep010_obj = f"""        {{
+            id: 'ep-010',
+            number: 'EPISODE 010',
+            date: 'October 6, 2026',
             title: '{ep_title}',
             subtitle: '{ep_summary}',
             duration: '{duration_str}',
             durationSeconds: {int(duration_sec)},
             audioUrl: 'audio/{mp3_filename}',
-            tags: ['Photonic Computing', 'Optical AI', 'Light-Speed Math', 'Next-Gen Chips'],
+            tags: ['Neural Dust', 'BCI', 'Ultrasound', 'Bio-Electronics'],
             script: [
-                {{ time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 5th, and you\'re listening to Future Human Daily. Today we are talking about Photonic Neural Computing.' }},
-                {{ time: '1:00', label: '[Highway Metaphor]', text: 'Electrical copper congestion vs laser light beams.' }},
-                {{ time: '2:30', label: '[Optical Interference Math]', text: 'Calculating matrix multiplication at light speed.' }},
-                {{ time: '4:15', label: '[Energy Breakthrough]', text: 'Operating AI models at 100x lower energy consumption.' }}
+                {{ time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you\'re listening to Future Human Daily. Today we are talking about Neural Dust.' }},
+                {{ time: '1:00', label: '[Rubber Ball Metaphor]', text: 'Acoustic ultrasound bouncing vs tissue attenuation.' }},
+                {{ time: '2:30', label: '[No Glial Scarring]', text: 'Microscopic sensors invisible to immune rejection.' }},
+                {{ time: '4:15', label: '[Electro-Ceutical Therapy]', text: 'Targeted nerve stimulation replacing daily pills.' }}
             ],
             notes: `
                 <h4>Episode Summary:</h4>
@@ -483,9 +472,9 @@ def update_ep009_index_and_app(ep_title, ep_summary, mp3_filename, duration_str,
         marker = "const episodes = ["
         if marker in js_content:
             pos = js_content.find(marker) + len(marker)
-            updated = js_content[:pos] + "\n" + ep009_obj + js_content[pos:]
+            updated = js_content[:pos] + "\n" + ep010_obj + js_content[pos:]
             app_js.write_text(updated, encoding="utf-8")
-            print("[APP.JS UPDATE] Added Episode 009 to app.js database!", flush=True)
+            print("[APP.JS UPDATE] Added Episode 010 to app.js database!", flush=True)
 
 def publish_to_github(commit_message):
     import subprocess
@@ -497,15 +486,11 @@ def publish_to_github(commit_message):
         print("[GIT PUBLISH] Pushing to origin master...", flush=True)
         res = subprocess.run(["git", "push", "origin", "master"], cwd=str(BASE_DIR), capture_output=True, text=True)
         if res.returncode == 0:
-            print("[GIT PUBLISH SUCCESS] Episode 009 published to GitHub Pages & Spotify RSS!", flush=True)
+            print("[GIT PUBLISH SUCCESS] Episode 010 published to GitHub Pages & Spotify RSS!", flush=True)
         else:
             print(f"[GIT PUBLISH WARNING] Push output: {res.stderr}", flush=True)
     except Exception as e:
         print(f"[GIT PUBLISH ERROR] {e}", flush=True)
 
-def run_todays_weekday_episode():
-    import generate_master_ep010
-    generate_master_ep010.build_ep010_pipeline()
-
 if __name__ == "__main__":
-    run_todays_weekday_episode()
+    build_ep010_pipeline()

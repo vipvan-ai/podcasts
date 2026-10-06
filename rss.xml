@@ -63,7 +63,27 @@
       <itunes:explicit>no</itunes:explicit>
     </item>
 
-    <!-- EPISODE 009 -->
+        <!-- EPISODE 010 -->
+    <item>
+      <title>EP 010: Neural Dust &amp; Ultrasound-Powered Micro BCI Transceivers</title>
+      <itunes:title>Neural Dust &amp; Ultrasound-Powered Micro BCI Transceivers</itunes:title>
+      <itunes:episode>10</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer &amp; Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.</itunes:summary>
+      <description><![CDATA[
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you're listening to Future Human Daily. Today we are talking about Neural Dust & Ultrasound-Powered Micro BCI Transceivers!</p>
+        <p>Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-010.mp3" length="2248824" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-ep010-20261006</guid>
+      <pubDate>Tue, 06 Oct 2026 08:05:04 +0000</pubDate>
+      <itunes:duration>04:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+<!-- EPISODE 009 -->
     <item>
       <title>EP 009: Photonic Neural Chips &amp; Light-Speed Optical Computing</title>
       <itunes:title>Photonic Neural Chips &amp; Light-Speed Optical Computing</itunes:title>

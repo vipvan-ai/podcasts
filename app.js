@@ -3,6 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-010',
+            number: 'EPISODE 010',
+            date: 'October 6, 2026',
+            title: 'Neural Dust & Ultrasound-Powered Micro BCI Transceivers',
+            subtitle: 'Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.',
+            duration: '04:33',
+            durationSeconds: 273,
+            audioUrl: 'audio/ep-010.mp3',
+            tags: ['Neural Dust', 'BCI', 'Ultrasound', 'Bio-Electronics'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you're listening to Future Human Daily. Today we are talking about Neural Dust.' },
+                { time: '1:00', label: '[Rubber Ball Metaphor]', text: 'Acoustic ultrasound bouncing vs tissue attenuation.' },
+                { time: '2:30', label: '[No Glial Scarring]', text: 'Microscopic sensors invisible to immune rejection.' },
+                { time: '4:15', label: '[Electro-Ceutical Therapy]', text: 'Targeted nerve stimulation replacing daily pills.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.</p>
+            `
+        },
+
+        {
             id: 'ep-009',
             number: 'EPISODE 009',
             date: 'October 5, 2026',
