@@ -24,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
             `
         },
 
+                { time: '1:00', label: '[Highway Metaphor]', text: 'Electrical copper congestion vs laser light beams.' },
+                { time: '2:30', label: '[Optical Interference Math]', text: 'Calculating matrix multiplication at light speed.' },
+                { time: '4:15', label: '[Energy Breakthrough]', text: 'Operating AI models at 100x lower energy consumption.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.</p>
+            `
+        },
+
         {
             id: 'ep-weekend-sun',
             number: 'WEEKEND RECAP',
