@@ -176,16 +176,24 @@ def update_unwritten_code_rss(ep_number, ep_title, ep_summary, mp3_filename, dur
     </item>
 """
 
-    marker = "<!-- OFFICIAL TRAILER"
-    if marker in content:
-        insert_idx = content.find(marker)
-        updated_content = content[:insert_idx] + new_item + "\n    " + content[insert_idx:]
+    marker_ep = f"<!-- EPISODE {ep_number:03d} -->"
+    if marker_ep in content:
+        # Replace existing episode item
+        start_idx = content.find(marker_ep)
+        end_tag = "</item>"
+        end_idx = content.find(end_tag, start_idx) + len(end_tag)
+        updated_content = content[:start_idx] + new_item.strip() + content[end_idx:]
     else:
-        insert_idx = content.find("</channel>")
-        updated_content = content[:insert_idx] + new_item + content[insert_idx:]
+        marker = "<!-- OFFICIAL TRAILER"
+        if marker in content:
+            insert_idx = content.find(marker)
+            updated_content = content[:insert_idx] + new_item + "\n    " + content[insert_idx:]
+        else:
+            insert_idx = content.find("</channel>")
+            updated_content = content[:insert_idx] + new_item + content[insert_idx:]
 
     rss_file.write_text(updated_content, encoding="utf-8")
-    print(f"[RSS SUCCESS] Added Episode {ep_number} to unwritten_code_rss.xml!", flush=True)
+    print(f"[RSS SUCCESS] Updated Episode {ep_number} in unwritten_code_rss.xml!", flush=True)
     return True
 
 def auto_publish_to_github(commit_message):
@@ -207,71 +215,10 @@ def auto_publish_to_github(commit_message):
         return False
 
 # =============================================================================
-# EPISODE SCRIPTS DATABASE BY DAY OF WEEK
+# EPISODE SCRIPTS DATABASE BY DAY OF WEEK (Imported from unwritten_code_scripts)
 # =============================================================================
-def get_script_for_day(day_idx):
-    """Returns (episode_number, title, summary, script_turns) based on weekday."""
-    # Monday = 0: Workplace & Slack Etiquette
-    if day_idx == 0:
-        ep_num = 1
-        title = "EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster"
-        summary = "Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?"
-        turns = [
-            {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Happy Monday, everyone! Welcome to the official premiere of The Unwritten Code! I am Maya Lin, and if you are listening to this on your morning commute, sitting at your desk with your second cup of coffee, or hiding in the office kitchen avoiding your inbox, you are in the exact right place. Today is Monday, October fifth, which means we are inaugurating this show by diving headfirst into the chaotic, passive-aggressive jungle known as modern workplace communication."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[warmly] And I am Julian Cross. Maya, I have to say, there is no better way to kick off Episode One than with the corporate danger zone. Every single one of us spends forty to fifty hours a week staring at glowing screens, deciphering micro-messages, decoding emoji nuances, and pretending we understand what our coworkers actually mean when they type three innocent words. Society spent thousands of years developing vocal tone, facial expressions, and body language, and then within ten years, corporate software compressed all human intimacy down into unformatted text bubbles on Slack and Teams."},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] It really is an emotional battlefield! And the single biggest flashpoint in the modern office right now is one humble, yellow digital icon: the Slack thumbs-up emoji. Julian, let me set the scene for you. An employee spends three solid hours pouring their heart, soul, and intellect into a comprehensive, beautifully structured project update. They hit send, their pulse is racing, and two minutes later, their manager reacts with a single, naked, yellow thumbs-up emoji. Tell me: what is the psychological fallout of that moment?"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[chuckles] Absolute existential terror, Maya! My heart plunges straight through the floorboards. I immediately minimize the window, stare blankly out the window, and spend the next forty-five minutes frantically re-reading every single syllable of my update to figure out if I am about to get fired, demoted, or placed on a secret performance improvement plan! [sighs] The thumbs-up emoji is the most emotionally ambiguous gesture in human history. Does it mean Great job? Does it mean I acknowledge your existence? Or does it mean I am deeply disappointed in you, but I do not have the patience to type real words?"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[laughs] That is the genius and the horror of it! What we have here is the great generational divide of the corporate world. If you talk to anyone in senior leadership who grew up with flip phones and fax machines, a thumbs-up emoji is the pinnacle of workplace efficiency. To them, it simply means: Message received, thank you, keep moving. But to anyone under thirty-five, receiving a lone thumbs-up feels like someone looked you directly in the eyes in the hallway, said nothing, and slowly closed the elevator door in your face with a blank expression!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[laughs] [warmly] It has zero emotional warmth, Maya! It is cold, robotic, and transactional. It is the digital equivalent of texting someone the letter K with a period at the end! If you receive a text from a friend that says K with a period, you immediately assume the friendship is over and they are blocking your number. The thumbs-up carries that exact same chilling energy in a direct message. If you want to encourage your team, use the celebration party popper! Use the green checkmark! Use the little dancing penguin! Use literally anything in the emoji library except the cold, unfeeling thumb of doom!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] I could not agree more, Julian! But wait, because workplace messaging crimes do not stop at emojis. Let us talk about what I call the Hello Hostage Situation. You are sitting at your desk, deep in your zone, making actual progress on a spreadsheet. Suddenly, your notification dings: Dave from Marketing says: Hey Maya. And then... nothing. Silence. Just that little pencil icon bouncing: Dave is typing... Dave stopped typing... Dave is typing again. Julian, why do people do this?!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[chuckles] Oh, it is psychological torture! Why are you holding my attention hostage with a two-word greeting? Tell me what you want in the same breath! When someone sends just Hey Julian, they are demanding that I stop whatever I am doing, reply with Hey Dave, and wait for them to spend three agonizing minutes composing their actual question. There is a whole website dedicated to this called No Hello! Just type: Hey Julian, quick question about the budget numbers, do you have five minutes later today? Boom, done, professional, respectful of my sanity!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[laughs] Exactly! Respect the time and respect the nervous system! But now, Julian, we have to address the undisputed heavyweight champion of workplace felonies. The crime against humanity that unites every corporate department from sales to engineering in collective agony: The Reply-All Disaster."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[groans] [chuckles] Oh, heaven help us! Straight to corporate federal prison! Maya, walk us through how this horror show always unfolds."},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] It always starts completely innocently. Human Resources or the Facilities team sends an email announcement to two thousand people across four global offices: Reminder: The cafeteria will be serving pumpkin soup this Thursday. Simple, right? But then, within ninety seconds, someone named Kevin in Regional Logistics accidentally clicks Reply-All instead of Reply, and broadcasts to all two thousand people: Sounds delicious, thanks team! And that is when the nuclear chain reaction begins."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[laughs] Because thirty seconds later, three different people who think they are the email police hit Reply-All to say: Please stop replying all to this thread! And then five minutes later, eight more people hit Reply-All screaming: Why am I on this list? Please unsubscribe me! And within half an hour, the company exchange server is smoking in the IT closet, forty thousand redundant emails have clogged everyone's inboxes, and productive work has ground to a complete halt across three time zones!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[giggles] It is a self-sustaining cyclone of office madness! I once worked at an agency where a reply-all chain got so completely out of control that someone started replying all with sourdough bread recipes, another person attached photos of their golden retriever, and leadership had to send an emergency IT kill-switch memo shutting down the entire email server for the afternoon!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[chuckles] See, this is why modern society is crumbling at the edges, Maya! We have sophisticated artificial intelligence, quantum computing, and autonomous electric vehicles, but human beings still cannot resist the primal urge to hit Reply-All and inform four thousand strangers that they enjoy pumpkin soup!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] And speaking of virtual workplace drama, Julian, what about modern meeting culture? Specifically, the awkward Camera-On Standoff. You log into a nine AM video call with your camera politely turned off, wearing a comfy hoodie and holding your tea, and the meeting host chirps: Hey everyone, let us all turn our cameras on so we can see all your lovely smiling faces this morning!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[sighs] [chuckles] The sheer panic! Your fight-or-flight response kicks in immediately! You are frantically scrambling to throw a collared dress shirt over your pajama pants, wiping sleep out of your eyes, kicking laundry baskets out of the webcam frame, and desperately toggling the background blur filter hoping it disguises the fact that you are sitting on your unmade bed!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[laughs] And the funniest secret of all, Julian, is that nobody on a video call is actually looking at the person speaking anyway! Behavioral studies have shown that during an eight-person Zoom meeting, people spend roughly eighty-five percent of the time staring exclusively at their own tiny video preview box in the corner, making sure their hair looks acceptable and adjusting their chin angle!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[laughs] It is pure vanity under the guise of collaboration! And of course, there is always the grand finale of every video meeting: the person who delivers an impassioned, three-minute speech on quarterly revenue while completely muted, gesturing wildly with their hands, until six people simultaneously unmute to scream: Bob, you are on mute! Bob, we cannot hear you!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Every single day, Julian! Which is why we created The Unwritten Code. Because somebody has to bring law, order, and sanity to the modern human experience. So right here on Episode One, let us officially hand down The New Code for surviving modern workplace communication."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[warmly] Here is The Code. Rule Number One: The Emoji Upgrade Law. If you manage people, ban the naked thumbs-up emoji on Slack forever. If you want to acknowledge good work, use the green checkmark, the party popper, or pair your thumbs-up with three actual words like: Looks great, thanks! Save a life; upgrade your emoji."},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] Rule Number Two: The No-Hello Mandate. Never send a standalone greeting. Always include your actual request or question in the very same message. Your coworkers will respect you, your projects will move faster, and nobody has to stare at the bouncing typing bubble in terror."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[chuckles] Rule Number Three: The Reply-All Felony Fine. If you reply-all to a company-wide announcement sent to more than twenty people just to say thanks or ask to be unsubscribed, you are officially obligated to buy gourmet coffee and donuts for your entire department on Friday morning."},
-            {"speaker": "Maya", "voice": "Kore", "text": "[warmly] And Rule Number Four: The Three-Sentence Email Boundary. If an email thread requires more than three back-and-forth messages, stop typing paragraphs. Pick up the phone or walk over for a sixty-second conversation. Protect your inbox sanity!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[warmly] That is The Unwritten Code for this Monday morning! What an incredible way to kick off our very first episode. If you resonated with any of these workplace struggles, do not forget to hit the Follow button right now on Spotify and Apple Podcasts so you never miss tomorrow morning's drop!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Tomorrow on Tuesday, we are leaving the office behind and diving straight into modern dating economics: who pays on date three, the awkward wallet reach, and why the slow-fade text is worse than ghosting. Until tomorrow morning, stay sane out there, and remember: do not break the code!"}
-        ]
-        return ep_num, title, summary, turns
+from unwritten_code_scripts import get_script_for_day
 
-    # Tuesday = 1: Modern Dating & Romance
-    elif day_idx == 1:
-        ep_num = 2
-        title = "EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)"
-        summary = "Maya & Julian unpack modern dating etiquette: who pays on date three, the awkward wallet reach, and why the slow-fade text is worse than outright ghosting."
-        turns = [
-            {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Welcome back to The Unwritten Code! I am Maya Lin with Julian Cross, and today is Tuesday—which means we are diving into the messy, confusing battlefield of modern romance."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[chuckles] Oh boy. Today's dilemma comes straight from a listener who asked: on date three, who is responsible for picking up the dinner tab?"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] The classic wallet showdown! Date one, whoever asked usually pays. Date two, the other person offers. But on date three, you hit this weird financial stalemate."},
-            {"speaker": "Julian", "voice": "Puck", "text": "[warmly] [chuckles] Exactly. You do the polite fake-reach for your card, but secretly you are praying the other person insists!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[laughs] And let us talk about the slow-fade text! Leaving someone on read for three days instead of just saying: 'Hey, I had fun, but I didn't feel a romantic spark.'"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[warmly] That is The Unwritten Code for Tuesday! Be honest, split the third date, and never do the slow-fade. See you tomorrow!"}
-        ]
-        return ep_num, title, summary, turns
-
-    # Default fallback for other weekdays
-    else:
-        ep_num = day_idx + 1
-        title = f"EP 00{ep_num}: Modern Social Dynamics & Everyday Rules"
-        summary = "Maya & Julian unpack life's unwritten rules and modern etiquette."
-        turns = [
-            {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Welcome back to The Unwritten Code with Maya Lin and Julian Cross!"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[warmly] Today we are breaking down life's unspoken social contracts. Let's get into it!"},
-            {"speaker": "Maya", "voice": "Kore", "text": "[playfully] Have you ever wondered why people behave the way they do in public?"},
-            {"speaker": "Julian", "voice": "Puck", "text": "[chuckles] That is why we are here. Don't break the code!"}
-        ]
-        return ep_num, title, summary, turns
 
 def run_daily_pipeline():
     # Detect current day of week (Monday=0 ... Sunday=6)
