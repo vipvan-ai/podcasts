@@ -46,6 +46,26 @@
       <itunes:explicit>no</itunes:explicit>
     </item>
 
+        <!-- EPISODE 002 -->
+    <item>
+      <title>EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)</title>
+      <itunes:title>EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)</itunes:title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian unpack modern dating etiquette: who pays on date three, the awkward wallet reach, and why the slow-fade text is worse than outright ghosting.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)</strong></p>
+        <p>Maya & Julian unpack modern dating etiquette: who pays on date three, the awkward wallet reach, and why the slow-fade text is worse than outright ghosting.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_ep002_20261006.mp3" length="500784" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-ep-002-20261006</guid>
+      <pubDate>Tue, 06 Oct 2026 09:02:53 +0000</pubDate>
+      <itunes:duration>01:04</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
     <!-- OFFICIAL TRAILER / TEASER (COMING OCTOBER 5TH) -->
     <item>
       <title>Welcome to The Unwritten Code! (Official Trailer - Premieres Oct 5)</title>
