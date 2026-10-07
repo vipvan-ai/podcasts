@@ -26,6 +26,27 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- EPISODE 003 -->
+    <item>
+      <title>EP 003: Birthday Dinner Bill Hostages &amp; Runaway Group Chats</title>
+      <itunes:title>EP 003: Birthday Dinner Bill Hostages &amp; Runaway Group Chats</itunes:title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian tackle friendship etiquette: why splitting large group dinner tabs turns into financial extortion, the politics of vacation Airbnb room inequality, and how to escape a runaway group chat without offending everyone.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>EP 003: Birthday Dinner Bill Hostages &amp; Runaway Group Chats</strong></p>
+        <p>Maya & Julian tackle friendship etiquette: why splitting large group dinner tabs turns into financial extortion, the politics of vacation Airbnb room inequality, and how to escape a runaway group chat without offending everyone.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_ep003_20261007.mp3" length="5402928" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-ep-003-20261007</guid>
+      <pubDate>Wed, 07 Oct 2026 09:16:56 +0000</pubDate>
+      <itunes:duration>11:14</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- EPISODE 002 -->
     <item>
       <title>EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)</title>
