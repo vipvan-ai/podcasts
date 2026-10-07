@@ -26,27 +26,7 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
-        <!-- EPISODE 001 -->
-    <item>
-      <title>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</title>
-      <itunes:title>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</itunes:title>
-      <itunes:episode>1</itunes:episode>
-      <itunes:season>1</itunes:season>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
-      <itunes:summary>Maya &amp; Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</itunes:summary>
-      <description><![CDATA[
-        <p><strong>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</strong></p>
-        <p>Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_ep001_20261005.mp3" length="5220792" type="audio/mpeg" />
-      <guid isPermaLink="false">unwritten-code-ep-001-20261005</guid>
-      <pubDate>Mon, 05 Oct 2026 09:26:32 +0000</pubDate>
-      <itunes:duration>10:44</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-        <!-- EPISODE 002 -->
+    <!-- EPISODE 002 -->
     <item>
       <title>EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)</title>
       <itunes:title>EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)</itunes:title>
@@ -63,6 +43,26 @@
       <guid isPermaLink="false">unwritten-code-ep-002-20261006-v2</guid>
       <pubDate>Tue, 06 Oct 2026 21:00:00 +0000</pubDate>
       <itunes:duration>10:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+    <!-- EPISODE 001 -->
+    <item>
+      <title>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</title>
+      <itunes:title>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</itunes:title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</itunes:summary>
+      <description><![CDATA[
+        <p><strong>EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster</strong></p>
+        <p>Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_ep001_20261005.mp3" length="5220792" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-ep-001-20261005</guid>
+      <pubDate>Mon, 05 Oct 2026 09:26:32 +0000</pubDate>
+      <itunes:duration>10:44</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 

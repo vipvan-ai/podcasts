@@ -184,10 +184,10 @@ def update_unwritten_code_rss(ep_number, ep_title, ep_summary, mp3_filename, dur
         end_idx = content.find(end_tag, start_idx) + len(end_tag)
         updated_content = content[:start_idx] + new_item.strip() + content[end_idx:]
     else:
-        marker = "<!-- OFFICIAL TRAILER"
-        if marker in content:
-            insert_idx = content.find(marker)
-            updated_content = content[:insert_idx] + new_item + "\n    " + content[insert_idx:]
+        atom_marker = '<atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />'
+        if atom_marker in content:
+            insert_idx = content.find(atom_marker) + len(atom_marker)
+            updated_content = content[:insert_idx] + "\n\n" + new_item.strip() + "\n" + content[insert_idx:]
         else:
             insert_idx = content.find("</channel>")
             updated_content = content[:insert_idx] + new_item + content[insert_idx:]
