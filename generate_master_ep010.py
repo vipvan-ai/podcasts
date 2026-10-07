@@ -422,11 +422,12 @@ def update_ep010_rss(ep_title, ep_summary, mp3_filename, duration_str, file_size
     </item>
 """
 
-    if "<!-- EPISODE 009 -->" in content:
-        insert_pos = content.find("<!-- EPISODE 009 -->")
-        updated = content[:insert_pos] + item_xml + "\n" + content[insert_pos:]
+    marker = '<atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />'
+    if marker in content:
+        insert_pos = content.find(marker) + len(marker)
+        updated = content[:insert_pos] + "\n\n" + item_xml.strip() + "\n" + content[insert_pos:]
         validate_and_save_rss(rss_file, updated)
-        print("[RSS UPDATE] Added Episode 010 to rss.xml!", flush=True)
+        print("[RSS UPDATE] Added Episode 010 to top of rss.xml!", flush=True)
 
 def update_ep010_index_and_app(ep_title, ep_summary, mp3_filename, duration_str, duration_sec):
     index_file = BASE_DIR / "index.html"
