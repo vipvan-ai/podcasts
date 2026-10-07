@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             audioUrl: 'audio/ep-010.mp3',
             tags: ['Neural Dust', 'BCI', 'Ultrasound', 'Bio-Electronics'],
             script: [
-                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you're listening to Future Human Daily. Today we are talking about Neural Dust.' },
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you\'re listening to Future Human Daily. Today we are talking about Neural Dust.' },
                 { time: '1:00', label: '[Rubber Ball Metaphor]', text: 'Acoustic ultrasound bouncing vs tissue attenuation.' },
                 { time: '2:30', label: '[No Glial Scarring]', text: 'Microscopic sensors invisible to immune rejection.' },
                 { time: '4:15', label: '[Electro-Ceutical Therapy]', text: 'Targeted nerve stimulation replacing daily pills.' }
@@ -25,34 +25,58 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         {
-            id: 'ep-009',
-            number: 'EPISODE 009',
-            date: 'October 5, 2026',
-            title: 'Photonic Neural Chips & Light-Speed Optical Computing',
-            subtitle: 'Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.',
-            duration: '05:01',
-            durationSeconds: 301,
-            audioUrl: 'audio/ep-009.mp3',
-            tags: ['Photonic Computing', 'Optical AI', 'Light-Speed Math', 'Next-Gen Chips'],
+            id: 'unwritten-code-ep-002',
+            number: 'THE UNWRITTEN CODE: EP 002',
+            date: 'October 6, 2026',
+            title: 'EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)',
+            subtitle: 'Maya Lin & Julian Cross unpack modern dating etiquette: who pays on date three, the subtle art of the polite wallet reach, and why the slow-fade text is emotional cowardice.',
+            duration: '10:33',
+            durationSeconds: 633,
+            audioUrl: 'audio/unwritten_code_ep002_20261006.mp3',
+            tags: ['The Unwritten Code', 'Maya & Julian', 'Modern Dating', 'Etiquette'],
             script: [
-                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 5th, and you're listening to Future Human Daily. Today we are talking about Photonic Neural Computing.' },
-                { time: '1:00', label: '[Highway Metaphor]', text: 'Electrical copper congestion vs laser light beams.' },
-                { time: '2:30', label: '[Optical Interference Math]', text: 'Calculating matrix multiplication at light speed.' },
-                { time: '4:15', label: '[Energy Breakthrough]', text: 'Operating AI models at 100x lower energy consumption.' }
+                { time: '0:00', label: '[Maya]', text: '[cheerful] Welcome back to The Unwritten Code, everyone! I am Maya Lin alongside Julian Cross, and today is Tuesday, October sixth.' },
+                { time: '0:45', label: '[Julian]', text: '[warmly] Today\'s dilemma comes from Ryan in Chicago: on date three, who is actually responsible for picking up the bill?' },
+                { time: '2:30', label: '[Maya]', text: '[playfully] The performative wallet reach—pulling out your card while praying the other person insists on paying!' },
+                { time: '5:15', label: '[Julian]', text: '[chuckles] The slow-fade text message: psychological torture disguised as politeness.' },
+                { time: '8:45', label: '[The Code]', text: 'Handing down The New Dating Code: normalize the date three split, banish the slow-fade, and keep voice notes under 90 seconds.' }
             ],
             notes: `
-                <h4>Episode Summary:</h4>
-                <p>Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.</p>
+                <h4>The Unwritten Code — Episode 002</h4>
+                <p><strong>Hosts:</strong> Maya Lin & Julian Cross</p>
+                <p>Maya & Julian unpack modern dating etiquette: who pays on date three, the subtle art of the polite wallet reach, and why the slow-fade text message is emotional cowardice compared to honest closure.</p>
+                <br>
+                <h4>The New Dating Code:</h4>
+                <ul>
+                    <li><strong>Rule 1:</strong> The Date Three Split or Take-Turns Law.</li>
+                    <li><strong>Rule 2:</strong> The Sincere Wallet Rule—if you pull out your card, be prepared to swipe.</li>
+                    <li><strong>Rule 3:</strong> The 48-Hour Closure Mandate—banish the slow-fade forever.</li>
+                    <li><strong>Rule 4:</strong> The Audio Memo Cap—keep early voice notes under 90 seconds.</li>
+                </ul>
             `
         },
 
-                { time: '1:00', label: '[Highway Metaphor]', text: 'Electrical copper congestion vs laser light beams.' },
-                { time: '2:30', label: '[Optical Interference Math]', text: 'Calculating matrix multiplication at light speed.' },
-                { time: '4:15', label: '[Energy Breakthrough]', text: 'Operating AI models at 100x lower energy consumption.' }
+        {
+            id: 'unwritten-code-ep-001',
+            number: 'THE UNWRITTEN CODE: EP 001',
+            date: 'October 5, 2026',
+            title: 'EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster',
+            subtitle: 'Maya Lin & Julian Cross launch The Unwritten Code: workplace Slack anxiety, the cold thumbs-up emoji, the "No-Hello" typing bubble, and reply-all disasters.',
+            duration: '10:44',
+            durationSeconds: 644,
+            audioUrl: 'audio/unwritten_code_ep001_20261005.mp3',
+            tags: ['The Unwritten Code', 'Maya & Julian', 'Workplace Etiquette', 'Slack Culture'],
+            script: [
+                { time: '0:00', label: '[Maya]', text: '[cheerful] Welcome to the premiere of The Unwritten Code! I am Maya Lin alongside Julian Cross.' },
+                { time: '1:00', label: '[Julian]', text: '[warmly] Deciphering micro-messages and modern workplace communication.' },
+                { time: '3:00', label: '[Maya]', text: '[playfully] The existential terror of receiving a naked yellow thumbs-up emoji from your boss on Slack.' },
+                { time: '5:30', label: '[Julian]', text: '[chuckles] The Reply-All disaster and company email meltdowns.' },
+                { time: '8:45', label: '[The Code]', text: 'The New Workplace Code: upgrade your emoji, never send a standalone "Hey", and respect inbox sanity.' }
             ],
             notes: `
-                <h4>Episode Summary:</h4>
-                <p>Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.</p>
+                <h4>The Unwritten Code — Episode 001</h4>
+                <p><strong>Hosts:</strong> Maya Lin & Julian Cross</p>
+                <p>Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</p>
             `
         },
 
@@ -142,13 +166,13 @@ document.addEventListener('DOMContentLoaded', () => {
             number: 'EPISODE 008',
             date: 'October 2, 2026',
             title: 'Neuromorphic Acoustic AI Sensors & Ultrasound Diagnostics',
-            subtitle: 'Using micro-acoustic MEMS chips to listen to your body's internal biological symphony continuously with Dr. Elena Vance & Alex Mercer.',
+            subtitle: "Using micro-acoustic MEMS chips to listen to your body's internal biological symphony continuously with Dr. Elena Vance & Alex Mercer.",
             duration: '6:29',
             durationSeconds: 389,
             audioUrl: 'audio/ep-008.mp3',
             tags: ['Acoustic AI', 'Bio-Sensors', 'Cardiovascular', 'Preventive Care'],
             script: [
-                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 2nd, and you're listening to Future Human Daily. Today we are talking about Neuromorphic Acoustic Sensors.' },
+                { time: '0:00', label: '[Intro]', text: "I am your host Alex Mercer with Dr. Elena Vance, and today is October 2nd, and you're listening to Future Human Daily. Today we are talking about Neuromorphic Acoustic Sensors." },
                 { time: '0:45', label: '[Car Mechanic Metaphor]', text: 'Listening to internal engine purrs vs a 10-second annual stethoscope check.' },
                 { time: '1:45', label: '[Arterial Micro-Turbulence]', text: 'Detecting swirling blood flow micro-ripples 4 years before physical symptoms.' },
                 { time: '3:15', label: '[Spiking Neural Microchips]', text: 'Low-power acoustic pattern recognition running on micro-watts.' },
@@ -172,13 +196,13 @@ document.addEventListener('DOMContentLoaded', () => {
             number: 'EPISODE 007',
             date: 'October 1, 2026',
             title: 'Personalized mRNA Cancer Vaccines & Immune Training',
-            subtitle: 'Training your body's T-cells to hunt down tumor mutations with surgical precision with Dr. Elena Vance & Alex Mercer.',
+            subtitle: "Training your body's T-cells to hunt down tumor mutations with surgical precision with Dr. Elena Vance & Alex Mercer.",
             duration: '6:32',
             durationSeconds: 392,
             audioUrl: 'audio/ep-007.mp3',
             tags: ['mRNA Vaccines', 'Oncology', 'Immune Training', 'Biotech'],
             script: [
-                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 1st, and you're listening to Future Human Daily. Today we are talking about Personalized mRNA Cancer Vaccines.' },
+                { time: '0:00', label: '[Intro]', text: "I am your host Alex Mercer with Dr. Elena Vance, and today is October 1st, and you're listening to Future Human Daily. Today we are talking about Personalized mRNA Cancer Vaccines." },
                 { time: '0:45', label: '[Therapeutic vs Preventative]', text: 'Why cancer vaccines act like wanted posters for white blood cells after a tumor develops.' },
                 { time: '1:45', label: '[Cellular Camouflage]', text: 'How tumors disguise themselves behind normal self-proteins.' },
                 { time: '3:00', label: '[Neoantigen Target Practice]', text: 'Custom mRNA sequences training killer T-cells to target unique mutant flags.' },
@@ -232,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
             audioUrl: 'audio/ep-006.mp3',
             tags: ['Energy Harvesting', 'Piezoelectric', 'Battery-Free', 'Green Tech'],
             script: [
-                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is September 30th, and you're listening to Future Human Daily. Today we are talking about Ambient Energy Harvesting.' },
+                { time: '0:00', label: '[Intro]', text: "I am your host Alex Mercer with Dr. Elena Vance, and today is September 30th, and you're listening to Future Human Daily. Today we are talking about Ambient Energy Harvesting." },
                 { time: '0:45', label: '[Low-Battery Anxiety Hook]', text: 'The modern panic of dead smartwatch batteries and tangled charging cables.' },
                 { time: '1:30', label: '[Micro-Watt Harvesting Analogies]', text: 'Self-winding mechanical watches scaled to micro-electronics.' },
                 { time: '2:45', label: '[Piezoelectric & TENG Mechanics]', text: 'Piezoelectric shoe insoles, clothing friction, and ambient Wi-Fi wave capture.' },
@@ -397,6 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li><strong>Two-Way Neural Loops:</strong> Reading and writing to the cortex simultaneously.</li>
                     <li><strong>Cognitive Privacy:</strong> Who owns your neural logs in a connected world?</li>
                 </ul>
+            `
         }
     ];
 
