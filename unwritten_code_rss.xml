@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261008 -->
+    <item>
+      <title>Airplane Armrest Wars &amp; Tipping Screen Fatigue</title>
+      <itunes:title>Airplane Armrest Wars &amp; Tipping Screen Fatigue</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian unpack public space dilemmas: the sacred rules of airplane middle seat armrests, reclining your seat into someone's knees, and the modern anxiety of the iPad tip screen spinning around at checkout.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Airplane Armrest Wars &amp; Tipping Screen Fatigue</strong></p>
+        <p>Maya & Julian unpack public space dilemmas: the sacred rules of airplane middle seat armrests, reclining your seat into someone's knees, and the modern anxiety of the iPad tip screen spinning around at checkout.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261008.mp3" length="4992768" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261008</guid>
+      <pubDate>Thu, 08 Oct 2026 09:45:44 +0000</pubDate>
+      <itunes:duration>10:26</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- EPISODE 003 -->
     <item>
       <title>EP 003: Birthday Dinner Bill Hostages &amp; Runaway Group Chats</title>
