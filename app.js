@@ -34,6 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
             `
         },
 
+                { time: '1:00', label: '[Rubber Ball Metaphor]', text: 'Acoustic ultrasound bouncing vs tissue attenuation.' },
+                { time: '2:30', label: '[No Glial Scarring]', text: 'Microscopic sensors invisible to immune rejection.' },
+                { time: '4:15', label: '[Electro-Ceutical Therapy]', text: 'Targeted nerve stimulation replacing daily pills.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.</p>
+            `
+        },
+
         {
             id: 'unwritten-code-ep-002',
             number: 'THE UNWRITTEN CODE: EP 002',

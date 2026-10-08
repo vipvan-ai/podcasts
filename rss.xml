@@ -25,7 +25,7 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
-    <!-- EPISODE 010 -->
+<!-- EPISODE 010 -->
     <item>
       <title>EP 010: Neural Dust &amp; Ultrasound-Powered Micro BCI Transceivers</title>
       <itunes:title>Neural Dust &amp; Ultrasound-Powered Micro BCI Transceivers</itunes:title>
@@ -35,15 +35,16 @@
       <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
       <itunes:summary>Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer &amp; Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.</itunes:summary>
       <description><![CDATA[
-        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 7th, and you're listening to Future Human Daily. Today we are talking about Neural Dust & Ultrasound-Powered Micro BCI Transceivers!</p>
+        <p>I am your host Alex Mercer with Dr. Elena Vance, and today is October 6th, and you're listening to Future Human Daily. Today we are talking about Neural Dust & Ultrasound-Powered Micro BCI Transceivers!</p>
         <p>Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.</p>
       ]]></description>
       <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-010.mp3" length="2248824" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-ep010-20261007</guid>
-      <pubDate>Wed, 07 Oct 2026 07:00:16 +0000</pubDate>
+      <guid isPermaLink="false">future-human-daily-ep010-20261008</guid>
+      <pubDate>Thu, 08 Oct 2026 07:00:16 +0000</pubDate>
       <itunes:duration>04:33</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
+
 
     <!-- WEEKEND RECAP: SUNDAY -->
     <item>
