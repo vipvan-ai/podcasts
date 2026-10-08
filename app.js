@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261008',
+            number: 'OCTOBER 08, 2026',
+            date: 'October 08, 2026',
+            title: 'Organoid Intelligence & DNA Biocomputing',
+            subtitle: 'Living human neuron clusters wired to silicon microchips, and dense DNA data storage that stores all the world\'s knowledge in a single teaspoon with Dr. Elena Vance & Alex Mercer.',
+            duration: '09:37',
+            durationSeconds: 577,
+            audioUrl: 'audio/future_human_20261008.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 08, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Living human neuron clusters wired to silicon microchips, and dense DNA data storage that stores all the world\'s knowledge in a single teaspoon with Dr. Elena Vance & Alex Mercer.</p>
+            `
+        },
+
+        {
             id: 'ep-010',
             number: 'EPISODE 010',
             date: 'October 6, 2026',

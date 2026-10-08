@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261008 -->
+    <item>
+      <title>Organoid Intelligence &amp; DNA Biocomputing</title>
+      <itunes:title>Organoid Intelligence &amp; DNA Biocomputing</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Living human neuron clusters wired to silicon microchips, and dense DNA data storage that stores all the world&#x27;s knowledge in a single teaspoon with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
+      <description><![CDATA[
+        <p>Living human neuron clusters wired to silicon microchips, and dense DNA data storage that stores all the world's knowledge in a single teaspoon with Dr. Elena Vance & Alex Mercer.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261008.mp3" length="4834200" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261008</guid>
+      <pubDate>Thu, 08 Oct 2026 08:00:20 +0000</pubDate>
+      <itunes:duration>09:37</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- EPISODE 010 -->
     <item>
       <title>EP 010: Neural Dust &amp; Ultrasound-Powered Micro BCI Transceivers</title>

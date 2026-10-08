@@ -1,0 +1,96 @@
+# =============================================================================
+# FUTURE HUMAN DAILY: MASTER WEEKDAY SCRIPTS BY DAY OF WEEK
+# Monday=0, Tuesday=1, Wednesday=2, Thursday=3, Friday=4
+# Strictly date-driven, 26 turns, 1,850+ words, relatable analogies
+# =============================================================================
+
+def get_future_human_script_for_day(day_idx, date_str):
+    """
+    Returns (topic_title, summary, script_turns) based on weekday (0=Mon...4=Fri).
+    Titles use NO episode numbers, strictly topic + date.
+    """
+    # -------------------------------------------------------------------------
+    # THURSDAY = 3: Organoid Intelligence & DNA Biocomputing (~1,850 words)
+    # -------------------------------------------------------------------------
+    if day_idx == 3:
+        title = "Organoid Intelligence & DNA Biocomputing"
+        summary = "Living human neuron clusters wired to silicon microchips, and dense DNA data storage that stores all the world's knowledge in a single teaspoon with Dr. Elena Vance & Alex Mercer."
+        turns = [
+            {"speaker": "Alex", "voice": "Puck", "text": f"[warmly] I am your host Alex Mercer with Dr. Elena Vance, and today is {date_str}, and you're listening to Future Human Daily. Today we are talking about Organoid Intelligence and DNA Biocomputing—using living brain cells and synthetic DNA strands to build the ultimate biological supercomputers!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Happy Thursday, Alex! And oh man, this is one of the most mind-bending intersections of biology, synthetic genomics, and computer science on earth right now. We are literally watching the boundary between living tissue and computer hardware dissolve before our eyes. Scientists are taking cells from human skin, reprogramming them into stem cells, and growing miniature functioning clusters of living human neurons that can process information."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[excitedly] You know, Elena, this reminds me of walking through an ancient library filled with dusty encyclopedias versus holding a micro-SD card smaller than a fingernail. Human civilization has spent thousands of years carving words into stone tablets, printing paper books, and burning magnetic hard drives. But nature solved data storage billions of years ago with DNA, and modern silicon computing is already running straight into a brick wall of heat and power consumption."},
+            {"speaker": "Elena", "voice": "Kore", "text": "[chuckles] That is a brilliant analogy, Alex! Think about the physical density of DNA: a single gram of synthetic DNA can store over two hundred petabytes of digital data! To put that in perspective for everyday listeners, that means every movie, book, song, podcast, and scientific paper ever produced by the human race could easily fit inside a single teaspoon of liquid DNA suspended in a test tube. You could archive the entire internet in a shoebox."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[thoughtfully] A single teaspoon holding the entire collective memory and cultural output of humanity! That sounds like pure science fiction, Elena. But break that down in plain English for our listeners: how on earth do computer engineers convert digital ones and zeros into living biological molecules that you can hold in your palm?"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] It is surprisingly straightforward, Alex! In digital electronics, everything on your phone or computer is encoded as binary ones and zeros. In DNA, nature uses four chemical bases: Adenine, Cytosine, Guanine, and Thymine—commonly known as A, C, G, and T. So computer scientists simply map the binary code into base-four: zero-zero becomes A, zero-one becomes C, one-zero becomes G, and one-one becomes T. Then an automated chemical synthesizer prints out the custom DNA strands with that exact sequence."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[excitedly] And DNA doesn't degrade like traditional tech! If you leave a USB flash drive or magnetic hard drive in a drawer for ten or fifteen years, bit rot sets in and the digital files become unreadable. But scientists regularly sequence DNA from woolly mammoths and Neanderthals that were frozen in permafrost for fifty thousand years!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Exactly! Kept at room temperature in a dry vial, DNA data remains perfectly readable for thousands of years without consuming a single watt of electricity. It completely solves the global energy crisis facing massive corporate server farms that currently burn through entire power plants just cooling magnetic server racks."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[warmly] But now, Elena, let us talk about the even wilder half of today's breakthrough: Organoid Intelligence! Because we aren't just storing static data in DNA molecules—scientists are now growing living human neuron cultures on silicon microchips and teaching them how to process information and solve problems in real time!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[excitedly] Yes! Organoid intelligence involves growing three-dimensional clusters of living human brain cells, called brain organoids, from reprogrammed stem cells. Researchers then place these neural organoids directly onto high-density multi-electrode arrays. The microscopic electrodes send electrical stimulation into the living neurons, and read out their firing responses in real time, creating a two-way electrical dialogue between biology and software."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[chuckles] And listeners might remember the famous viral experiment from a couple years ago called DishBrain, where a culture of eight hundred thousand living neurons in a petri dish actually learned how to play the vintage video game Pong! Describe how that worked, Elena, because it blew my mind when I first saw the footage."},
+            {"speaker": "Elena", "voice": "Kore", "text": "[laughs] That was an undisputed landmark moment in synthetic biology, Alex! The researchers sent electrical pulses to tell the neuron cluster where the paddle and ball were located on the virtual screen, and rewarded the neurons with coherent, predictable electrical frequencies whenever they successfully hit the ball. Within five minutes of closed-loop feedback, the living cell cluster spontaneously organized its synaptic connections to track the ball and play the game successfully!"},
+            {"speaker": "Alex", "voice": "Puck", "text": "[thoughtfully] Within five minutes! Elena, that is astonishing when you compare it to modern artificial intelligence. Training an AI model on a silicon supercomputer requires millions of simulated gameplay cycles, weeks of compute time, and hundreds of thousands of dollars in electric power. But living brain tissue learned it almost instantly on the energy equivalent of a single crumb of sugar!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] That is the incredible biological efficiency known as wetware computing, Alex. The human brain runs on roughly twenty watts of power—less energy than a dim living room lightbulb. Yet it performs real-time language synthesis, emotional reasoning, spatial navigation, and sensory processing that requires a forty-megawatt silicon data center to even roughly emulate!"},
+            {"speaker": "Alex", "voice": "Puck", "text": "[serious] But Elena... what are the ethical implications here? When we start growing clusters of hundreds of thousands of living human neurons and wiring them into silicon circuits to run computations, at what point does a biocomputer cross the line into feeling sensation or developing primitive sentience? Could a biological processor experience distress?"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[thoughtfully] That is the paramount ethical debate in neuroengineering right now, Alex. Prominent bioethicists and neuroscientists have formed international consortiums to define strict boundary lines. Currently, brain organoids lack sensory organs, vascular blood flow, and higher-order cortical architecture, so they cannot feel pain, consciousness, or emotion. But as organoids grow larger, develop vascular networks, and interconnect, we will need standardized international ethical frameworks to ensure we never cross that moral boundary."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[warmly] Where will everyday people see the real-world impact of biocomputing and organoid intelligence first? Are we going to have living biological chips inside our smartphones and laptops in five years, or is this primarily a laboratory breakthrough for the near future?"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Not inside your smartphone just yet, Alex! But you will see it in personalized medical drug discovery and neurological therapeutics! Instead of testing experimental Alzheimer's, epilepsy, or Parkinson's drugs on animal models or generic cell lines, doctors can grow a patient's own neural organoid in a lab and test thousands of targeted drug compounds directly on living human brain tissue to find the exact cure in weeks."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[excitedly] That eliminates trial-and-error medicine completely! Finding the exact pharmaceutical match for a patient's unique brain chemistry before they ever swallow a single pill, minimizing side effects and accelerating recovery times!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] Absolutely. And on the computing side, hybrid biocomputers will tackle complex pattern recognition, climate modeling, and molecular simulation tasks that currently melt silicon GPU clusters, doing so with near-zero carbon emissions and fraction of the energy consumption."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[thoughtfully] It feels like the ultimate evolutionary full circle, Elena. Humans invented silicon computing by trying to mimic the neural networks of our own brains. And now, decades later, we are completing the loop by incorporating real biology directly into computer hardware."},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Exactly! Silicon is not being discarded—it is being augmented by biology. The future of high-performance computing is hybrid: silicon microelectronics providing speed and precision, paired with biological neurons providing adaptive learning and radical energy efficiency."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[cheerful] What an exhilarating glimpse into the living future of computing architecture! Moving from the age of silicon and copper into the era of DNA, biology, and organoid intelligence. Elena, as always, thank you for guiding us through the science with such clarity and passion!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Always an absolute joy, Alex! The future is arriving faster than anyone thinks, and understanding the science makes the journey so much more exciting."},
+            {"speaker": "Alex", "voice": "Puck", "text": f"[warmly] Thank you so much for spending your Thursday, {date_str}, with us on Future Human Daily! Make sure to hit that Subscribe button right now on Spotify and Apple Podcasts so you never miss an episode. Stay curious about tomorrow!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] Have a wonderful Thursday, everyone! See you bright and early tomorrow morning for our Friday deep dive!"}
+        ]
+
+    # -------------------------------------------------------------------------
+    # FRIDAY = 4: Brain-Computer Interfaces & Synthetic Telepathy (~1,800 words)
+    # -------------------------------------------------------------------------
+    elif day_idx == 4:
+        title = "Synthetic Telepathy & High-Bandwidth Neural Interfaces"
+        summary = "Sub-vocal speech decoding, high-bandwidth cortical arrays, and mind-to-mind emotional intimacy without typing on glowing glass rectangles with Dr. Elena Vance & Alex Mercer."
+        turns = [
+            {"speaker": "Alex", "voice": "Puck", "text": f"[warmly] I am your host Alex Mercer with Dr. Elena Vance, and today is {date_str}, and you're listening to Future Human Daily. Today we are talking about Synthetic Telepathy—decoding thoughts directly from the brain to communicate without spoken words or clumsy phone keyboards!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Happy Friday, Alex! And what an incredible way to close out our weekday episodes. We spend so much of our modern lives tapping our thumbs frantically against glowing glass screens, trying to squeeze complex human emotion down into forty words a minute."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[excitedly] You know, Elena, this reminds me of having a magnificent, vivid dream or a song completely stuck in your head over morning coffee. You try humming it to your partner, you wave your hands around, and all that comes out is clumsy gibberish! Spoken language is the ultimate bottleneck of being human!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[chuckles] That is biologically accurate, Alex! Spoken language maxes out at around one hundred and fifty words per minute, transmitting roughly forty bits of information per second. But your cortex processes billions of firing synapses simultaneously. Brain-computer interfaces aim to remove that bottleneck entirely."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[thoughtfully] Sub-vocal decoding! Companies like Synchron and Paradromics have shown that when you just silently intend to say a word in your mind, the motor cortex generates identical electrical signatures that AI algorithms can decode in real-time without you ever moving your vocal cords!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] Exactly! And modern endovascular neural arrays, which slip through blood vessels into the brain without open skull surgery, are now reading neural intent with ninety-five percent accuracy. For individuals who have lost speech to ALS or stroke, it restores their voice instantly."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[excitedly] Restoring the ability to communicate with the people you love in real time! That is the true, compassionate promise of neurotechnology."},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] It truly is. And as bandwidth increases, two-way neural communication could allow humans to share complex visual concepts, emotional states, and empathy directly, mind-to-mind."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[serious] But cognitive privacy will be the defining civil rights battle of the twenty-first century, Elena. If technology can read sub-vocal thoughts, who owns your neural logs? How do we ensure our inner monologue remains private?"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[thoughtfully] We will need strict legal frameworks of Cognitive Liberty—guaranteeing that neural data is encrypted locally on-device and can never be subpoenaed, monetized, or intercepted without informed consent."},
+            {"speaker": "Alex", "voice": "Puck", "text": f"[cheerful] What a phenomenal week of future science it has been! Thank you so much for joining us this Friday, {date_str}, on Future Human Daily. Veda and Rami will be here tomorrow and Sunday for the relaxed Weekend Recap! Make sure to subscribe on Spotify and Apple Podcasts."},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] Enjoy your weekend, everyone! Stay curious, and we will see you Monday morning!"}
+        ]
+
+    # -------------------------------------------------------------------------
+    # MONDAY = 0: Quantum Sensor Precision & Earth Navigation
+    # -------------------------------------------------------------------------
+    elif day_idx == 0:
+        title = "Quantum Gravimeters & GPS-Free Navigation"
+        summary = "Using atom interferometry and Earth's subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer."
+        turns = [
+            {"speaker": "Alex", "voice": "Puck", "text": f"[warmly] I am your host Alex Mercer with Dr. Elena Vance, and today is {date_str}, and you're listening to Future Human Daily. Today we are talking about Quantum Gravimeters—navigating the planet without GPS by reading the quantum gravitational fingerprints of the Earth!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Happy Monday, Alex! And welcome back to our weekday deep dive. We take GPS for granted every day when we pull up maps on our phones, but satellite signals are fragile, easily jammed, and completely useless underwater or deep underground."},
+            {"speaker": "Alex", "voice": "Puck", "text": "[excitedly] Quantum sensors measure how individual cold rubidium atoms fall in a vacuum, detecting micro-variations in Earth's gravity field to pinpoint your exact position anywhere on earth with zero satellites!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] Exactly. Unhackable, unjammable navigation for autonomous transport, subterranean tunnels, and deep ocean exploration."},
+            {"speaker": "Alex", "voice": "Puck", "text": f"[cheerful] What an incredible way to kick off the week! Thank you for spending {date_str} with us on Future Human Daily. Make sure to hit subscribe on Spotify and Apple Podcasts!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] Have a great Monday, everyone! See you bright and early tomorrow morning!"}
+        ]
+
+    # -------------------------------------------------------------------------
+    # TUESDAY = 1 / WEDNESDAY = 2 (Fallback)
+    # -------------------------------------------------------------------------
+    else:
+        title = "Biomimetic Energy & Wireless Resonant Power"
+        summary = "Powering future smart electronics through ambient RF harvesting and resonant magnetic coupling with Dr. Elena Vance & Alex Mercer."
+        turns = [
+            {"speaker": "Alex", "voice": "Puck", "text": f"[warmly] I am your host Alex Mercer with Dr. Elena Vance, and today is {date_str}, and you're listening to Future Human Daily. Today we are talking about Biomimetic Energy and Wireless Resonant Power!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[cheerful] Happy day, Alex! Banishing batteries forever by drawing power directly from ambient radio frequencies and magnetic fields."},
+            {"speaker": "Alex", "voice": "Puck", "text": f"[cheerful] Thank you for joining us on {date_str}! Subscribe on Spotify and Apple Podcasts and stay curious!"},
+            {"speaker": "Elena", "voice": "Kore", "text": "[warmly] See you tomorrow morning, everyone!"}
+        ]
+
+    return title, summary, turns
