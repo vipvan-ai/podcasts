@@ -3,6 +3,9 @@ import sys
 import time
 import base64
 import subprocess
+import re
+import asyncio
+import edge_tts
 import numpy as np
 import scipy.signal as signal
 from scipy.signal import butter, sosfilt
@@ -34,6 +37,38 @@ TTS_MODELS = [
     'gemini-2.5-flash-preview-tts',
     'gemini-3.1-flash-tts-preview'
 ]
+
+EDGE_VOICES = {
+    "Kore": "en-US-AriaNeural",
+    "Puck": "en-US-GuyNeural",
+    "Maya": "en-US-AriaNeural",
+    "Julian": "en-US-GuyNeural"
+}
+
+def synth_edge_turn(text, voice_key, sample_rate=24000):
+    voice = EDGE_VOICES.get(voice_key, "en-US-AriaNeural")
+    clean_text = re.sub(r'\[.*?\]', '', text).strip()
+    for attempt in range(5):
+        tmp_path = BASE_DIR / f"_tmp_edge_uc_{time.time_ns()}.mp3"
+        async def _run():
+            communicate = edge_tts.Communicate(clean_text, voice, rate="+0%", pitch="+0Hz")
+            await communicate.save(str(tmp_path))
+        try:
+            asyncio.run(_run())
+            if tmp_path.exists() and tmp_path.stat().st_size > 1000:
+                data, sr = sf.read(str(tmp_path))
+                tmp_path.unlink(missing_ok=True)
+                if data.ndim > 1:
+                    data = np.mean(data, axis=1)
+                if sr != sample_rate:
+                    num_samples = int(len(data) * sample_rate / sr)
+                    data = signal.resample(data, num_samples)
+                return data.astype(np.float32)
+        except Exception:
+            if tmp_path.exists():
+                tmp_path.unlink(missing_ok=True)
+            time.sleep(1.5)
+    return None
 
 # Audio Processing: Future Human Daily clean_turn & Studio Room Tone
 def clean_turn(x, sr=24000, gap_ms=60, max_artifact_ms=250, flat_thresh=0.3):
@@ -140,9 +175,17 @@ def synthesize_turn_with_cache(cache_key, voice_name, text):
                     time.sleep(15)
                 else:
                     time.sleep(2)
+
+    # Edge-TTS Fallback
+    print(f" -> [Edge-TTS Fallback] Synthesizing [{voice_name}]...", flush=True)
+    edge_samples = synth_edge_turn(text, voice_name)
+    if edge_samples is not None:
+        np.save(str(cache_file), edge_samples)
+        return edge_samples
+
     return None
 
-def update_unwritten_code_rss(ep_number, ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
+def update_unwritten_code_rss(date_tag, date_str, ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
     rss_file = BASE_DIR / "unwritten_code_rss.xml"
     if not rss_file.exists():
         print("[RSS ERROR] unwritten_code_rss.xml not found!", flush=True)
@@ -150,16 +193,15 @@ def update_unwritten_code_rss(ep_number, ep_title, ep_summary, mp3_filename, dur
 
     content = rss_file.read_text(encoding="utf-8")
     pub_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0000")
-    guid = f"unwritten-code-ep-{ep_number:03d}-{datetime.now().strftime('%Y%m%d')}"
+    guid = f"unwritten-code-{date_tag}"
 
     clean_title = ep_title.replace('&', '&amp;') if '&amp;' not in ep_title else ep_title
     clean_summary = ep_summary.replace('&', '&amp;') if '&amp;' not in ep_summary else ep_summary
 
-    new_item = f"""    <!-- EPISODE {ep_number:03d} -->
+    new_item = f"""    <!-- THE UNWRITTEN CODE: {date_tag} -->
     <item>
       <title>{clean_title}</title>
       <itunes:title>{clean_title}</itunes:title>
-      <itunes:episode>{ep_number}</itunes:episode>
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
@@ -176,10 +218,10 @@ def update_unwritten_code_rss(ep_number, ep_title, ep_summary, mp3_filename, dur
     </item>
 """
 
-    marker_ep = f"<!-- EPISODE {ep_number:03d} -->"
-    if marker_ep in content:
-        # Replace existing episode item
-        start_idx = content.find(marker_ep)
+    marker_date = f"<!-- THE UNWRITTEN CODE: {date_tag} -->"
+    if marker_date in content:
+        # Replace existing episode item for today if re-running
+        start_idx = content.find(marker_date)
         end_tag = "</item>"
         end_idx = content.find(end_tag, start_idx) + len(end_tag)
         updated_content = content[:start_idx] + new_item.strip() + content[end_idx:]
@@ -193,7 +235,7 @@ def update_unwritten_code_rss(ep_number, ep_title, ep_summary, mp3_filename, dur
             updated_content = content[:insert_idx] + new_item + content[insert_idx:]
 
     rss_file.write_text(updated_content, encoding="utf-8")
-    print(f"[RSS SUCCESS] Updated Episode {ep_number} in unwritten_code_rss.xml!", flush=True)
+    print(f"[RSS SUCCESS] Updated unwritten_code_rss.xml for {date_str}!", flush=True)
     return True
 
 def auto_publish_to_github(commit_message):
@@ -237,8 +279,8 @@ def run_daily_pipeline():
     print("==========================================================", flush=True)
 
     sample_rate = 24000
-    out_mp3_name = f"unwritten_code_ep{ep_num:03d}_{date_tag}.mp3"
-    out_wav_name = f"unwritten_code_ep{ep_num:03d}_{date_tag}.wav"
+    out_mp3_name = f"unwritten_code_{date_tag}.mp3"
+    out_wav_name = f"unwritten_code_{date_tag}.wav"
     out_mp3 = AUDIO_DIR / out_mp3_name
     out_wav = AUDIO_DIR / out_wav_name
 
@@ -246,7 +288,7 @@ def run_daily_pipeline():
     pause_gap = np.zeros(int(sample_rate * 0.32), dtype=np.float32)
 
     for idx, turn in enumerate(script_turns):
-        cache_key = f"ep{ep_num:03d}_{date_tag}_turn_{idx+1}_{turn['speaker']}"
+        cache_key = f"unwritten_code_{date_tag}_turn_{idx+1}_{turn['speaker']}"
         raw_samples = synthesize_turn_with_cache(cache_key, turn["voice"], turn["text"])
         if raw_samples is None:
             print(f"[Error] Failed to synthesize turn {idx+1}!")
@@ -296,13 +338,13 @@ def run_daily_pipeline():
 
     # 1. Update RSS Feed
     file_size = out_mp3.stat().st_size
-    update_unwritten_code_rss(ep_num, ep_title, ep_summary, out_mp3_name, duration_str, file_size)
+    update_unwritten_code_rss(date_tag, date_str, ep_title, ep_summary, out_mp3_name, duration_str, file_size)
 
     # 2. Push to GitHub Pages & Spotify RSS
     auto_publish_to_github(f"Auto-publish {ep_title} ({date_str})")
 
     print("\n==========================================================", flush=True)
-    print(f"[COMPLETE] Episode {ep_num} published successfully!", flush=True)
+    print(f"[COMPLETE] The Unwritten Code for {date_str} published successfully!", flush=True)
     print("==========================================================", flush=True)
     return True
 

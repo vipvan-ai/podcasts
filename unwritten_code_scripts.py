@@ -15,7 +15,7 @@ def get_script_for_day(day_idx):
     # -------------------------------------------------------------------------
     if day_idx == 0:
         ep_num = 1
-        title = "EP 001: The Slack Thumbs-Up vs. The Reply-All Disaster"
+        title = "The Slack Thumbs-Up vs. The Reply-All Disaster"
         summary = "Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?"
         turns = [
             {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Happy Monday, everyone! Welcome to the official premiere of The Unwritten Code! I am Maya Lin, and if you are listening to this on your morning commute, sitting at your desk with your second cup of coffee, or hiding in the office kitchen avoiding your inbox, you are in the exact right place. Today is Monday, October fifth, which means we are inaugurating this show by diving headfirst into the chaotic, passive-aggressive jungle known as modern workplace communication."},
@@ -50,7 +50,7 @@ def get_script_for_day(day_idx):
     # -------------------------------------------------------------------------
     elif day_idx == 1:
         ep_num = 2
-        title = "EP 002: Who Pays on Date Three? (And The Ghosting Slow-Fade)"
+        title = "Who Pays on Date Three? (And The Ghosting Slow-Fade)"
         summary = "Maya & Julian unpack modern dating etiquette: who pays on date three, the subtle art of the polite wallet reach, and why the slow-fade text message is emotional cowardice compared to honest closure."
         turns = [
             {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Welcome back to The Unwritten Code, everyone! I am Maya Lin alongside Julian Cross, and today is Tuesday, October sixth. Yesterday we survived corporate Slack warfare, the terror of the naked thumbs-up emoji, and the catastrophic reply-all chain email. But today, we are stepping into an even more dangerous, emotionally volatile, high-stakes arena: modern dating economics and the bizarre rituals of romance in the smartphone era."},
@@ -86,7 +86,7 @@ def get_script_for_day(day_idx):
     # -------------------------------------------------------------------------
     elif day_idx == 2:
         ep_num = 3
-        title = "EP 003: Birthday Dinner Bill Hostages & Runaway Group Chats"
+        title = "Birthday Dinner Bill Hostages & Runaway Group Chats"
         summary = "Maya & Julian tackle friendship etiquette: why splitting large group dinner tabs turns into financial extortion, the politics of vacation Airbnb room inequality, and how to escape a runaway group chat without offending everyone."
         turns = [
             {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Happy Wednesday, everyone! Welcome back to The Unwritten Code. I am Maya Lin alongside Julian Cross, and we are officially at the midpoint of our premiere week! Today, we are taking on a sacred, essential institution of human life: friendships in the digital age. Specifically: the delicate art of lending money to friends, navigating the nightmare of large group dinner tabs, escaping fifty-person runaway group chats, and the unwritten laws of borrowing your best friend's clothes or car."},
@@ -126,7 +126,7 @@ def get_script_for_day(day_idx):
     # -------------------------------------------------------------------------
     elif day_idx == 3:
         ep_num = 4
-        title = "EP 004: Airplane Armrest Wars & Tipping Screen Fatigue"
+        title = "Airplane Armrest Wars & Tipping Screen Fatigue"
         summary = "Maya & Julian unpack public space dilemmas: the sacred rules of airplane middle seat armrests, reclining your seat into someone's knees, and the modern anxiety of the iPad tip screen spinning around at checkout."
         turns = [
             {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Good morning, everyone! Welcome back to The Unwritten Code. I am Maya Lin alongside Julian Cross, and today is Thursday, October eighth. We have covered the office, we have survived dating economics, and we have navigated the minefield of friendship group chats. But today, we are stepping out into the wild frontier of human civilization: shared public spaces and our daily encounters with complete strangers."},
@@ -168,7 +168,7 @@ def get_script_for_day(day_idx):
     # -------------------------------------------------------------------------
     elif day_idx == 4:
         ep_num = 5
-        title = "EP 005: Roommate Sink Standoffs & Uninvited Houseguests"
+        title = "Roommate Sink Standoffs & Uninvited Houseguests"
         summary = "Maya & Julian tackle domestic life: the passive-aggressive 'soaking pan' in the kitchen sink, handling unannounced in-law drop-ins, and the art of making houseguests leave when their welcome expires."
         turns = [
             {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Happy Friday, everyone! Welcome back to The Unwritten Code. I am Maya Lin alongside Julian Cross, and we have officially made it to the end of our very first week on the air! Today, we are heading inside the four walls of the home to unpack the domestic battlefield: roommates, in-laws, household chores, and houseguests who overstay their welcome."},
@@ -209,7 +209,7 @@ def get_script_for_day(day_idx):
     # -------------------------------------------------------------------------
     else:
         ep_num = 6
-        title = "EP 006: The Weekend Docket: Wedding Plus-Ones & Family Holiday Drama"
+        title = "The Weekend Docket: Wedding Plus-Ones & Family Holiday Drama"
         summary = "Maya & Julian convene The Weekend Docket to put listener-submitted moral dilemmas on trial: the bridesmaid dress invoice, uninvited wedding plus-ones, and holiday family seating wars."
         turns = [
             {"speaker": "Maya", "voice": "Kore", "text": "[cheerful] Happy Saturday, everyone! Welcome to the inaugural edition of The Weekend Docket on The Unwritten Code. I am Maya Lin with Julian Cross, and while Alex and Elena on Future Human Daily take their weekends slow with science recaps, we are here with your weekend coffee to put humanity’s messiest real-world dilemmas on trial."},
