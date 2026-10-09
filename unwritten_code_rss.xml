@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261009 -->
+    <item>
+      <title>Roommate Sink Standoffs &amp; Uninvited Houseguests</title>
+      <itunes:title>Roommate Sink Standoffs &amp; Uninvited Houseguests</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian tackle domestic life: the passive-aggressive 'soaking pan' in the kitchen sink, handling unannounced in-law drop-ins, and the art of making houseguests leave when their welcome expires.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Roommate Sink Standoffs &amp; Uninvited Houseguests</strong></p>
+        <p>Maya & Julian tackle domestic life: the passive-aggressive 'soaking pan' in the kitchen sink, handling unannounced in-law drop-ins, and the art of making houseguests leave when their welcome expires.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261009.mp3" length="4728288" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261009</guid>
+      <pubDate>Fri, 09 Oct 2026 09:28:01 +0000</pubDate>
+      <itunes:duration>09:55</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261008 -->
     <item>
       <title>Airplane Armrest Wars &amp; Tipping Screen Fatigue</title>
