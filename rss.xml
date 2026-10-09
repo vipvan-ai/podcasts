@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261009 -->
+    <item>
+      <title>Synthetic Telepathy &amp; High-Bandwidth Neural Interfaces</title>
+      <itunes:title>Synthetic Telepathy &amp; High-Bandwidth Neural Interfaces</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Sub-vocal speech decoding, high-bandwidth cortical arrays, and mind-to-mind emotional intimacy without typing on glowing glass rectangles with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
+      <description><![CDATA[
+        <p>Sub-vocal speech decoding, high-bandwidth cortical arrays, and mind-to-mind emotional intimacy without typing on glowing glass rectangles with Dr. Elena Vance & Alex Mercer.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261009.mp3" length="1560672" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261009</guid>
+      <pubDate>Fri, 09 Oct 2026 07:01:44 +0000</pubDate>
+      <itunes:duration>03:06</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261008 -->
     <item>
       <title>Organoid Intelligence &amp; DNA Biocomputing</title>
