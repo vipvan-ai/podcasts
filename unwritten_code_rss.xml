@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261010 -->
+    <item>
+      <title>The Weekend Docket: Wedding Plus-Ones &amp; Family Holiday Drama</title>
+      <itunes:title>The Weekend Docket: Wedding Plus-Ones &amp; Family Holiday Drama</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian convene The Weekend Docket to put listener-submitted moral dilemmas on trial: the bridesmaid dress invoice, uninvited wedding plus-ones, and holiday family seating wars.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>The Weekend Docket: Wedding Plus-Ones &amp; Family Holiday Drama</strong></p>
+        <p>Maya & Julian convene The Weekend Docket to put listener-submitted moral dilemmas on trial: the bridesmaid dress invoice, uninvited wedding plus-ones, and holiday family seating wars.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261010.mp3" length="3002400" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261010</guid>
+      <pubDate>Sat, 10 Oct 2026 11:46:28 +0000</pubDate>
+      <itunes:duration>06:14</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261009 -->
     <item>
       <title>Roommate Sink Standoffs &amp; Uninvited Houseguests</title>
