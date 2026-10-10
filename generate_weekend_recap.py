@@ -138,15 +138,15 @@ def apply_studio_warmth_eq(audio_samples, sample_rate=24000, low_boost_db=4.0):
 
     return signal.filtfilt(b_eq, a_eq, audio_samples)
 
-def update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration_str):
+def update_weekend_app_js(day_name, tag_suffix, date_tag, ep_title, ep_summary, mp3_filename, duration_str):
     app_js = BASE_DIR / "app.js"
     if not app_js.exists():
         return
     content = app_js.read_text(encoding="utf-8")
-    ep_id = f"ep-weekend-{day_name[:3].lower()}"
+    ep_id = f"ep-weekend-{tag_suffix}-{date_tag}"
     
     parts = duration_str.split(":")
-    dur_sec = int(parts[0]) * 60 + int(parts[1]) if len(parts) == 2 else 1200
+    dur_sec = int(parts[0]) * 60 + int(parts[1]) if len(parts) == 2 else 360
     date_str = datetime.now().strftime("%B %d, %Y")
     
     entry_code = f"""        {{
@@ -158,7 +158,7 @@ def update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration
             duration: '{duration_str}',
             durationSeconds: {dur_sec},
             audioUrl: 'audio/{mp3_filename}',
-            tags: ['Weekend Recap', 'Veda & Rami', '{day_name} AI Catchup'],
+            tags: ['Weekend Recap', 'Veda & Rami', '{day_name} Recap'],
             script: [
                 {{ time: '0:00', label: '[Intro]', text: 'Happy {day_name}! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }}
             ],
@@ -168,8 +168,15 @@ def update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration
             `
         }},"""
 
+    # Clean previous recap entry for this exact id
     if f"id: '{ep_id}'" in content:
         pattern = re.compile(r"\s*\{\s*id:\s*'" + re.escape(ep_id) + r"'.*?\}\s*,", re.DOTALL)
+        content = pattern.sub("", content)
+
+    # Also clean old generic ep-weekend-sat or ep-weekend-sun
+    old_id = f"ep-weekend-{tag_suffix}"
+    if f"id: '{old_id}'" in content:
+        pattern = re.compile(r"\s*\{\s*id:\s*'" + re.escape(old_id) + r"'.*?\}\s*,", re.DOTALL)
         content = pattern.sub("", content)
 
     marker = "const episodes = ["
@@ -177,10 +184,10 @@ def update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration
         pos = content.find(marker) + len(marker)
         updated = content[:pos] + "\n" + entry_code + content[pos:]
         app_js.write_text(updated, encoding="utf-8")
-        print(f"[APP.JS UPDATE] Updated {day_name} Weekend Recap in app.js!", flush=True)
+        print(f"[APP.JS UPDATE] Updated {day_name} Weekend Recap ({ep_id}) in app.js!", flush=True)
 
-def update_weekend_rss(day_name, ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
-    update_weekend_app_js(day_name, ep_title, ep_summary, mp3_filename, duration_str)
+def update_weekend_rss(day_name, tag_suffix, date_tag, ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
+    update_weekend_app_js(day_name, tag_suffix, date_tag, ep_title, ep_summary, mp3_filename, duration_str)
 
     rss_file = BASE_DIR / "rss.xml"
     if not rss_file.exists():
@@ -192,8 +199,8 @@ def update_weekend_rss(day_name, ep_title, ep_summary, mp3_filename, duration_st
     pattern = re.compile(rf"\s*<!-- WEEKEND RECAP: {day_name.upper()} -->\s*<item>.*?</item>", re.DOTALL)
     content = pattern.sub("", content)
 
-    pub_date = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
-    guid = f"future-human-daily-weekend-{day_name.lower()}-{datetime.now().strftime('%Y%m%d')}"
+    pub_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    guid = f"future-human-daily-weekend-{tag_suffix}-{date_tag}"
 
     from rss_utils import sanitize_xml_text, validate_and_save_rss
 
@@ -235,13 +242,14 @@ def build_weekend_recap_pipeline(is_sunday=False):
     day_name = "Sunday" if is_sunday else "Saturday"
     tag_suffix = "sun" if is_sunday else "sat"
     date_str = datetime.now().strftime("%B %d, %Y")
+    date_tag = datetime.now().strftime("%Y%m%d")
 
     print("==========================================================", flush=True)
     print(f"Building Future Human Daily - {day_name} Weekend Recap ({date_str})", flush=True)
-    print("Hosts: Veda & Rami | Target: ~10 Minutes (30 Turns)", flush=True)
+    print(f"Hosts: Veda & Rami | Date: {date_str}", flush=True)
     print("==========================================================", flush=True)
 
-    cache_dir = AUDIO_DIR / f"cache_weekend_{tag_suffix}"
+    cache_dir = AUDIO_DIR / f"cache_weekend_{tag_suffix}_{date_tag}"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     script = get_weekend_script(is_sunday=is_sunday)
@@ -340,7 +348,6 @@ def build_weekend_recap_pipeline(is_sunday=False):
         target_peak = 10 ** (-1.0 / 20.0)
         mixed_audio = mixed_audio * (target_peak / max_peak)
 
-    date_tag = datetime.now().strftime("%Y%m%d")
     out_mp3_name = f"ep-weekend-{tag_suffix}-{date_tag}.mp3"
     out_wav_name = f"ep-weekend-{tag_suffix}-{date_tag}.wav"
     out_mp3 = AUDIO_DIR / out_mp3_name
@@ -361,10 +368,15 @@ def build_weekend_recap_pipeline(is_sunday=False):
     print("==========================================================", flush=True)
 
     # Update RSS feed
-    ep_title = f"{day_name} Weekend Recap: Tech Deep Dives & Weekly Catchup" if not is_sunday else "Sunday AI Catchup: Claude Opus 5.5 & Cyber Defense"
-    ep_summary = "Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions."
+    if is_sunday:
+        ep_title = "Sunday AI Catchup: Neural Dust & Sub-Vocal Telepathy"
+        ep_summary = "Veda & Rami wrap up the weekend with a relaxed catchup on ultrasound-powered neural dust, zero glial scarring, and sub-vocal speech decoding interfaces."
+    else:
+        ep_title = "Saturday Weekend Recap: Photonic Chips & Whisper-Quiet Drones"
+        ep_summary = "Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones."
+
     file_size = out_mp3.stat().st_size if out_mp3.exists() else 0
-    update_weekend_rss(day_name, ep_title, ep_summary, out_mp3_name, duration_str, file_size)
+    update_weekend_rss(day_name, tag_suffix, date_tag, ep_title, ep_summary, out_mp3_name, duration_str, file_size)
 
     # Auto-publish to GitHub Pages and Spotify RSS
     publish_to_github(f"Auto-publish {day_name} Weekend Recap ({date_str})")

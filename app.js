@@ -3,21 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
-            id: 'ep-weekend-sat',
+            id: 'ep-weekend-sat-20261010',
             number: 'WEEKEND RECAP',
             date: 'October 10, 2026',
-            title: 'Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup',
-            subtitle: 'Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.',
-            duration: '20:35',
-            durationSeconds: 1235,
+            title: 'Saturday Weekend Recap: Photonic Chips & Whisper-Quiet Drones',
+            subtitle: 'Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones.',
+            duration: '06:52',
+            durationSeconds: 412,
             audioUrl: 'audio/ep-weekend-sat-20261010.mp3',
-            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday AI Catchup'],
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
             script: [
                 { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
             ],
             notes: `
                 <h4>Episode Summary:</h4>
-                <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
+                <p>Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones.</p>
             `
         },
         {

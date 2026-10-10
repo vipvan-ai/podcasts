@@ -27,23 +27,24 @@
 
     <!-- WEEKEND RECAP: SATURDAY -->
     <item>
-      <title>Saturday Weekend Recap: Tech Deep Dives &amp; Weekly Catchup</title>
-      <itunes:title>Saturday Weekend Recap: Tech Deep Dives &amp; Weekly Catchup</itunes:title>
+      <title>Saturday Weekend Recap: Photonic Chips &amp; Whisper-Quiet Drones</title>
+      <itunes:title>Saturday Weekend Recap: Photonic Chips &amp; Whisper-Quiet Drones</itunes:title>
       <itunes:episodeType>bonus</itunes:episodeType>
       <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda &amp; Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</itunes:summary>
+      <itunes:summary>Veda &amp; Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones.</itunes:summary>
       <description><![CDATA[
         <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
+        <p>Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones.</p>
       ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261010.mp3" length="9805440" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-saturday-20261010</guid>
-      <pubDate>Sat, 10 Oct 2026 11:05:30 +0000</pubDate>
-      <itunes:duration>20:35</itunes:duration>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261010.mp3" length="3154920" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sat-20261010</guid>
+      <pubDate>Sat, 10 Oct 2026 07:44:41 +0000</pubDate>
+      <itunes:duration>06:52</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 
 
+    <!-- WEEKEND RECAP: SATURDAY -->
 <!-- FUTURE HUMAN DAILY: 20261009 -->
     <item>
       <title>Synthetic Telepathy &amp; High-Bandwidth Neural Interfaces</title>
