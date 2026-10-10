@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat',
+            number: 'WEEKEND RECAP',
+            date: 'October 10, 2026',
+            title: 'Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup',
+            subtitle: 'Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.',
+            duration: '20:35',
+            durationSeconds: 1235,
+            audioUrl: 'audio/ep-weekend-sat-20261010.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday AI Catchup'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and zero noise transitions.</p>
+            `
+        },
+        {
             id: 'fhd-20261009',
             number: 'OCTOBER 09, 2026',
             date: 'October 09, 2026',
@@ -192,18 +210,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Join co-hosts <strong>Maya Lin</strong> & <strong>Julian Cross</strong> every weekday morning for 6–8 minute deep dives into the hilarious, awkward, and unwritten rules of modern life—plus <strong>The Weekend Docket</strong> every Saturday resolving listener dilemmas!</p>
             `
         },
-        {
-            id: 'ep-weekend-sat',
-            number: 'WEEKEND RECAP',
-            date: 'October 3, 2026',
-            title: 'Saturday Weekend Recap: Tech Deep Dives & Weekly Catchup',
-            subtitle: 'Veda & Rami host a relaxed weekend recap featuring deep tech stories, unhurried pacing, and continuous studio room tone.',
-            duration: '5:42',
-            durationSeconds: 342,
-            audioUrl: 'audio/ep-weekend-sat-20261003.mp3',
-            tags: ['Weekend Recap', 'Veda & Rami', 'Tech Catchup', 'Deep Dives'],
-            script: [
-                { time: '0:00', label: '[Intro]', text: 'Alex and Elena are off taking a well-deserved break today—so I am Veda with Rami...' },
                 { time: '1:15', label: '[Weekly Highlights]', text: 'Recapping neuromorphic bio-acoustics, ambient energy harvesting, and mRNA oncology.' },
                 { time: '3:30', label: '[Deep Tech Discussion]', text: 'Unhurried story transitions and deep-dive technical insights.' }
             ],
