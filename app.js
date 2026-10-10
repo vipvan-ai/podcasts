@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
             date: 'October 10, 2026',
             title: 'Saturday Weekend Recap: Photonic Chips & Whisper-Quiet Drones',
             subtitle: 'Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones.',
-            duration: '06:52',
-            durationSeconds: 412,
+            duration: '06:59',
+            durationSeconds: 419,
             audioUrl: 'audio/ep-weekend-sat-20261010.mp3',
             tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
             script: [
