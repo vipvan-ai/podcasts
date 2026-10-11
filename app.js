@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261011',
+            number: 'WEEKEND RECAP',
+            date: 'October 11, 2026',
+            title: 'Sunday AI Catchup: Neural Dust & Sub-Vocal Telepathy',
+            subtitle: 'Veda & Rami wrap up the weekend with a relaxed catchup on ultrasound-powered neural dust, zero glial scarring, and sub-vocal speech decoding interfaces.',
+            duration: '05:39',
+            durationSeconds: 339,
+            audioUrl: 'audio/ep-weekend-sun-20261011.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda & Rami wrap up the weekend with a relaxed catchup on ultrasound-powered neural dust, zero glial scarring, and sub-vocal speech decoding interfaces.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261010',
             number: 'WEEKEND RECAP',
             date: 'October 10, 2026',
@@ -155,19 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</p>
             `
         },
-
-        {
-            id: 'ep-weekend-sun',
-            number: 'WEEKEND RECAP',
-            date: 'October 4, 2026',
-            title: 'Sunday AI Catchup: Claude Opus 5.5 & Cyber Defense',
-            subtitle: 'Veda & Rami host a relaxed 20-minute weekend recap featuring Claude Opus 5.5, autonomous AI cyber defense agents, and solid-state energy.',
-            duration: '20:51',
-            durationSeconds: 1251,
-            audioUrl: 'audio/ep-weekend-sun-20261004.mp3',
-            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday AI Catchup', 'Claude Opus 5.5'],
-            script: [
-                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Today we are looking back at the biggest AI & cyber defense stories of the week...' },
                 { time: '2:15', label: '[Claude Opus 5.5]', text: 'Deep dive into Opus 5.5 reasoning, context window stability, and cross-domain synthesis.' },
                 { time: '8:30', label: '[Autonomous Cyber Defense]', text: 'Ethical AI security agents discovering micro-vulnerabilities in real-time.' },
                 { time: '14:00', label: '[Solid State Energy]', text: 'Hybrid quantum battery modeling and 5-minute EV fast charging.' }
