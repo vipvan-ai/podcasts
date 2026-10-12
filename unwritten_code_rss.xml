@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261012 -->
+    <item>
+      <title>The Slack Thumbs-Up vs. The Reply-All Disaster</title>
+      <itunes:title>The Slack Thumbs-Up vs. The Reply-All Disaster</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</itunes:summary>
+      <description><![CDATA[
+        <p><strong>The Slack Thumbs-Up vs. The Reply-All Disaster</strong></p>
+        <p>Maya & Julian launch The Unwritten Code by unpacking modern workplace messaging anxiety: why does a thumbs-up emoji on Slack feel passive-aggressive, the agony of the 'No-Hello' typing bubble, and who is still hitting reply-all to company emails?</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261012.mp3" length="5048256" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261012</guid>
+      <pubDate>Mon, 12 Oct 2026 10:51:05 +0000</pubDate>
+      <itunes:duration>10:39</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261010 -->
     <item>
       <title>The Weekend Docket: Wedding Plus-Ones &amp; Family Holiday Drama</title>
