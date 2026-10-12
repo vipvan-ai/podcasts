@@ -253,6 +253,14 @@ def build_weekend_recap_pipeline(is_sunday=False):
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     script = get_weekend_script(is_sunday=is_sunday)
+
+    # STRICT 5-MINUTE GUARDRAIL ENFORCEMENT
+    total_words = sum(len(turn["text"].split()) for turn in script)
+    num_turns = len(script)
+    print(f"Pre-flight audit: {num_turns} turns, {total_words} words", flush=True)
+    if total_words < 1200 or num_turns < 20:
+        raise ValueError(f"[ABORT] Weekend script violates 5-minute rule! Contains only {num_turns} turns and {total_words} words. Minimum requirement is 20 turns and 1,200 words.")
+
     audio_chunks = []
     pause_gap = np.zeros(int(sample_rate * 0.35), dtype=np.float32) # 350ms natural pause
 
@@ -360,6 +368,10 @@ def build_weekend_recap_pipeline(is_sunday=False):
     minutes = int(duration_sec // 60)
     seconds = int(duration_sec % 60)
     duration_str = f"{minutes:02d}:{seconds:02d}"
+
+    # STRICT 5-MINUTE DURATION GUARDRAIL
+    if duration_sec < 300.0:
+        raise ValueError(f"[ABORT] Mastered weekend audio duration {duration_sec:.1f}s ({minutes}m {seconds}s) is below required 5-minute standard (300s)! Refusing to publish.")
 
     print("==========================================================", flush=True)
     print(f"[SUCCESS] Mastered {day_name} Weekend Recap!", flush=True)
