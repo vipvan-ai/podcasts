@@ -32,16 +32,17 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
-      <itunes:summary>Using atom interferometry and Earth&#x27;s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
+      <itunes:summary>Using cold atom interferometry and Earth&#x27;s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
       <description><![CDATA[
-        <p>Using atom interferometry and Earth's subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.</p>
+        <p>Using cold atom interferometry and Earth's subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.</p>
       ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261012.mp3" length="638928" type="audio/mpeg" />
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261012.mp3" length="5122968" type="audio/mpeg" />
       <guid isPermaLink="false">future-human-daily-20261012</guid>
-      <pubDate>Mon, 12 Oct 2026 07:00:59 +0000</pubDate>
-      <itunes:duration>01:15</itunes:duration>
+      <pubDate>Mon, 12 Oct 2026 07:46:55 +0000</pubDate>
+      <itunes:duration>10:11</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
+
 
 
     <!-- WEEKEND RECAP: SUNDAY -->

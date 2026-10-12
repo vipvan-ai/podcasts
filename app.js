@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
             number: 'OCTOBER 12, 2026',
             date: 'October 12, 2026',
             title: 'Quantum Gravimeters & GPS-Free Navigation',
-            subtitle: 'Using atom interferometry and Earth\'s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.',
-            duration: '01:15',
-            durationSeconds: 75,
+            subtitle: 'Using cold atom interferometry and Earth\'s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.',
+            duration: '10:11',
+            durationSeconds: 611,
             audioUrl: 'audio/future_human_20261012.mp3',
             tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
             script: [
@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             notes: `
                 <h4>Episode Summary:</h4>
-                <p>Using atom interferometry and Earth\'s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.</p>
+                <p>Using cold atom interferometry and Earth\'s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.</p>
             `
         },
+
 
         {
             id: 'ep-weekend-sun-20261011',

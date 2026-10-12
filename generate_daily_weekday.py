@@ -141,6 +141,14 @@ def build_daily_weekday_pipeline():
     date_tag = now.strftime("%Y%m%d")
 
     title, summary, script_turns = get_future_human_script_for_day(day_idx, date_str)
+    
+    # STRICT 5-MINUTE GUARDRAIL ENFORCEMENT
+    total_words = sum(len(turn["text"].split()) for turn in script_turns)
+    num_turns = len(script_turns)
+    print(f"Pre-flight audit: {num_turns} turns, {total_words} words", flush=True)
+    if total_words < 1200 or num_turns < 20:
+        raise ValueError(f"[ABORT] Script violates 5-minute rule! Contains only {num_turns} turns and {total_words} words. Minimum requirement is 20 turns and 1,200 words.")
+
     out_mp3_name = f"future_human_{date_tag}.mp3"
     out_mp3 = AUDIO_DIR / out_mp3_name
     cache_dir = AUDIO_DIR / f"cache_fhd_{date_tag}"
@@ -149,7 +157,7 @@ def build_daily_weekday_pipeline():
     sample_rate = 24000
     print("==========================================================", flush=True)
     print(f"BUILDING FUTURE HUMAN DAILY: {title} ({date_str})", flush=True)
-    print(f"Total Turns: {len(script_turns)}", flush=True)
+    print(f"Total Turns: {len(script_turns)} | Word Count: {total_words}", flush=True)
     print("==========================================================", flush=True)
 
     audio_chunks = []
@@ -243,6 +251,10 @@ def build_daily_weekday_pipeline():
     seconds = int(duration_sec % 60)
     duration_str = f"{minutes:02d}:{seconds:02d}"
 
+    # STRICT 5-MINUTE DURATION GUARDRAIL
+    if duration_sec < 300.0:
+        raise ValueError(f"[ABORT] Mastered audio duration {duration_sec:.1f}s ({minutes}m {seconds}s) is below the required 5-minute standard (300s)! Refusing to publish.")
+
     print("==========================================================", flush=True)
     print(f"[SUCCESS] Mastered Future Human Daily for {date_str}!", flush=True)
     print(f"Duration: {minutes}m {seconds}s ({duration_sec:.2f}s)", flush=True)
@@ -314,7 +326,7 @@ def update_fhd_index_and_app(ep_title, ep_summary, mp3_filename, duration_str, d
         js_content = app_js.read_text(encoding="utf-8")
         ep_id = f"fhd-{date_tag}"
         if f"id: '{ep_id}'" in js_content:
-            pattern = re.compile(rf"\s*\{{\s*id:\s*'{ep_id}'.*?\}}\s*,", re.DOTALL)
+            pattern = re.compile(r"\s*\{\s*id:\s*'" + re.escape(ep_id) + r"'.*?\}\s*,", re.DOTALL)
             js_content = pattern.sub("", js_content)
 
         clean_title_js = ep_title.replace("'", "\\'")
