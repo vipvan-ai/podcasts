@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261012 -->
+    <item>
+      <title>Quantum Gravimeters &amp; GPS-Free Navigation</title>
+      <itunes:title>Quantum Gravimeters &amp; GPS-Free Navigation</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Using atom interferometry and Earth&#x27;s subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
+      <description><![CDATA[
+        <p>Using atom interferometry and Earth's subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261012.mp3" length="638928" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261012</guid>
+      <pubDate>Mon, 12 Oct 2026 07:00:59 +0000</pubDate>
+      <itunes:duration>01:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SUNDAY -->
     <item>
       <title>Sunday AI Catchup: Neural Dust &amp; Sub-Vocal Telepathy</title>
