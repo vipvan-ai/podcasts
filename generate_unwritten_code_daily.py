@@ -70,6 +70,31 @@ def synth_edge_turn(text, voice_key, sample_rate=24000):
             time.sleep(1.5)
     return None
 
+def synth_gtts_turn(text, voice_key, sample_rate=24000):
+    from gtts import gTTS
+    clean_text = re.sub(r'\[.*?\]', '', text).strip()
+    # Different accents for Maya vs Julian if needed
+    tld = 'co.uk' if voice_key in ['Puck', 'Julian'] else 'us'
+    for attempt in range(3):
+        tmp_path = BASE_DIR / f"_tmp_gtts_{time.time_ns()}.mp3"
+        try:
+            tts = gTTS(text=clean_text, lang='en', tld=tld)
+            tts.save(str(tmp_path))
+            if tmp_path.exists() and tmp_path.stat().st_size > 1000:
+                data, sr = sf.read(str(tmp_path))
+                tmp_path.unlink(missing_ok=True)
+                if data.ndim > 1:
+                    data = np.mean(data, axis=1)
+                if sr != sample_rate:
+                    num_samples = int(len(data) * sample_rate / sr)
+                    data = signal.resample(data, num_samples)
+                return data.astype(np.float32)
+        except Exception as e:
+            if tmp_path.exists():
+                tmp_path.unlink(missing_ok=True)
+            time.sleep(2)
+    return None
+
 # Audio Processing: Future Human Daily clean_turn & Studio Room Tone
 def clean_turn(x, sr=24000, gap_ms=60, max_artifact_ms=250, flat_thresh=0.3):
     x = np.asarray(x)
@@ -182,6 +207,13 @@ def synthesize_turn_with_cache(cache_key, voice_name, text):
     if edge_samples is not None:
         np.save(str(cache_file), edge_samples)
         return edge_samples
+
+    # gTTS Fallback
+    print(f" -> [gTTS Fallback] Synthesizing [{voice_name}]...", flush=True)
+    gtts_samples = synth_gtts_turn(text, voice_name)
+    if gtts_samples is not None:
+        np.save(str(cache_file), gtts_samples)
+        return gtts_samples
 
     return None
 

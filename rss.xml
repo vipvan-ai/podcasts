@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261013 -->
+    <item>
+      <title>Biomimetic Energy &amp; Wireless Resonant Power</title>
+      <itunes:title>Biomimetic Energy &amp; Wireless Resonant Power</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Powering future smart electronics through ambient RF harvesting and resonant magnetic coupling with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
+      <description><![CDATA[
+        <p>Powering future smart electronics through ambient RF harvesting and resonant magnetic coupling with Dr. Elena Vance & Alex Mercer.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261013.mp3" length="4298016" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261013</guid>
+      <pubDate>Tue, 13 Oct 2026 07:03:41 +0000</pubDate>
+      <itunes:duration>08:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261012 -->
     <item>
       <title>Quantum Gravimeters &amp; GPS-Free Navigation</title>
