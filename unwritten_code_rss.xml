@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261013 -->
+    <item>
+      <title>Who Pays on Date Three? (And The Ghosting Slow-Fade)</title>
+      <itunes:title>Who Pays on Date Three? (And The Ghosting Slow-Fade)</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian unpack modern dating etiquette: who pays on date three, the subtle art of the polite wallet reach, and why the slow-fade text message is emotional cowardice compared to honest closure.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Who Pays on Date Three? (And The Ghosting Slow-Fade)</strong></p>
+        <p>Maya & Julian unpack modern dating etiquette: who pays on date three, the subtle art of the polite wallet reach, and why the slow-fade text message is emotional cowardice compared to honest closure.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261013.mp3" length="5188896" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261013</guid>
+      <pubDate>Tue, 13 Oct 2026 09:31:07 +0000</pubDate>
+      <itunes:duration>10:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261012 -->
     <item>
       <title>The Slack Thumbs-Up vs. The Reply-All Disaster</title>
