@@ -7,3 +7,7 @@ audio/cache_*/*.pcm
 audio/cache_*/*.mp3
 __pycache__/
 *.pyc
+*.log
+_test*
+test_*
+daily_scripts_cache/

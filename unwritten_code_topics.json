@@ -1,0 +1,205 @@
+[
+  {
+    "id": "slack-thumbs-up",
+    "title": "The Slack Thumbs-Up vs. The Reply-All Disaster",
+    "category": "Workplace",
+    "description": "Workplace messaging anxiety: passive-aggressive thumbs-up emojis, no-hello messages, and company-wide reply-all meltdowns.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "who-pays-date-three",
+    "title": "Who Pays on Date Three? (And The Ghosting Slow-Fade)",
+    "category": "Dating",
+    "description": "Modern dating economics, the awkward wallet reach, and why the slow-fade text is worse than clean ghosting.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "birthday-dinner-tabs",
+    "title": "Birthday Dinner Bill Hostages & Runaway Group Chats",
+    "category": "Friendship",
+    "description": "The twelve-person birthday dinner tab split, Airbnb room inequalities, and escaping endless event group chats.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "airplane-armrest-wars",
+    "title": "Airplane Armrest Wars & Tipping Screen Fatigue",
+    "category": "Public Spaces",
+    "description": "Middle seat armrest ownership, seat reclining etiquette, and the iPad tip screen spinning around at counter checkout.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "roommate-sink-standoffs",
+    "title": "Roommate Sink Standoffs & Uninvited Houseguests",
+    "category": "Domestic",
+    "description": "The soaking skillet lie in the sink, unannounced in-law visits, and houseguests who overstay their welcome.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "weekend-docket-wedding-plus-ones",
+    "title": "The Weekend Docket: Wedding Plus-Ones & Family Holiday Drama",
+    "category": "Weekend Docket",
+    "description": "Putting moral dilemmas on trial: bridesmaid invoices, wedding plus-one exclusions, and sitting at the kids table at age thirty-two.",
+    "day_type": "saturday"
+  },
+  {
+    "id": "elevator-standoff-open-office",
+    "title": "The Elevator Standoff & Open-Plan Acoustic Warfare",
+    "category": "Workplace",
+    "description": "The placebo door-close button, speakerphone calls at open-plan desks, and breakroom microwave fish offenses.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "gym-equipment-squatter",
+    "title": "Gym Etiquette: The Equipment Squatter & Unsolicited Form Advice",
+    "category": "Public Spaces",
+    "description": "Scrolling social media on the leg press, reserving three machines during rush hour, and unsolicited gym advice.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "coffee-shop-squatters",
+    "title": "Coffee Shop Squatters & The Single Espresso Lease",
+    "category": "Dining & Cafe",
+    "description": "Buying one coffee and occupying a four-person table for eight hours, loud Zoom calls in cafes, and bathroom code ransom.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "grocery-express-cart-anarchy",
+    "title": "Grocery Store Checkout Standoffs & Parking Lot Cart Anarchy",
+    "category": "Retail & Errands",
+    "description": "Thirty items in the ten-or-fewer lane, abandoning shopping carts on parking curbs, and stalking walkers for spots.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "dinner-party-byob-trap",
+    "title": "Dinner Party Host Hostages & The BYOB Etiquette Trap",
+    "category": "Domestic & Dining",
+    "description": "Arriving thirty minutes early, trading cheap wine for the host's vintage Cabernet, and kicking out lingering guests at midnight.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "weekend-docket-bachelor-party-shakedown",
+    "title": "The Weekend Docket: Bachelor Party Shakedowns & Neighborhood Lawn Feuds",
+    "category": "Weekend Docket",
+    "description": "Listener trials: surprise $2,400 bachelor party invoices, mowing the lawn at 7:15 AM on Sunday, and borrowing pickup trucks.",
+    "day_type": "saturday"
+  },
+  {
+    "id": "venmo-micro-requests",
+    "title": "The Venmo Request for $1.87 & The Bill Splitting Standoff",
+    "category": "Friendship & Finance",
+    "description": "Itemized payment requests for a single slice of pizza, splitting shared Uber rides, and the boundary of petty money requests.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "pedestrian-sidewalk-etiquette",
+    "title": "Sidewalk Traffic Jams: Slow Walkers & Phone Head-Down Collisions",
+    "category": "Public Spaces",
+    "description": "Four people walking abreast on narrow sidewalks, people suddenly stopping in doorways to check text messages, and dog leash tripwires.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "texting-cadence-and-voice-memos",
+    "title": "The Seven-Minute Voice Memo & The Unannounced Phone Call",
+    "category": "Digital Life",
+    "description": "Why calling someone without texting first feels like a home invasion, the podcast-length voice note, and double-text anxiety.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "hotel-breakfast-and-buffet-raids",
+    "title": "Continental Breakfast Smuggling & Pool Chair Reservations",
+    "category": "Travel",
+    "description": "Hoarding four mini boxes of cereal in your suitcase, claiming pool loungers at 6:00 AM with towels, and the waffle maker queue.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "movie-theater-etiquette",
+    "title": "Movie Theater Screen Glow & Popcorn Shuffling Crimes",
+    "category": "Entertainment",
+    "description": "Smartwatch flashlight beams, talking to the screen during plot twists, and arriving fifteen minutes after the movie started.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "weekend-docket-wedding-registry-audits",
+    "title": "The Weekend Docket: Wedding Registry Audits & Borrowed Tuxedos",
+    "category": "Weekend Docket",
+    "description": "Listener moral trials: couples demanding cash instead of gifts, guests wearing white, and the borrowed bridesmaid dress disaster.",
+    "day_type": "saturday"
+  },
+  {
+    "id": "rideshare-passenger-conduct",
+    "title": "Uber Small-Talk Anxiety & Front Seat Confusion",
+    "category": "Transit",
+    "description": "Sitting in the front seat vs back seat, eating greasy food in an Uber, and the delicate dance of quiet ride preference.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "social-plans-cancellation-flaking",
+    "title": "The Last-Minute Flake & The 'Let's Hang Out Soon' Lie",
+    "category": "Friendship",
+    "description": "Canceling thirty minutes before dinner with vague excuses, ghost plans that never materialize, and the joy of canceled plans.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "doctor-waiting-room-acoustics",
+    "title": "Waiting Room Speakerphones & Sneezing Without Cover",
+    "category": "Public Spaces",
+    "description": "Full-volume FaceTime calls in medical waiting rooms, coughing openly in tight elevators, and taking three magazines home.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "dog-park-politics",
+    "title": "Dog Park Politics & The Off-Leash Entitlement",
+    "category": "Pets & Community",
+    "description": "Owners who ignore their misbehaving dogs while scrolling phones, unsolicited pet training advice, and unpicked poop standoffs.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "restaurant-reservation-etiquette",
+    "title": "Table Hogging at Trendy Bistros & The 'Just One More Drink' Stall",
+    "category": "Dining",
+    "description": "Holding a reservation when half your party is forty-five minutes late, splitting eight cards at fine dining, and sending food back.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "weekend-docket-borrowed-cars-lawnmowers",
+    "title": "The Weekend Docket: The Empty Gas Tank & The Sublet Mower",
+    "category": "Weekend Docket",
+    "description": "Listener dilemma trials: returning borrowed cars on empty, lending neighbor tools to third parties, and fence line boundary wars.",
+    "day_type": "saturday"
+  },
+  {
+    "id": "tailgating-and-highway-lane-discipline",
+    "title": "Left-Lane Campers & The Passive-Aggressive High-Beams",
+    "category": "Transit & Driving",
+    "description": "Driving fifty-five in the passing lane, merging at the last second of a zipper merge, and the courtesy thank-you wave.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "remote-work-video-call-backgrounds",
+    "title": "Zoom Virtual Background Illusions & Accidental Unmuting",
+    "category": "Workplace",
+    "description": "Spouses walking behind video calls in underwear, pet cameos during serious corporate audits, and typing loudly while unmuted.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "second-date-red-flags",
+    "title": "Second Date Interrogations: Ex Talk & The Job Interview Vibe",
+    "category": "Dating",
+    "description": "Treating a date like a police interrogation, venting about an ex for two hours, and judging someone by their astrological sign.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "thrift-store-and-flea-market-bargaining",
+    "title": "The Flea Market Lowball & Garage Sale Territorial Fights",
+    "category": "Retail & Shopping",
+    "description": "Offering three dollars on a fifty-dollar antique, hovering over someone's estate sale basket, and grabbing items from other carts.",
+    "day_type": "weekday"
+  },
+  {
+    "id": "weekend-docket-family-holiday-flight-wars",
+    "title": "The Weekend Docket: Thanksgiving Flight Seat Swaps & In-Law Feuds",
+    "category": "Weekend Docket",
+    "description": "Listener trials: strangers demanding your extra-legroom seat so their family can sit together, and in-law holiday gift audits.",
+    "day_type": "saturday"
+  }
+]

@@ -15,6 +15,7 @@ from google import genai
 from google.genai import types
 
 from future_human_weekday_scripts import get_future_human_script_for_day
+from generate_future_human_script import get_or_create_future_human_script
 from rss_utils import sanitize_xml_text, validate_and_save_rss
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -140,7 +141,7 @@ def build_daily_weekday_pipeline():
     date_str = now.strftime("%B %d, %Y")
     date_tag = now.strftime("%Y%m%d")
 
-    title, summary, script_turns = get_future_human_script_for_day(day_idx, date_str)
+    title, summary, script_turns = get_or_create_future_human_script(now)
     
     # STRICT 5-MINUTE GUARDRAIL ENFORCEMENT
     total_words = sum(len(turn["text"].split()) for turn in script_turns)

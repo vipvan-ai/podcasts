@@ -1,0 +1,52 @@
+[
+  {
+    "date": "2026-09-30",
+    "topic_id": "ambient-energy-harvesting",
+    "title": "Ambient Energy Harvesting & Battery-Free Electronics"
+  },
+  {
+    "date": "2026-10-01",
+    "topic_id": "mrna-cancer-vaccines",
+    "title": "Personalized mRNA Cancer Vaccines & Immune Training"
+  },
+  {
+    "date": "2026-10-02",
+    "topic_id": "neuromorphic-acoustic-sensors",
+    "title": "Neuromorphic Acoustic AI Sensors & Ultrasound Diagnostics"
+  },
+  {
+    "date": "2026-10-05",
+    "topic_id": "photonic-neural-chips",
+    "title": "Photonic Neural Chips & Light-Speed Optical Computing"
+  },
+  {
+    "date": "2026-10-06",
+    "topic_id": "neural-dust-bci",
+    "title": "Neural Dust & Ultrasound-Powered Micro BCI Transceivers"
+  },
+  {
+    "date": "2026-10-07",
+    "topic_id": "cellular-reprogramming",
+    "title": "Cellular Reprogramming & Epigenetic Aging Reversal"
+  },
+  {
+    "date": "2026-10-08",
+    "topic_id": "organoid-intelligence",
+    "title": "Organoid Intelligence & Biocomputers"
+  },
+  {
+    "date": "2026-10-09",
+    "topic_id": "solid-state-batteries",
+    "title": "Solid-State Batteries & Silicon-Anode Breakthroughs"
+  },
+  {
+    "date": "2026-10-12",
+    "topic_id": "quantum-gravimeters",
+    "title": "Quantum Gravimeters & GPS-Free Navigation"
+  },
+  {
+    "date": "2026-10-13",
+    "topic_id": "biomimetic-energy-wireless-power",
+    "title": "Biomimetic Energy & Wireless Resonant Power"
+  }
+]

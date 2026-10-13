@@ -48,26 +48,24 @@ EDGE_VOICES = {
 def synth_edge_turn(text, voice_key, sample_rate=24000):
     voice = EDGE_VOICES.get(voice_key, "en-US-AriaNeural")
     clean_text = re.sub(r'\[.*?\]', '', text).strip()
-    for attempt in range(5):
-        tmp_path = BASE_DIR / f"_tmp_edge_uc_{time.time_ns()}.mp3"
-        async def _run():
-            communicate = edge_tts.Communicate(clean_text, voice, rate="+0%", pitch="+0Hz")
-            await communicate.save(str(tmp_path))
-        try:
-            asyncio.run(_run())
-            if tmp_path.exists() and tmp_path.stat().st_size > 1000:
-                data, sr = sf.read(str(tmp_path))
-                tmp_path.unlink(missing_ok=True)
-                if data.ndim > 1:
-                    data = np.mean(data, axis=1)
-                if sr != sample_rate:
-                    num_samples = int(len(data) * sample_rate / sr)
-                    data = signal.resample(data, num_samples)
-                return data.astype(np.float32)
-        except Exception:
-            if tmp_path.exists():
-                tmp_path.unlink(missing_ok=True)
-            time.sleep(1.5)
+    tmp_path = BASE_DIR / f"_tmp_edge_uc_{time.time_ns()}.mp3"
+    async def _run():
+        communicate = edge_tts.Communicate(clean_text, voice, rate="+0%", pitch="+0Hz")
+        await communicate.save(str(tmp_path))
+    try:
+        asyncio.run(_run())
+        if tmp_path.exists() and tmp_path.stat().st_size > 1000:
+            data, sr = sf.read(str(tmp_path))
+            tmp_path.unlink(missing_ok=True)
+            if data.ndim > 1:
+                data = np.mean(data, axis=1)
+            if sr != sample_rate:
+                num_samples = int(len(data) * sample_rate / sr)
+                data = signal.resample(data, num_samples)
+            return data.astype(np.float32)
+    except Exception:
+        if tmp_path.exists():
+            tmp_path.unlink(missing_ok=True)
     return None
 
 def synth_gtts_turn(text, voice_key, sample_rate=24000):
@@ -170,36 +168,34 @@ def synthesize_turn_with_cache(cache_key, voice_name, text):
         print(f" -> [{voice_name}] Loaded from cache!", flush=True)
         return np.load(str(cache_file))
 
-    for model_name in TTS_MODELS:
-        for attempt in range(2):
-            try:
-                print(f" -> Synthesizing [{voice_name}] via {model_name}...", flush=True)
-                resp = client.models.generate_content(
-                    model=model_name,
-                    contents=text,
-                    config=types.GenerateContentConfig(
-                        response_modalities=["AUDIO"],
-                        speech_config=types.SpeechConfig(
-                            voice_config=types.VoiceConfig(
-                                prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
-                            )
+    for model_name in TTS_MODELS[:2]:
+        try:
+            print(f" -> Synthesizing [{voice_name}] via {model_name}...", flush=True)
+            resp = client.models.generate_content(
+                model=model_name,
+                contents=text,
+                config=types.GenerateContentConfig(
+                    response_modalities=["AUDIO"],
+                    speech_config=types.SpeechConfig(
+                        voice_config=types.VoiceConfig(
+                            prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
                         )
                     )
                 )
-                part = resp.candidates[0].content.parts[0]
-                if part.inline_data:
-                    data = part.inline_data.data
-                    if isinstance(data, str): data = base64.b64decode(data)
-                    raw_samples = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
-                    np.save(str(cache_file), raw_samples)
-                    return raw_samples
-            except Exception as e:
-                err_str = str(e)
-                if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
-                    print(f"    [{model_name}] Rate limited. Waiting 15s...", flush=True)
-                    time.sleep(15)
-                else:
-                    time.sleep(2)
+            )
+            part = resp.candidates[0].content.parts[0]
+            if part.inline_data:
+                data = part.inline_data.data
+                if isinstance(data, str): data = base64.b64decode(data)
+                raw_samples = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
+                np.save(str(cache_file), raw_samples)
+                return raw_samples
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
+                print(f"    [{model_name}] Rate limited. Trying fallback...", flush=True)
+            else:
+                print(f"    [{model_name}] Error: {e}", flush=True)
 
     # Edge-TTS Fallback
     print(f" -> [Edge-TTS Fallback] Synthesizing [{voice_name}]...", flush=True)
@@ -301,11 +297,14 @@ def run_daily_pipeline():
     date_str = now.strftime("%B %d, %Y")
     date_tag = now.strftime("%Y%m%d")
 
-    ep_num, ep_title, ep_summary, script_turns = get_script_for_day(day_idx)
+    iso_week = now.isocalendar().week
+    week_idx = max(0, iso_week - 41) % 2
+
+    ep_num, ep_title, ep_summary, script_turns = get_script_for_day(day_idx, date_str=date_str, week_idx=week_idx)
 
     print("==========================================================", flush=True)
     print(f"RUNNING DAILY PODCAST GENERATOR: THE UNWRITTEN CODE", flush=True)
-    print(f"Date: {date_str} (Day {day_idx}) | Episode: {ep_num}", flush=True)
+    print(f"Date: {date_str} (Day {day_idx}, Week {week_idx}) | Episode: {ep_num}", flush=True)
     print(f"Title: {ep_title}", flush=True)
     print(f"Total Turns: {len(script_turns)}", flush=True)
     print("==========================================================", flush=True)
@@ -319,8 +318,10 @@ def run_daily_pipeline():
     audio_chunks = []
     pause_gap = np.zeros(int(sample_rate * 0.32), dtype=np.float32)
 
+    import hashlib
     for idx, turn in enumerate(script_turns):
-        cache_key = f"unwritten_code_{date_tag}_turn_{idx+1}_{turn['speaker']}"
+        text_hash = hashlib.md5(turn["text"].encode("utf-8")).hexdigest()[:8]
+        cache_key = f"unwritten_code_{date_tag}_turn_{idx+1}_{turn['speaker']}_{text_hash}"
         raw_samples = synthesize_turn_with_cache(cache_key, turn["voice"], turn["text"])
         if raw_samples is None:
             print(f"[Error] Failed to synthesize turn {idx+1}!")
