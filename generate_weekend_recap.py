@@ -14,7 +14,7 @@ from datetime import datetime
 from google import genai
 from google.genai import types
 
-from generate_weekend_script import get_weekend_script
+from generate_future_human_weekend_script import get_or_create_weekend_script
 
 BASE_DIR = Path(__file__).resolve().parent
 AUDIO_DIR = BASE_DIR / "audio"
@@ -252,7 +252,7 @@ def build_weekend_recap_pipeline(is_sunday=False):
     cache_dir = AUDIO_DIR / f"cache_weekend_{tag_suffix}_{date_tag}"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
-    script = get_weekend_script(is_sunday=is_sunday)
+    ep_title, ep_summary, script = get_or_create_weekend_script(datetime.now(), is_sunday=is_sunday)
 
     # STRICT 5-MINUTE GUARDRAIL ENFORCEMENT
     total_words = sum(len(turn["text"].split()) for turn in script)
@@ -379,13 +379,7 @@ def build_weekend_recap_pipeline(is_sunday=False):
     print(f"Output MP3: {out_mp3}", flush=True)
     print("==========================================================", flush=True)
 
-    # Update RSS feed
-    if is_sunday:
-        ep_title = "Sunday AI Catchup: Neural Dust & Sub-Vocal Telepathy"
-        ep_summary = "Veda & Rami wrap up the weekend with a relaxed catchup on ultrasound-powered neural dust, zero glial scarring, and sub-vocal speech decoding interfaces."
-    else:
-        ep_title = "Saturday Weekend Recap: Photonic Chips & Whisper-Quiet Drones"
-        ep_summary = "Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones."
+    # Update RSS feed (title & summary come from today's ledger-generated script)
 
     file_size = out_mp3.stat().st_size if out_mp3.exists() else 0
     update_weekend_rss(day_name, tag_suffix, date_tag, ep_title, ep_summary, out_mp3_name, duration_str, file_size)
@@ -399,7 +393,7 @@ def publish_to_github(commit_message):
     import subprocess
     try:
         print("[GIT PUBLISH] Staging updated RSS feed and episode audio...", flush=True)
-        subprocess.run(["git", "add", "index.html", "app.js", "rss.xml", "audio/", "*.py"], cwd=str(BASE_DIR), check=True)
+        subprocess.run(["git", "add", "index.html", "app.js", "rss.xml", "audio/", "*.py", "future_human_history.json", "future_human_topics.json"], cwd=str(BASE_DIR), check=True)
         print(f"[GIT PUBLISH] Committing: {commit_message}", flush=True)
         subprocess.run(["git", "commit", "-m", commit_message], cwd=str(BASE_DIR), check=False)
         print("[GIT PUBLISH] Pushing to origin master...", flush=True)

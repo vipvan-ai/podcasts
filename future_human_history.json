@@ -1,0 +1,155 @@
+[
+  {
+    "date": "2026-09-26",
+    "kind": "weekday",
+    "topic_id": "aired-20260926-the-age-of-synthetic-telepathy",
+    "title": "The Age of Synthetic Telepathy",
+    "summary": "Alex Mercer and Dr. Elena Vance simplify Brain-Computer Interfaces, neural bandwidth, and mind-to-mind intimacy.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep001-20260926"
+  },
+  {
+    "date": "2026-09-27",
+    "kind": "weekday",
+    "topic_id": "aired-20260927-cellular-reprogramming-resetting-biological-age-clocks",
+    "title": "Cellular Reprogramming & Resetting Biological Age Clocks",
+    "summary": "Can Yamanaka factors turn back your biological clock without turning cells into tumors? Alex Mercer & Dr. Elena Vance debate partial epigenetic resets, rejuvenation science, and extend healthspan vs lifespan.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep003-20260927"
+  },
+  {
+    "date": "2026-09-27",
+    "kind": "weekday",
+    "topic_id": "aired-20260927-targeted-dream-incubation-neuro-hacking",
+    "title": "Targeted Dream Incubation & Neuro-Hacking",
+    "summary": "Can technology guide, record, or hack what happens inside your sleeping mind? Alex Mercer & Dr. Elena Vance debate MIT's Dormio project, sleep side-hustles, and dream ads.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep002-20260927"
+  },
+  {
+    "date": "2026-09-28",
+    "kind": "weekday",
+    "topic_id": "aired-20260928-quantum-biomagnetism-non-invasive-brain-mapping",
+    "title": "Quantum Biomagnetism & Non-Invasive Brain Mapping",
+    "summary": "Can optically pumped quantum sensors read tiny femtotesla brain magnetic signals without surgery? Alex Mercer & Dr. Elena Vance break down quantum MEG helmets and real-time AI noise cancellation.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep004-20260928"
+  },
+  {
+    "date": "2026-09-29",
+    "kind": "weekday",
+    "topic_id": "aired-20260929-neuromorphic-optical-chips-photonic-brain-computing",
+    "title": "Neuromorphic Optical Chips & Photonic Brain Computing",
+    "summary": "Can light replace electricity to compute artificial intelligence at the speed of light? Alex Mercer & Dr. Elena Vance break down optical waveguides, non-volatile optical memory, and zero-heat AI processing.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep005-20260929"
+  },
+  {
+    "date": "2026-09-30",
+    "kind": "weekday",
+    "topic_id": "aired-20260930-ambient-energy-harvesting-battery-free-electronics",
+    "title": "Ambient Energy Harvesting & Battery-Free Electronics",
+    "summary": "Can everyday footsteps, indoor lighting, and ambient Wi-Fi energy power our electronics forever without charging cables? Alex Mercer & Dr. Elena Vance break down piezoelectric crystals, triboelectric nanogenerators, and battery-free pacemakers.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep006-20260930"
+  },
+  {
+    "date": "2026-10-01",
+    "kind": "weekday",
+    "topic_id": "aired-20261001-personalized-mrna-cancer-vaccines-immune-training",
+    "title": "Personalized mRNA Cancer Vaccines & Immune Training",
+    "summary": "Can a custom mRNA vaccine train your body's T-cells to hunt down tumor mutations with surgical precision? Alex Mercer & Dr. Elena Vance break down therapeutic cancer vaccines, neoantigen flags, and 18-day bio-printing turnaround times.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep007-20261001"
+  },
+  {
+    "date": "2026-10-02",
+    "kind": "weekday",
+    "topic_id": "aired-20261002-neuromorphic-acoustic-ai-sensors-ultrasound-diagnostics",
+    "title": "Neuromorphic Acoustic AI Sensors & Ultrasound Diagnostics",
+    "summary": "Can micro-acoustic MEMS patches listen to internal blood flow micro-swirls and catch arterial blockages years before a heart attack occurs? Alex Mercer & Dr. Elena Vance break down continuous bio-acoustics, spiking neural microchips, and nocturnal asthma monitoring.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep008-20261002"
+  },
+  {
+    "date": "2026-10-06",
+    "kind": "weekday",
+    "topic_id": "aired-20261006-photonic-neural-chips-light-speed-optical-computing",
+    "title": "Photonic Neural Chips & Light-Speed Optical Computing",
+    "summary": "Replacing copper wires with laser beams! Alex Mercer & Dr. Elena Vance break down photonic neural processing, wave interference matrix math, and 100x lower energy AI computing.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep009-20261006"
+  },
+  {
+    "date": "2026-10-08",
+    "kind": "weekday",
+    "topic_id": "aired-20261008-organoid-intelligence-dna-biocomputing",
+    "title": "Organoid Intelligence & DNA Biocomputing",
+    "summary": "Living human neuron clusters wired to silicon microchips, and dense DNA data storage that stores all the world's knowledge in a single teaspoon with Dr. Elena Vance & Alex Mercer.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-20261008"
+  },
+  {
+    "date": "2026-10-08",
+    "kind": "weekday",
+    "topic_id": "aired-20261008-neural-dust-ultrasound-powered-micro-bci-transceivers",
+    "title": "Neural Dust & Ultrasound-Powered Micro BCI Transceivers",
+    "summary": "Wireless ultrasound neural sensors smaller than sand grains! Alex Mercer & Dr. Elena Vance break down battery-free BCI motes, zero glial scar formation, and electro-ceutical therapies.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-ep010-20261008"
+  },
+  {
+    "date": "2026-10-09",
+    "kind": "weekday",
+    "topic_id": "aired-20261009-synthetic-telepathy-high-bandwidth-neural-interfaces",
+    "title": "Synthetic Telepathy & High-Bandwidth Neural Interfaces",
+    "summary": "Sub-vocal speech decoding, high-bandwidth cortical arrays, and mind-to-mind emotional intimacy without typing on glowing glass rectangles with Dr. Elena Vance & Alex Mercer.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-20261009"
+  },
+  {
+    "date": "2026-10-10",
+    "kind": "saturday_recap",
+    "topic_id": "aired-20261010-saturday-weekend-recap-photonic-chips-whisper-quiet-drones",
+    "title": "Saturday Weekend Recap: Photonic Chips & Whisper-Quiet Drones",
+    "summary": "Veda & Rami kick back with Saturday morning coffee to break down light-speed photonic computing, split-second robotics reflexes, and toroidal delivery drones.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-weekend-sat-20261010"
+  },
+  {
+    "date": "2026-10-11",
+    "kind": "sunday",
+    "topic_id": "aired-20261011-sunday-ai-catchup-neural-dust-sub-vocal-telepathy",
+    "title": "Sunday AI Catchup: Neural Dust & Sub-Vocal Telepathy",
+    "summary": "Veda & Rami wrap up the weekend with a relaxed catchup on ultrasound-powered neural dust, zero glial scarring, and sub-vocal speech decoding interfaces.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-weekend-sun-20261011"
+  },
+  {
+    "date": "2026-10-12",
+    "kind": "weekday",
+    "topic_id": "aired-20261012-quantum-gravimeters-gps-free-navigation",
+    "title": "Quantum Gravimeters & GPS-Free Navigation",
+    "summary": "Using cold atom interferometry and Earth's subtle gravitational variations to navigate anywhere on the planet without satellite signals with Dr. Elena Vance & Alex Mercer.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-20261012"
+  },
+  {
+    "date": "2026-10-13",
+    "kind": "weekday",
+    "topic_id": "aired-20261013-biomimetic-energy-wireless-resonant-power",
+    "title": "Biomimetic Energy & Wireless Resonant Power",
+    "summary": "Powering future smart electronics through ambient RF harvesting and resonant magnetic coupling with Dr. Elena Vance & Alex Mercer.",
+    "source": "seeded-from-rss",
+    "guid": "future-human-daily-20261013"
+  },
+  {
+    "date": "2026-10-14",
+    "kind": "weekday",
+    "topic_id": "solid-state-batteries",
+    "title": "Solid-State Batteries & the Ten-Minute EV Charge",
+    "summary": "Alex and Dr. Vance explore how replacing flammable liquid electrolytes with solid ceramics and sulfides could eliminate battery fires, double range, and make charging an EV as fast as grabbing a morning cup of coffee.",
+    "source": "generated",
+    "recorded_at": "2026-10-13T14:43:16"
+  }
+]

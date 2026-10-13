@@ -11,3 +11,4 @@ __pycache__/
 _test*
 test_*
 daily_scripts_cache/
+future_human_scripts_cache/
