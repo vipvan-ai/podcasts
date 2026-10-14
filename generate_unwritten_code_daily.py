@@ -4,8 +4,6 @@ import time
 import base64
 import subprocess
 import re
-import asyncio
-import edge_tts
 import numpy as np
 import scipy.signal as signal
 from scipy.signal import butter, sosfilt
@@ -34,64 +32,8 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY", ""))
 TTS_MODELS = [
     'gemini-3.8-flash-tts',
     'gemini-3.8-flash-lite-tts',
-    'gemini-2.5-flash-preview-tts',
-    'gemini-3.1-flash-tts-preview'
+    'gemini-3.1-flash-tts-preview',
 ]
-
-EDGE_VOICES = {
-    "Kore": "en-US-AriaNeural",
-    "Puck": "en-US-GuyNeural",
-    "Maya": "en-US-AriaNeural",
-    "Julian": "en-US-GuyNeural"
-}
-
-def synth_edge_turn(text, voice_key, sample_rate=24000):
-    voice = EDGE_VOICES.get(voice_key, "en-US-AriaNeural")
-    clean_text = re.sub(r'\[.*?\]', '', text).strip()
-    tmp_path = BASE_DIR / f"_tmp_edge_uc_{time.time_ns()}.mp3"
-    async def _run():
-        communicate = edge_tts.Communicate(clean_text, voice, rate="+0%", pitch="+0Hz")
-        await communicate.save(str(tmp_path))
-    try:
-        asyncio.run(_run())
-        if tmp_path.exists() and tmp_path.stat().st_size > 1000:
-            data, sr = sf.read(str(tmp_path))
-            tmp_path.unlink(missing_ok=True)
-            if data.ndim > 1:
-                data = np.mean(data, axis=1)
-            if sr != sample_rate:
-                num_samples = int(len(data) * sample_rate / sr)
-                data = signal.resample(data, num_samples)
-            return data.astype(np.float32)
-    except Exception:
-        if tmp_path.exists():
-            tmp_path.unlink(missing_ok=True)
-    return None
-
-def synth_gtts_turn(text, voice_key, sample_rate=24000):
-    from gtts import gTTS
-    clean_text = re.sub(r'\[.*?\]', '', text).strip()
-    # Different accents for Maya vs Julian if needed
-    tld = 'co.uk' if voice_key in ['Puck', 'Julian'] else 'us'
-    for attempt in range(3):
-        tmp_path = BASE_DIR / f"_tmp_gtts_{time.time_ns()}.mp3"
-        try:
-            tts = gTTS(text=clean_text, lang='en', tld=tld)
-            tts.save(str(tmp_path))
-            if tmp_path.exists() and tmp_path.stat().st_size > 1000:
-                data, sr = sf.read(str(tmp_path))
-                tmp_path.unlink(missing_ok=True)
-                if data.ndim > 1:
-                    data = np.mean(data, axis=1)
-                if sr != sample_rate:
-                    num_samples = int(len(data) * sample_rate / sr)
-                    data = signal.resample(data, num_samples)
-                return data.astype(np.float32)
-        except Exception as e:
-            if tmp_path.exists():
-                tmp_path.unlink(missing_ok=True)
-            time.sleep(2)
-    return None
 
 # Audio Processing: Future Human Daily clean_turn & Studio Room Tone
 def clean_turn(x, sr=24000, gap_ms=60, max_artifact_ms=250, flat_thresh=0.3):
@@ -168,50 +110,46 @@ def synthesize_turn_with_cache(cache_key, voice_name, text):
         print(f" -> [{voice_name}] Loaded from cache!", flush=True)
         return np.load(str(cache_file))
 
-    for model_name in TTS_MODELS[:2]:
-        try:
-            print(f" -> Synthesizing [{voice_name}] via {model_name}...", flush=True)
-            resp = client.models.generate_content(
-                model=model_name,
-                contents=text,
-                config=types.GenerateContentConfig(
-                    response_modalities=["AUDIO"],
-                    speech_config=types.SpeechConfig(
-                        voice_config=types.VoiceConfig(
-                            prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
+    tts_clean_text = text.strip()
+    MAX_ATTEMPTS = 8
+    BACKOFF_SECONDS = 35
+
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        for model_name in TTS_MODELS:
+            try:
+                print(f" -> Synthesizing [{voice_name}] via {model_name} (attempt {attempt}/{MAX_ATTEMPTS})...", flush=True)
+                resp = client.models.generate_content(
+                    model=model_name,
+                    contents=tts_clean_text,
+                    config=types.GenerateContentConfig(
+                        response_modalities=["AUDIO"],
+                        speech_config=types.SpeechConfig(
+                            voice_config=types.VoiceConfig(
+                                prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
+                            )
                         )
                     )
                 )
-            )
-            part = resp.candidates[0].content.parts[0]
-            if part.inline_data:
-                data = part.inline_data.data
-                if isinstance(data, str): data = base64.b64decode(data)
-                raw_samples = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
-                np.save(str(cache_file), raw_samples)
-                return raw_samples
-        except Exception as e:
-            err_str = str(e)
-            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str:
-                print(f"    [{model_name}] Rate limited. Trying fallback...", flush=True)
-            else:
-                print(f"    [{model_name}] Error: {e}", flush=True)
+                part = resp.candidates[0].content.parts[0]
+                if part.inline_data:
+                    data = part.inline_data.data
+                    if isinstance(data, str): data = base64.b64decode(data)
+                    raw_samples = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
+                    np.save(str(cache_file), raw_samples)
+                    print(f"    [Success ({model_name})] Cached {len(raw_samples)} samples.", flush=True)
+                    return raw_samples
+            except Exception as e:
+                err_str = str(e)
+                if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str or "503" in err_str:
+                    print(f"    [{model_name}] Rate limited/unavailable. Will retry.", flush=True)
+                else:
+                    print(f"    [{model_name}] Warning: {err_str[:120]}", flush=True)
 
-    # Edge-TTS Fallback
-    print(f" -> [Edge-TTS Fallback] Synthesizing [{voice_name}]...", flush=True)
-    edge_samples = synth_edge_turn(text, voice_name)
-    if edge_samples is not None:
-        np.save(str(cache_file), edge_samples)
-        return edge_samples
+        if attempt < MAX_ATTEMPTS:
+            print(f" -> Quota/rate limit reached across models. Waiting {BACKOFF_SECONDS}s before retry round {attempt + 1}...", flush=True)
+            time.sleep(BACKOFF_SECONDS)
 
-    # gTTS Fallback
-    print(f" -> [gTTS Fallback] Synthesizing [{voice_name}]...", flush=True)
-    gtts_samples = synth_gtts_turn(text, voice_name)
-    if gtts_samples is not None:
-        np.save(str(cache_file), gtts_samples)
-        return gtts_samples
-
-    return None
+    raise RuntimeError(f"[TTS FAILURE] Exhausted {MAX_ATTEMPTS} attempts for [{voice_name}]. Refusing to use generic voices to maintain podcast quality.")
 
 def update_unwritten_code_rss(date_tag, date_str, ep_title, ep_summary, mp3_filename, duration_str, file_size_bytes):
     rss_file = BASE_DIR / "unwritten_code_rss.xml"
