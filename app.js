@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261014',
+            number: 'OCTOBER 14, 2026',
+            date: 'October 14, 2026',
+            title: 'Solid-State Batteries & the Ten-Minute EV Charge',
+            subtitle: 'Alex and Dr. Vance explore how replacing flammable liquid electrolytes with solid ceramics and sulfides could eliminate battery fires, double range, and make charging an EV as fast as grabbing a morning cup of coffee.',
+            duration: '10:28',
+            durationSeconds: 628,
+            audioUrl: 'audio/future_human_20261014.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 14, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Dr. Vance explore how replacing flammable liquid electrolytes with solid ceramics and sulfides could eliminate battery fires, double range, and make charging an EV as fast as grabbing a morning cup of coffee.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261013',
             number: 'OCTOBER 13, 2026',
             date: 'October 13, 2026',

@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261014 -->
+    <item>
+      <title>Solid-State Batteries &amp; the Ten-Minute EV Charge</title>
+      <itunes:title>Solid-State Batteries &amp; the Ten-Minute EV Charge</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex and Dr. Vance explore how replacing flammable liquid electrolytes with solid ceramics and sulfides could eliminate battery fires, double range, and make charging an EV as fast as grabbing a morning cup of coffee.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex and Dr. Vance explore how replacing flammable liquid electrolytes with solid ceramics and sulfides could eliminate battery fires, double range, and make charging an EV as fast as grabbing a morning cup of coffee.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261014.mp3" length="5356944" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261014</guid>
+      <pubDate>Wed, 14 Oct 2026 07:04:15 +0000</pubDate>
+      <itunes:duration>10:28</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261013 -->
     <item>
       <title>Biomimetic Energy &amp; Wireless Resonant Power</title>
