@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261014 -->
+    <item>
+      <title>Coffee Shop Squatters &amp; The Single Espresso Lease</title>
+      <itunes:title>Coffee Shop Squatters &amp; The Single Espresso Lease</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian unpack neighborhood cafe etiquette: buying a three-dollar drip coffee and claiming a four-person table with an extension cord for eight hours, taking loud Zoom meetings in quiet cafes, and the tip jar stare.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Coffee Shop Squatters &amp; The Single Espresso Lease</strong></p>
+        <p>Maya & Julian unpack neighborhood cafe etiquette: buying a three-dollar drip coffee and claiming a four-person table with an extension cord for eight hours, taking loud Zoom meetings in quiet cafes, and the tip jar stare.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261014.mp3" length="4754592" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261014</guid>
+      <pubDate>Wed, 14 Oct 2026 09:04:16 +0000</pubDate>
+      <itunes:duration>10:34</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261013 -->
     <item>
       <title>Gym Etiquette: The Equipment Squatter &amp; Unsolicited Form Advice</title>
