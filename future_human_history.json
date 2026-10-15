@@ -151,5 +151,14 @@
     "summary": "Alex and Dr. Vance explore how replacing flammable liquid electrolytes with solid ceramics and sulfides could eliminate battery fires, double range, and make charging an EV as fast as grabbing a morning cup of coffee.",
     "source": "generated",
     "recorded_at": "2026-10-13T14:43:16"
+  },
+  {
+    "date": "2026-10-15",
+    "kind": "weekday",
+    "topic_id": "crispr-base-editing",
+    "title": "Base Editing & Prime Editing: CRISPR's Precision Pencil",
+    "summary": "Alex Mercer and Dr. Elena Vance explore how base and prime editing move beyond traditional CRISPR scissors to chemically rewrite single DNA letters, paving the way for one-shot cures for sickle cell disease and inherited high cholesterol.",
+    "source": "generated",
+    "recorded_at": "2026-10-15T07:04:57"
   }
 ]

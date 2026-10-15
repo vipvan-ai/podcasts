@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261015 -->
+    <item>
+      <title>Base Editing &amp; Prime Editing: CRISPR&#x27;s Precision Pencil</title>
+      <itunes:title>Base Editing &amp; Prime Editing: CRISPR&#x27;s Precision Pencil</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how base and prime editing move beyond traditional CRISPR scissors to chemically rewrite single DNA letters, paving the way for one-shot cures for sickle cell disease and inherited high cholesterol.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how base and prime editing move beyond traditional CRISPR scissors to chemically rewrite single DNA letters, paving the way for one-shot cures for sickle cell disease and inherited high cholesterol.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261015.mp3" length="5445504" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261015</guid>
+      <pubDate>Thu, 15 Oct 2026 07:08:24 +0000</pubDate>
+      <itunes:duration>10:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261014 -->
     <item>
       <title>Solid-State Batteries &amp; the Ten-Minute EV Charge</title>
