@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261016 -->
+    <item>
+      <title>Perovskite Tandem Solar Cells &amp; Paint-On Power</title>
+      <itunes:title>Perovskite Tandem Solar Cells &amp; Paint-On Power</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex and Dr. Elena Vance explore how stacking perovskite crystals on silicon is breaking the efficiency ceiling of solar energy and the engineering hurdles remaining for commercial adoption.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex and Dr. Elena Vance explore how stacking perovskite crystals on silicon is breaking the efficiency ceiling of solar energy and the engineering hurdles remaining for commercial adoption.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261016.mp3" length="4630632" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261016</guid>
+      <pubDate>Fri, 16 Oct 2026 07:06:22 +0000</pubDate>
+      <itunes:duration>09:12</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261015 -->
     <item>
       <title>Base Editing &amp; Prime Editing: CRISPR&#x27;s Precision Pencil</title>

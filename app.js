@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261016',
+            number: 'OCTOBER 16, 2026',
+            date: 'October 16, 2026',
+            title: 'Perovskite Tandem Solar Cells & Paint-On Power',
+            subtitle: 'Alex and Dr. Elena Vance explore how stacking perovskite crystals on silicon is breaking the efficiency ceiling of solar energy and the engineering hurdles remaining for commercial adoption.',
+            duration: '09:12',
+            durationSeconds: 552,
+            audioUrl: 'audio/future_human_20261016.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 16, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Dr. Elena Vance explore how stacking perovskite crystals on silicon is breaking the efficiency ceiling of solar energy and the engineering hurdles remaining for commercial adoption.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261015',
             number: 'OCTOBER 15, 2026',
             date: 'October 15, 2026',

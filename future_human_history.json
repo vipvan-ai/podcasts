@@ -160,5 +160,14 @@
     "summary": "Alex Mercer and Dr. Elena Vance explore how base and prime editing move beyond traditional CRISPR scissors to chemically rewrite single DNA letters, paving the way for one-shot cures for sickle cell disease and inherited high cholesterol.",
     "source": "generated",
     "recorded_at": "2026-10-15T07:04:57"
+  },
+  {
+    "date": "2026-10-16",
+    "kind": "weekday",
+    "topic_id": "perovskite-tandem-solar",
+    "title": "Perovskite Tandem Solar Cells & Paint-On Power",
+    "summary": "Alex and Dr. Elena Vance explore how stacking perovskite crystals on silicon is breaking the efficiency ceiling of solar energy and the engineering hurdles remaining for commercial adoption.",
+    "source": "generated",
+    "recorded_at": "2026-10-16T07:03:11"
   }
 ]
