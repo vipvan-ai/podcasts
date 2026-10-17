@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261017',
+            number: 'WEEKEND RECAP',
+            date: 'October 17, 2026',
+            title: 'Saturday Weekend Recap: Solid-State Batteries and Prime Editing',
+            subtitle: 'Veda and Rami recap a blockbuster week covering GPS-free quantum navigation, ambient wireless energy, ten-minute solid-state EV charging, CRISPR's precision base and prime editing, and perovskite tandem solar power.',
+            duration: '09:38',
+            durationSeconds: 578,
+            audioUrl: 'audio/ep-weekend-sat-20261017.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap a blockbuster week covering GPS-free quantum navigation, ambient wireless energy, ten-minute solid-state EV charging, CRISPR's precision base and prime editing, and perovskite tandem solar power.</p>
+            `
+        },
+        {
             id: 'fhd-20261016',
             number: 'OCTOBER 16, 2026',
             date: 'October 16, 2026',
