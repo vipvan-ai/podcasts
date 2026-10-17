@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261017 -->
+    <item>
+      <title>The Weekend Docket: Bachelor Party Shakedowns &amp; Neighborhood Lawn Feuds</title>
+      <itunes:title>The Weekend Docket: Bachelor Party Shakedowns &amp; Neighborhood Lawn Feuds</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian convene The Weekend Docket to put listener-submitted moral dilemmas on trial: unexpected $2,500 bachelor party invoices, mowing the lawn at 7:00 AM on Sunday, and neighborly equipment feuds.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>The Weekend Docket: Bachelor Party Shakedowns &amp; Neighborhood Lawn Feuds</strong></p>
+        <p>Maya & Julian convene The Weekend Docket to put listener-submitted moral dilemmas on trial: unexpected $2,500 bachelor party invoices, mowing the lawn at 7:00 AM on Sunday, and neighborly equipment feuds.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261017.mp3" length="2277792" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261017</guid>
+      <pubDate>Sat, 17 Oct 2026 11:02:54 +0000</pubDate>
+      <itunes:duration>04:46</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261014 -->
     <item>
       <title>Coffee Shop Squatters &amp; The Single Espresso Lease</title>
