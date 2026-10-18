@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261018',
+            number: 'WEEKEND RECAP',
+            date: 'October 18, 2026',
+            title: 'Sunday AI Catchup: AI Weather Forecasting & Predicting Storms in Seconds',
+            subtitle: 'Veda and Rami unpack how neural weather models are beating billion-dollar supercomputers on single chips, revolutionizing storm warnings while confronting the challenge of unprecedented climate extremes.',
+            duration: '07:48',
+            durationSeconds: 468,
+            audioUrl: 'audio/ep-weekend-sun-20261018.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami unpack how neural weather models are beating billion-dollar supercomputers on single chips, revolutionizing storm warnings while confronting the challenge of unprecedented climate extremes.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261017',
             number: 'WEEKEND RECAP',
             date: 'October 17, 2026',

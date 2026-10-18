@@ -178,5 +178,14 @@
     "summary": "Veda and Rami recap a blockbuster week covering GPS-free quantum navigation, ambient wireless energy, ten-minute solid-state EV charging, CRISPR's precision base and prime editing, and perovskite tandem solar power.",
     "source": "generated",
     "recorded_at": "2026-10-17T07:01:11"
+  },
+  {
+    "date": "2026-10-18",
+    "kind": "sunday",
+    "topic_id": "sun-ai-weather-forecasting",
+    "title": "Sunday AI Catchup: AI Weather Forecasting & Predicting Storms in Seconds",
+    "summary": "Veda and Rami unpack how neural weather models are beating billion-dollar supercomputers on single chips, revolutionizing storm warnings while confronting the challenge of unprecedented climate extremes.",
+    "source": "generated",
+    "recorded_at": "2026-10-18T07:02:05"
   }
 ]
