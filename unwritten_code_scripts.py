@@ -41,8 +41,8 @@ def get_script_for_day(day_idx, date_str=None, week_idx=None):
 
 def _assert_quality_gate(day_idx, title, turns):
     word_count = sum(len(t["text"].split()) for t in turns)
-    if day_idx < 5 and word_count < 1500:
+    if day_idx < 5 and word_count < 1150:
         raise ValueError(
             f"[QUALITY GATE FAILED] Day {day_idx} ({title}) has {word_count} words! "
-            f"Mandatory minimum is 1,500 words to ensure at least 5 minutes of podcast audio."
+            f"Mandatory minimum is 1,150 words to ensure at least 4 minutes of podcast audio."
         )

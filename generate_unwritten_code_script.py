@@ -36,14 +36,14 @@ HOST PERSONAS:
 2. Julian Cross (Voice: "Puck"): Warm, observant, dry British-style witty sarcasm, etiquette philosopher. Uses stage directions like [warmly], [chuckles], [sighs], [thoughtfully], [playfully].
 
 MANDATORY RULES:
-1. DURATION & WORD COUNT: The script MUST be between 1,550 and 1,800 words across 24 to 30 alternating turns. Every turn should be 50-80 words of rich, funny observation. Never write short one-liners.
+1. DURATION & WORD COUNT: The script MUST be between 1,200 and 1,400 words across 16 to 20 alternating turns (targeting 4 to 6 minutes of audio). Every turn should be 60-80 words of punchy, funny observation. Never write short one-liners.
 2. DYNAMIC DATE INJECTION: Turn 1 (Maya) MUST state: "Good morning, everyone! Welcome back to The Unwritten Code. I am Maya Lin alongside Julian Cross, and today is {WEEKDAY_NAME}, {DATE_STR}..."
 3. STRICTLY ZERO EPISODE NUMBERS: Never mention "Episode 1", "Episode 8", or any numbers in titles, dialogue, or headers.
 4. ZERO INAUGURAL PHRASES: Do NOT mention "our launch week", "our inaugural episode", or "premiere week". This is an ongoing hit daily show.
 5. ACT STRUCTURE:
-   - Act 1 (Turns 1-8): The Relatable Hook & Everyday Setup. Contrast civil expectations with real-world chaos.
-   - Act 2 (Turns 9-20): The Deep Dive into the Micro-Behaviors. Divide human offenders into funny archetypes, explore the awkward social psychology.
-   - Act 3 (Turns 21-28): Handing down "The New Code" (Rules 1 to 5 or 6). Clear, definitive, comedic rules.
+   - Act 1 (Turns 1-5): The Relatable Hook & Everyday Setup. Contrast civil expectations with real-world chaos.
+   - Act 2 (Turns 6-13): The Deep Dive into the Micro-Behaviors. Funny archetypes, awkward social psychology.
+   - Act 3 (Turns 14-18): Handing down "The New Code" (Rules 1 to 4). Clear, punchy, comedic rules.
    - Final Sign-off: "Hit that Follow button right now on Spotify and Apple Podcasts so you never miss tomorrow morning's drop... Until tomorrow morning, stay safe out there, and remember: do not break the code!"
 
 OUTPUT FORMAT:
@@ -106,21 +106,28 @@ def get_next_unused_topic(day_idx, history, topics):
     return topics[0] if topics else None
 
 def generate_script_with_gemini(topic, date_str, weekday_name):
-    prompt = f"""Write today's complete, hilarious 1,600+ word episode of "The Unwritten Code".
-
+    prompt = f"""Write today's complete, hilarious 1,200 to 1,350 word episode of "The Unwritten Code" (targeting 4 to 6 minutes of spoken audio).
+ 
 TODAY'S DATE: {weekday_name}, {date_str}
 TOPIC TITLE: {topic['title']}
 CATEGORY: {topic.get('category', 'Social Etiquette')}
 DESCRIPTION: {topic.get('description', '')}
 
-Ensure Maya and Julian deliver 24-28 alternating turns of witty, observant comedy.
+Ensure Maya and Julian deliver 16-20 alternating turns of witty, observant comedy.
 Maya must open with: "[cheerful] Good morning, everyone! Welcome back to The Unwritten Code. I am Maya Lin alongside Julian Cross, and today is {weekday_name}, {date_str}."
-Codify 5 or 6 rules of The New Code before sign-off.
-Word count must strictly exceed 1,500 words.
+Codify 3 or 4 rules of The New Code before sign-off.
+Word count must be between 1,200 and 1,400 words.
 Return strictly valid JSON.
 """
 
-    models_to_try = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-1.5-pro"]
+    models_to_try = [
+        "gemini-3.8-flash",
+        "gemini-3.7-flash",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash",
+        "gemini-3.1-pro-preview",
+        "gemini-flash-latest",
+    ]
     for model in models_to_try:
         try:
             print(f" -> Generating daily script via {model} for topic: {topic['title']}...", flush=True)
@@ -137,7 +144,7 @@ Return strictly valid JSON.
             turns = data.get("turns", [])
             word_count = sum(len(t["text"].split()) for t in turns)
             print(f" -> Generated {len(turns)} turns, {word_count} words.", flush=True)
-            if word_count >= 1400:
+            if word_count >= 1150:
                 return data["title"], data["summary"], turns
         except Exception as e:
             print(f"    [Generation Warning] {model} failed: {e}", flush=True)
@@ -196,7 +203,7 @@ def get_or_create_daily_script(date_obj=None):
     title, summary, turns = generate_script_with_gemini(topic, date_str, weekday_name)
 
     # 5. If LLM generation failed or was insufficient, use curated backup
-    if not turns or sum(len(t["text"].split()) for t in turns) < 1400:
+    if not turns or sum(len(t["text"].split()) for t in turns) < 1150:
         print("[FALLBACK] Using curated high-quality backup script...", flush=True)
         _, title, summary, turns = get_week_2_script(day_idx, date_str)
 

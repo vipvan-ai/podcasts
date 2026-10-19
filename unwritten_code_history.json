@@ -52,5 +52,23 @@
     "topic_id": "coffee-shop-squatters",
     "title": "Coffee Shop Squatters & The Single Espresso Lease",
     "category": "Dining & Cafe"
+  },
+  {
+    "date": "2026-10-15",
+    "topic_id": "grocery-express-cart-anarchy",
+    "title": "Grocery Store Checkout Standoffs & Parking Lot Cart Anarchy",
+    "category": "Retail & Errands"
+  },
+  {
+    "date": "2026-10-16",
+    "topic_id": "dinner-party-byob-trap",
+    "title": "Dinner Party Host Hostages & The BYOB Etiquette Trap",
+    "category": "Domestic & Dining"
+  },
+  {
+    "date": "2026-10-17",
+    "topic_id": "weekend-docket-bachelor-party-shakedown",
+    "title": "The Weekend Docket: Bachelor Party Shakedowns & Neighborhood Lawn Feuds",
+    "category": "Weekend Docket"
   }
 ]
