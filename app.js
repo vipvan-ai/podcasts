@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261019',
+            number: 'OCTOBER 19, 2026',
+            date: 'October 19, 2026',
+            title: 'Phage Therapy & Viruses That Hunt Superbugs',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore phage therapy, uncovering how Earth\'s most abundant natural predators are being engineered to defeat antibiotic-resistant superbugs with surgical precision.',
+            duration: '11:08',
+            durationSeconds: 668,
+            audioUrl: 'audio/future_human_20261019.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 19, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore phage therapy, uncovering how Earth\'s most abundant natural predators are being engineered to defeat antibiotic-resistant superbugs with surgical precision.</p>
+            `
+        },
+
+        {
             id: 'ep-weekend-sun-20261018',
             number: 'WEEKEND RECAP',
             date: 'October 18, 2026',

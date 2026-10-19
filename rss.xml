@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261019 -->
+    <item>
+      <title>Phage Therapy &amp; Viruses That Hunt Superbugs</title>
+      <itunes:title>Phage Therapy &amp; Viruses That Hunt Superbugs</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore phage therapy, uncovering how Earth&#x27;s most abundant natural predators are being engineered to defeat antibiotic-resistant superbugs with surgical precision.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore phage therapy, uncovering how Earth's most abundant natural predators are being engineered to defeat antibiotic-resistant superbugs with surgical precision.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261019.mp3" length="5629752" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261019</guid>
+      <pubDate>Mon, 19 Oct 2026 07:05:10 +0000</pubDate>
+      <itunes:duration>11:08</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SUNDAY -->
     <item>
       <title>Sunday AI Catchup: AI Weather Forecasting &amp; Predicting Storms in Seconds</title>
