@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261020 -->
+    <item>
+      <title>Sidewalk Traffic Jams: The Phalanx, The Freeze, and The Leash Trap</title>
+      <itunes:title>Sidewalk Traffic Jams: The Phalanx, The Freeze, and The Leash Trap</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya and Julian break down the unbearable chaos of morning foot traffic, from horizontal walking walls to doorway freezers and invisible canine tripwires.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Sidewalk Traffic Jams: The Phalanx, The Freeze, and The Leash Trap</strong></p>
+        <p>Maya and Julian break down the unbearable chaos of morning foot traffic, from horizontal walking walls to doorway freezers and invisible canine tripwires.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261020.mp3" length="4129992" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261020</guid>
+      <pubDate>Tue, 20 Oct 2026 11:12:41 +0000</pubDate>
+      <itunes:duration>08:46</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261017 -->
     <item>
       <title>The Weekend Docket: Bachelor Party Shakedowns &amp; Neighborhood Lawn Feuds</title>
