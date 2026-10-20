@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261020 -->
+    <item>
+      <title>Superconducting Magnets &amp; the Race to Compact Fusion</title>
+      <itunes:title>Superconducting Magnets &amp; the Race to Compact Fusion</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex and Elena explore how breakthrough high-temperature superconducting tape is shrinking fusion reactors from international megaprojects into modular, truck-transportable power plants.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex and Elena explore how breakthrough high-temperature superconducting tape is shrinking fusion reactors from international megaprojects into modular, truck-transportable power plants.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261020.mp3" length="5007456" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261020</guid>
+      <pubDate>Tue, 20 Oct 2026 07:06:14 +0000</pubDate>
+      <itunes:duration>09:54</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261019 -->
     <item>
       <title>Phage Therapy &amp; Viruses That Hunt Superbugs</title>

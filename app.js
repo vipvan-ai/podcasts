@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261020',
+            number: 'OCTOBER 20, 2026',
+            date: 'October 20, 2026',
+            title: 'Superconducting Magnets & the Race to Compact Fusion',
+            subtitle: 'Alex and Elena explore how breakthrough high-temperature superconducting tape is shrinking fusion reactors from international megaprojects into modular, truck-transportable power plants.',
+            duration: '09:54',
+            durationSeconds: 594,
+            audioUrl: 'audio/future_human_20261020.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 20, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Elena explore how breakthrough high-temperature superconducting tape is shrinking fusion reactors from international megaprojects into modular, truck-transportable power plants.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261019',
             number: 'OCTOBER 19, 2026',
             date: 'October 19, 2026',
