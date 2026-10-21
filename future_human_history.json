@@ -205,5 +205,14 @@
     "summary": "Alex and Elena explore how breakthrough high-temperature superconducting tape is shrinking fusion reactors from international megaprojects into modular, truck-transportable power plants.",
     "source": "generated",
     "recorded_at": "2026-10-20T07:02:48"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "weekday",
+    "topic_id": "liquid-biopsy",
+    "title": "Liquid Biopsies & Detecting Cancer From a Blood Draw",
+    "summary": "Alex Mercer and Dr. Elena Vance explore liquid biopsies, unpacking how sequencing fragments of circulating tumor DNA and epigenetic markers in the bloodstream could revolutionize early cancer detection.",
+    "source": "generated",
+    "recorded_at": "2026-10-21T07:01:26"
   }
 ]

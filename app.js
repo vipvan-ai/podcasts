@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261021',
+            number: 'OCTOBER 21, 2026',
+            date: 'October 21, 2026',
+            title: 'Liquid Biopsies & Detecting Cancer From a Blood Draw',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore liquid biopsies, unpacking how sequencing fragments of circulating tumor DNA and epigenetic markers in the bloodstream could revolutionize early cancer detection.',
+            duration: '09:53',
+            durationSeconds: 593,
+            audioUrl: 'audio/future_human_20261021.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 21, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore liquid biopsies, unpacking how sequencing fragments of circulating tumor DNA and epigenetic markers in the bloodstream could revolutionize early cancer detection.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261020',
             number: 'OCTOBER 20, 2026',
             date: 'October 20, 2026',

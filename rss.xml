@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261021 -->
+    <item>
+      <title>Liquid Biopsies &amp; Detecting Cancer From a Blood Draw</title>
+      <itunes:title>Liquid Biopsies &amp; Detecting Cancer From a Blood Draw</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore liquid biopsies, unpacking how sequencing fragments of circulating tumor DNA and epigenetic markers in the bloodstream could revolutionize early cancer detection.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore liquid biopsies, unpacking how sequencing fragments of circulating tumor DNA and epigenetic markers in the bloodstream could revolutionize early cancer detection.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261021.mp3" length="5044056" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261021</guid>
+      <pubDate>Wed, 21 Oct 2026 07:04:54 +0000</pubDate>
+      <itunes:duration>09:53</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261020 -->
     <item>
       <title>Superconducting Magnets &amp; the Race to Compact Fusion</title>
