@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261022 -->
+    <item>
+      <title>Dexterous Robot Hands &amp; Tactile Sensing Skin</title>
+      <itunes:title>Dexterous Robot Hands &amp; Tactile Sensing Skin</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore why picking up an egg remains harder for robots than mastering chess, and how high-density tactile sensing skins and neuromorphic reflexes are finally giving machines human-grade touch.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore why picking up an egg remains harder for robots than mastering chess, and how high-density tactile sensing skins and neuromorphic reflexes are finally giving machines human-grade touch.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261022.mp3" length="5665008" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261022</guid>
+      <pubDate>Thu, 22 Oct 2026 07:10:39 +0000</pubDate>
+      <itunes:duration>11:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261021 -->
     <item>
       <title>Liquid Biopsies &amp; Detecting Cancer From a Blood Draw</title>

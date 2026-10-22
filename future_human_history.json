@@ -214,5 +214,14 @@
     "summary": "Alex Mercer and Dr. Elena Vance explore liquid biopsies, unpacking how sequencing fragments of circulating tumor DNA and epigenetic markers in the bloodstream could revolutionize early cancer detection.",
     "source": "generated",
     "recorded_at": "2026-10-21T07:01:26"
+  },
+  {
+    "date": "2026-10-22",
+    "kind": "weekday",
+    "topic_id": "dexterous-robot-hands",
+    "title": "Dexterous Robot Hands & Tactile Sensing Skin",
+    "summary": "Alex Mercer and Dr. Elena Vance explore why picking up an egg remains harder for robots than mastering chess, and how high-density tactile sensing skins and neuromorphic reflexes are finally giving machines human-grade touch.",
+    "source": "generated",
+    "recorded_at": "2026-10-22T07:04:53"
   }
 ]

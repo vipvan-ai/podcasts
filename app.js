@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261022',
+            number: 'OCTOBER 22, 2026',
+            date: 'October 22, 2026',
+            title: 'Dexterous Robot Hands & Tactile Sensing Skin',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore why picking up an egg remains harder for robots than mastering chess, and how high-density tactile sensing skins and neuromorphic reflexes are finally giving machines human-grade touch.',
+            duration: '11:17',
+            durationSeconds: 677,
+            audioUrl: 'audio/future_human_20261022.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 22, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore why picking up an egg remains harder for robots than mastering chess, and how high-density tactile sensing skins and neuromorphic reflexes are finally giving machines human-grade touch.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261021',
             number: 'OCTOBER 21, 2026',
             date: 'October 21, 2026',
