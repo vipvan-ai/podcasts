@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261023 -->
+    <item>
+      <title>Movie Theater Screen Glow &amp; Popcorn Shuffling Crimes</title>
+      <itunes:title>Movie Theater Screen Glow &amp; Popcorn Shuffling Crimes</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya and Julian dissect the modern collapse of cinema etiquette, from blinding smartwatch notifications and late-arrival knee collisions to forensic popcorn excavation and vocal screen commentary.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Movie Theater Screen Glow &amp; Popcorn Shuffling Crimes</strong></p>
+        <p>Maya and Julian dissect the modern collapse of cinema etiquette, from blinding smartwatch notifications and late-arrival knee collisions to forensic popcorn excavation and vocal screen commentary.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261023.mp3" length="4447752" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261023</guid>
+      <pubDate>Fri, 23 Oct 2026 11:06:47 +0000</pubDate>
+      <itunes:duration>09:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261020 -->
     <item>
       <title>Sidewalk Traffic Jams: The Phalanx, The Freeze, and The Leash Trap</title>
