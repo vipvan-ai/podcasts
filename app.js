@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261023',
+            number: 'OCTOBER 23, 2026',
+            date: 'October 23, 2026',
+            title: 'Direct Air Capture & Turning Carbon Dioxide Into Stone',
+            subtitle: 'Alex and Elena explore the engineering behind Direct Air Capture technology and the process of mineralizing atmospheric carbon dioxide deep underground.',
+            duration: '08:22',
+            durationSeconds: 502,
+            audioUrl: 'audio/future_human_20261023.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 23, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Elena explore the engineering behind Direct Air Capture technology and the process of mineralizing atmospheric carbon dioxide deep underground.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261022',
             number: 'OCTOBER 22, 2026',
             date: 'October 22, 2026',
