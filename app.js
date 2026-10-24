@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261024',
+            number: 'WEEKEND RECAP',
+            date: 'October 24, 2026',
+            title: 'Saturday Weekend Recap: Compact Fusion and Tactile Robot Hands',
+            subtitle: 'Veda and Rami recap a week of high-precision frontiers, from phage therapies and compact fusion reactors to cancer liquid biopsies, tactile robot hands, and turning carbon into stone.',
+            duration: '09:22',
+            durationSeconds: 562,
+            audioUrl: 'audio/ep-weekend-sat-20261024.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap a week of high-precision frontiers, from phage therapies and compact fusion reactors to cancer liquid biopsies, tactile robot hands, and turning carbon into stone.</p>
+            `
+        },
+        {
             id: 'fhd-20261023',
             number: 'OCTOBER 23, 2026',
             date: 'October 23, 2026',
