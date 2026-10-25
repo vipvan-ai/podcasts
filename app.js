@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261025',
+            number: 'WEEKEND RECAP',
+            date: 'October 25, 2026',
+            title: 'Sunday AI Catchup: Autonomous Coding Agents & the Changing Job of a Software Engineer',
+            subtitle: 'Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.',
+            duration: '09:44',
+            durationSeconds: 584,
+            audioUrl: 'audio/ep-weekend-sun-20261025.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261024',
             number: 'WEEKEND RECAP',
             date: 'October 24, 2026',

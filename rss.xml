@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- WEEKEND RECAP: SUNDAY -->
+    <item>
+      <title>Sunday AI Catchup: Autonomous Coding Agents &amp; the Changing Job of a Software Engineer</title>
+      <itunes:title>Sunday AI Catchup: Autonomous Coding Agents &amp; the Changing Job of a Software Engineer</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261025.mp3" length="4845552" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sun-20261025</guid>
+      <pubDate>Sun, 25 Oct 2026 07:06:14 +0000</pubDate>
+      <itunes:duration>09:44</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SATURDAY -->
     <item>
       <title>Saturday Weekend Recap: Compact Fusion and Tactile Robot Hands</title>
@@ -135,25 +154,6 @@
       <guid isPermaLink="false">future-human-daily-20261019</guid>
       <pubDate>Mon, 19 Oct 2026 07:05:10 +0000</pubDate>
       <itunes:duration>11:08</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-
-    <!-- WEEKEND RECAP: SUNDAY -->
-    <item>
-      <title>Sunday AI Catchup: AI Weather Forecasting &amp; Predicting Storms in Seconds</title>
-      <itunes:title>Sunday AI Catchup: AI Weather Forecasting &amp; Predicting Storms in Seconds</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda and Rami unpack how neural weather models are beating billion-dollar supercomputers on single chips, revolutionizing storm warnings while confronting the challenge of unprecedented climate extremes.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda and Rami unpack how neural weather models are beating billion-dollar supercomputers on single chips, revolutionizing storm warnings while confronting the challenge of unprecedented climate extremes.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261018.mp3" length="3880296" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-sun-20261018</guid>
-      <pubDate>Sun, 18 Oct 2026 07:04:53 +0000</pubDate>
-      <itunes:duration>07:48</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 

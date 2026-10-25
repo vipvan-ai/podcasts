@@ -241,5 +241,14 @@
     "summary": "Veda and Rami recap a week of high-precision frontiers, from phage therapies and compact fusion reactors to cancer liquid biopsies, tactile robot hands, and turning carbon into stone.",
     "source": "generated",
     "recorded_at": "2026-10-24T07:03:01"
+  },
+  {
+    "date": "2026-10-25",
+    "kind": "sunday",
+    "topic_id": "sun-ai-coding-agents",
+    "title": "Sunday AI Catchup: Autonomous Coding Agents & the Changing Job of a Software Engineer",
+    "summary": "Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.",
+    "source": "generated",
+    "recorded_at": "2026-10-25T07:03:09"
   }
 ]
