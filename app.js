@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261026',
+            number: 'OCTOBER 26, 2026',
+            date: 'October 26, 2026',
+            title: 'Pig-to-Human Xenotransplantation & Ending the Organ Waitlist',
+            subtitle: 'Alex and Dr. Elena Vance explore the cutting edge of xenotransplantation in 2026, examining how complex gene editing is turning pig kidneys and hearts into life-saving, reject-proof human organs.',
+            duration: '09:44',
+            durationSeconds: 584,
+            audioUrl: 'audio/future_human_20261026.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 26, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Dr. Elena Vance explore the cutting edge of xenotransplantation in 2026, examining how complex gene editing is turning pig kidneys and hearts into life-saving, reject-proof human organs.</p>
+            `
+        },
+
+        {
             id: 'ep-weekend-sun-20261025',
             number: 'WEEKEND RECAP',
             date: 'October 25, 2026',

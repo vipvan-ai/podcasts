@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261026 -->
+    <item>
+      <title>Pig-to-Human Xenotransplantation &amp; Ending the Organ Waitlist</title>
+      <itunes:title>Pig-to-Human Xenotransplantation &amp; Ending the Organ Waitlist</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex and Dr. Elena Vance explore the cutting edge of xenotransplantation in 2026, examining how complex gene editing is turning pig kidneys and hearts into life-saving, reject-proof human organs.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex and Dr. Elena Vance explore the cutting edge of xenotransplantation in 2026, examining how complex gene editing is turning pig kidneys and hearts into life-saving, reject-proof human organs.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261026.mp3" length="4989192" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 07:08:04 +0000</pubDate>
+      <itunes:duration>09:44</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SUNDAY -->
     <item>
       <title>Sunday AI Catchup: Autonomous Coding Agents &amp; the Changing Job of a Software Engineer</title>
