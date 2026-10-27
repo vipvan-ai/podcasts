@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261027',
+            number: 'OCTOBER 27, 2026',
+            date: 'October 27, 2026',
+            title: 'Quantum Error Correction & the Logical Qubit Milestone',
+            subtitle: 'Alex and Dr. Elena Vance discuss why quantum computers are so fragile and how bundling noisy physical qubits into reliable logical qubits is the key to unlocking practical quantum computing.',
+            duration: '08:37',
+            durationSeconds: 517,
+            audioUrl: 'audio/future_human_20261027.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 27, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Dr. Elena Vance discuss why quantum computers are so fragile and how bundling noisy physical qubits into reliable logical qubits is the key to unlocking practical quantum computing.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261026',
             number: 'OCTOBER 26, 2026',
             date: 'October 26, 2026',

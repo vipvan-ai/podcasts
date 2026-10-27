@@ -259,5 +259,14 @@
     "summary": "Alex and Dr. Elena Vance explore the cutting edge of xenotransplantation in 2026, examining how complex gene editing is turning pig kidneys and hearts into life-saving, reject-proof human organs.",
     "source": "generated",
     "recorded_at": "2026-10-26T07:04:12"
+  },
+  {
+    "date": "2026-10-27",
+    "kind": "weekday",
+    "topic_id": "quantum-error-correction",
+    "title": "Quantum Error Correction & the Logical Qubit Milestone",
+    "summary": "Alex and Dr. Elena Vance discuss why quantum computers are so fragile and how bundling noisy physical qubits into reliable logical qubits is the key to unlocking practical quantum computing.",
+    "source": "generated",
+    "recorded_at": "2026-10-27T07:04:18"
   }
 ]
