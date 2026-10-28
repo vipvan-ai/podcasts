@@ -268,5 +268,14 @@
     "summary": "Alex and Dr. Elena Vance discuss why quantum computers are so fragile and how bundling noisy physical qubits into reliable logical qubits is the key to unlocking practical quantum computing.",
     "source": "generated",
     "recorded_at": "2026-10-27T07:04:18"
+  },
+  {
+    "date": "2026-10-28",
+    "kind": "weekday",
+    "topic_id": "graphene-desalination",
+    "title": "Graphene Membranes & Low-Energy Desalination",
+    "summary": "Alex and Dr. Elena Vance discuss how atom-thin graphene sieves could drastically reduce the energy cost of turning seawater into drinking water.",
+    "source": "generated",
+    "recorded_at": "2026-10-28T07:05:20"
   }
 ]

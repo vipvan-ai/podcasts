@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261028 -->
+    <item>
+      <title>Graphene Membranes &amp; Low-Energy Desalination</title>
+      <itunes:title>Graphene Membranes &amp; Low-Energy Desalination</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex and Dr. Elena Vance discuss how atom-thin graphene sieves could drastically reduce the energy cost of turning seawater into drinking water.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex and Dr. Elena Vance discuss how atom-thin graphene sieves could drastically reduce the energy cost of turning seawater into drinking water.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261028.mp3" length="4258992" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261028</guid>
+      <pubDate>Wed, 28 Oct 2026 07:08:24 +0000</pubDate>
+      <itunes:duration>08:27</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261027 -->
     <item>
       <title>Quantum Error Correction &amp; the Logical Qubit Milestone</title>

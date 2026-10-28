@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261028',
+            number: 'OCTOBER 28, 2026',
+            date: 'October 28, 2026',
+            title: 'Graphene Membranes & Low-Energy Desalination',
+            subtitle: 'Alex and Dr. Elena Vance discuss how atom-thin graphene sieves could drastically reduce the energy cost of turning seawater into drinking water.',
+            duration: '08:27',
+            durationSeconds: 507,
+            audioUrl: 'audio/future_human_20261028.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 28, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Dr. Elena Vance discuss how atom-thin graphene sieves could drastically reduce the energy cost of turning seawater into drinking water.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261027',
             number: 'OCTOBER 27, 2026',
             date: 'October 27, 2026',
