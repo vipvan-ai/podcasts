@@ -29,7 +29,8 @@ if ENV_FILE.exists():
             os.environ[k] = v
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-client = genai.Client(api_key=GEMINI_API_KEY)
+from future_human_ledger import call_with_timeout
+client = genai.Client(api_key=GEMINI_API_KEY, http_options=types.HttpOptions(timeout=60000))
 
 TTS_MODELS = [
     'gemini-3.8-flash-tts',
@@ -52,7 +53,7 @@ def synth_edge_turn(text, speaker, sample_rate=24000):
             await communicate.save(str(tmp_path))
         
         try:
-            asyncio.run(_run())
+            call_with_timeout(lambda: asyncio.run(_run()), timeout_sec=45)
             if tmp_path.exists() and tmp_path.stat().st_size > 1000:
                 data, sr = sf.read(str(tmp_path))
                 tmp_path.unlink(missing_ok=True)
@@ -180,7 +181,7 @@ def build_daily_weekday_pipeline():
             for model_name in TTS_MODELS:
                 for retry in range(2):
                     try:
-                        resp = client.models.generate_content(
+                        resp = call_with_timeout(lambda: client.models.generate_content(
                             model=model_name,
                             contents=tts_text,
                             config=types.GenerateContentConfig(
@@ -191,7 +192,7 @@ def build_daily_weekday_pipeline():
                                     )
                                 )
                             )
-                        )
+                        ), timeout_sec=75)
                         part = resp.candidates[0].content.parts[0]
                         if part.inline_data:
                             data = part.inline_data.data

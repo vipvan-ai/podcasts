@@ -27,7 +27,8 @@ if ENV_FILE.exists():
             k, v = line.strip().split("=", 1)
             os.environ[k] = v
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY", ""))
+from future_human_ledger import call_with_timeout
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY", ""), http_options=types.HttpOptions(timeout=60000))
 
 TTS_MODELS = [
     'gemini-3.8-flash-tts',
@@ -118,7 +119,7 @@ def synthesize_turn_with_cache(cache_key, voice_name, text):
         for model_name in TTS_MODELS:
             try:
                 print(f" -> Synthesizing [{voice_name}] via {model_name} (attempt {attempt}/{MAX_ATTEMPTS})...", flush=True)
-                resp = client.models.generate_content(
+                resp = call_with_timeout(lambda: client.models.generate_content(
                     model=model_name,
                     contents=tts_clean_text,
                     config=types.GenerateContentConfig(
@@ -129,7 +130,7 @@ def synthesize_turn_with_cache(cache_key, voice_name, text):
                             )
                         )
                     )
-                )
+                ), timeout_sec=75)
                 part = resp.candidates[0].content.parts[0]
                 if part.inline_data:
                     data = part.inline_data.data

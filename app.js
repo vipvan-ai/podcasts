@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261029',
+            number: 'OCTOBER 29, 2026',
+            date: 'October 29, 2026',
+            title: 'Precision Fermentation & Animal-Free Dairy',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how engineered microorganisms in steel fermenters are producing real milk proteins, egg whites, and human-identical collagen without animal farming.',
+            duration: '09:44',
+            durationSeconds: 584,
+            audioUrl: 'audio/future_human_20261029.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 29, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how engineered microorganisms in steel fermenters are producing real milk proteins, egg whites, and human-identical collagen without animal farming.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261028',
             number: 'OCTOBER 28, 2026',
             date: 'October 28, 2026',

@@ -167,12 +167,37 @@ def validate_turns(turns, allowed_speakers, voice_map, date_phrase, min_words, m
     return words
 
 
+def call_with_timeout(fn, timeout_sec=75):
+    """Runs fn() in a daemon thread so OS-level socket/TLS hangs cannot block forever."""
+    import threading
+    result = [None]
+    error = [None]
+
+    def _target():
+        try:
+            result[0] = fn()
+        except BaseException as exc:
+            error[0] = exc
+
+    t = threading.Thread(target=_target, daemon=True)
+    t.start()
+    t.join(timeout=timeout_sec)
+    if t.is_alive():
+        raise TimeoutError(f"Gemini API call timed out after {timeout_sec}s")
+    if error[0] is not None:
+        raise error[0]
+    return result[0]
+
+
 def generate_json_script(system_prompt, user_prompt, validator):
     """Tries each model; returns parsed+validated dict or None."""
     from google import genai
     from google.genai import types
 
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY", ""))
+    client = genai.Client(
+        api_key=os.getenv("GEMINI_API_KEY", ""),
+        http_options=types.HttpOptions(timeout=60000),
+    )
     dead = set()
     for rnd in range(1, GENERATION_ROUNDS + 1):
         for model in SCRIPT_MODELS:
@@ -181,20 +206,26 @@ def generate_json_script(system_prompt, user_prompt, validator):
             try:
                 print(f" -> [round {rnd}] Writing script with {model}...", flush=True)
                 if model.startswith("gemma"):
-                    resp = client.models.generate_content(
-                        model=model,
-                        contents=system_prompt + "\n\n" + user_prompt,
-                        config=types.GenerateContentConfig(temperature=0.8),
+                    resp = call_with_timeout(
+                        lambda m=model: client.models.generate_content(
+                            model=m,
+                            contents=system_prompt + "\n\n" + user_prompt,
+                            config=types.GenerateContentConfig(temperature=0.8),
+                        ),
+                        timeout_sec=75,
                     )
                 else:
-                    resp = client.models.generate_content(
-                        model=model,
-                        contents=user_prompt,
-                        config=types.GenerateContentConfig(
-                            system_instruction=system_prompt,
-                            response_mime_type="application/json",
-                            temperature=0.8,
+                    resp = call_with_timeout(
+                        lambda m=model: client.models.generate_content(
+                            model=m,
+                            contents=user_prompt,
+                            config=types.GenerateContentConfig(
+                                system_instruction=system_prompt,
+                                response_mime_type="application/json",
+                                temperature=0.8,
+                            ),
                         ),
+                        timeout_sec=75,
                     )
                 text = resp.text.strip()
                 m = re.search(r"\{.*\}", text, flags=re.S)
