@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261030',
+            number: 'OCTOBER 30, 2026',
+            date: 'October 30, 2026',
+            title: 'GLP-1 Medicines & the Science of Appetite Rewiring',
+            subtitle: 'We explore how the latest class of weight-loss drugs goes beyond the stomach to quiet the brain\'s food noise, and why scientists are optimistic about their impact on systemic health.',
+            duration: '08:17',
+            durationSeconds: 497,
+            audioUrl: 'audio/future_human_20261030.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is October 30, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>We explore how the latest class of weight-loss drugs goes beyond the stomach to quiet the brain\'s food noise, and why scientists are optimistic about their impact on systemic health.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261029',
             number: 'OCTOBER 29, 2026',
             date: 'October 29, 2026',

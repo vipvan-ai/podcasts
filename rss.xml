@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261030 -->
+    <item>
+      <title>GLP-1 Medicines &amp; the Science of Appetite Rewiring</title>
+      <itunes:title>GLP-1 Medicines &amp; the Science of Appetite Rewiring</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>We explore how the latest class of weight-loss drugs goes beyond the stomach to quiet the brain&#x27;s food noise, and why scientists are optimistic about their impact on systemic health.</itunes:summary>
+      <description><![CDATA[
+        <p>We explore how the latest class of weight-loss drugs goes beyond the stomach to quiet the brain's food noise, and why scientists are optimistic about their impact on systemic health.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261030.mp3" length="4219752" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261030</guid>
+      <pubDate>Fri, 30 Oct 2026 07:20:12 +0000</pubDate>
+      <itunes:duration>08:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261029 -->
     <item>
       <title>Precision Fermentation &amp; Animal-Free Dairy</title>
