@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- WEEKEND RECAP: SATURDAY -->
+    <item>
+      <title>Saturday Weekend Recap: Organ Xenotransplantation &amp; Graphene Desalination</title>
+      <itunes:title>Saturday Weekend Recap: Organ Xenotransplantation &amp; Graphene Desalination</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261031.mp3" length="4100760" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sat-20261031</guid>
+      <pubDate>Sat, 31 Oct 2026 07:06:46 +0000</pubDate>
+      <itunes:duration>08:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261030 -->
     <item>
       <title>GLP-1 Medicines &amp; the Science of Appetite Rewiring</title>
@@ -135,25 +154,6 @@
       <guid isPermaLink="false">future-human-daily-weekend-sun-20261025</guid>
       <pubDate>Sun, 25 Oct 2026 07:06:14 +0000</pubDate>
       <itunes:duration>09:44</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-
-    <!-- WEEKEND RECAP: SATURDAY -->
-    <item>
-      <title>Saturday Weekend Recap: Compact Fusion and Tactile Robot Hands</title>
-      <itunes:title>Saturday Weekend Recap: Compact Fusion and Tactile Robot Hands</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda and Rami recap a week of high-precision frontiers, from phage therapies and compact fusion reactors to cancer liquid biopsies, tactile robot hands, and turning carbon into stone.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda and Rami recap a week of high-precision frontiers, from phage therapies and compact fusion reactors to cancer liquid biopsies, tactile robot hands, and turning carbon into stone.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261024.mp3" length="4610976" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-sat-20261024</guid>
-      <pubDate>Sat, 24 Oct 2026 07:06:17 +0000</pubDate>
-      <itunes:duration>09:22</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 

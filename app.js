@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261031',
+            number: 'WEEKEND RECAP',
+            date: 'October 31, 2026',
+            title: 'Saturday Weekend Recap: Organ Xenotransplantation & Graphene Desalination',
+            subtitle: 'Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.',
+            duration: '08:15',
+            durationSeconds: 495,
+            audioUrl: 'audio/ep-weekend-sat-20261031.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.</p>
+            `
+        },
+        {
             id: 'fhd-20261030',
             number: 'OCTOBER 30, 2026',
             date: 'October 30, 2026',
