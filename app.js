@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261101',
+            number: 'WEEKEND RECAP',
+            date: 'November 01, 2026',
+            title: 'Sunday AI Catchup: On-Device AI & Small Language Models in Your Pocket',
+            subtitle: 'Veda and Rami break down how quantization and distillation allow powerful language models to run locally on smartphones and laptops, offering total data privacy and zero-latency performance.',
+            duration: '08:29',
+            durationSeconds: 509,
+            audioUrl: 'audio/ep-weekend-sun-20261101.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami break down how quantization and distillation allow powerful language models to run locally on smartphones and laptops, offering total data privacy and zero-latency performance.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261031',
             number: 'WEEKEND RECAP',
             date: 'October 31, 2026',

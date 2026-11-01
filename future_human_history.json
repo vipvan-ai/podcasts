@@ -304,5 +304,14 @@
     "summary": "Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.",
     "source": "generated",
     "recorded_at": "2026-10-31T07:03:56"
+  },
+  {
+    "date": "2026-11-01",
+    "kind": "sunday",
+    "topic_id": "sun-on-device-ai",
+    "title": "Sunday AI Catchup: On-Device AI & Small Language Models in Your Pocket",
+    "summary": "Veda and Rami break down how quantization and distillation allow powerful language models to run locally on smartphones and laptops, offering total data privacy and zero-latency performance.",
+    "source": "generated",
+    "recorded_at": "2026-11-01T07:02:28"
   }
 ]

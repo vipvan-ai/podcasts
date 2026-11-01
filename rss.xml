@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- WEEKEND RECAP: SUNDAY -->
+    <item>
+      <title>Sunday AI Catchup: On-Device AI &amp; Small Language Models in Your Pocket</title>
+      <itunes:title>Sunday AI Catchup: On-Device AI &amp; Small Language Models in Your Pocket</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda and Rami break down how quantization and distillation allow powerful language models to run locally on smartphones and laptops, offering total data privacy and zero-latency performance.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda and Rami break down how quantization and distillation allow powerful language models to run locally on smartphones and laptops, offering total data privacy and zero-latency performance.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261101.mp3" length="4218744" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sun-20261101</guid>
+      <pubDate>Sun, 01 Nov 2026 07:05:22 +0000</pubDate>
+      <itunes:duration>08:29</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SATURDAY -->
     <item>
       <title>Saturday Weekend Recap: Organ Xenotransplantation &amp; Graphene Desalination</title>
@@ -134,25 +153,6 @@
       <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261026.mp3" length="4989192" type="audio/mpeg" />
       <guid isPermaLink="false">future-human-daily-20261026</guid>
       <pubDate>Mon, 26 Oct 2026 07:08:04 +0000</pubDate>
-      <itunes:duration>09:44</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-
-    <!-- WEEKEND RECAP: SUNDAY -->
-    <item>
-      <title>Sunday AI Catchup: Autonomous Coding Agents &amp; the Changing Job of a Software Engineer</title>
-      <itunes:title>Sunday AI Catchup: Autonomous Coding Agents &amp; the Changing Job of a Software Engineer</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda and Rami unpack how autonomous coding agents are shifting software engineering from line-by-line syntax writing to high-level architecture and verification, exploring both the massive productivity gains and the subtle risks of automation complacency.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261025.mp3" length="4845552" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-sun-20261025</guid>
-      <pubDate>Sun, 25 Oct 2026 07:06:14 +0000</pubDate>
       <itunes:duration>09:44</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
