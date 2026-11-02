@@ -313,5 +313,14 @@
     "summary": "Veda and Rami break down how quantization and distillation allow powerful language models to run locally on smartphones and laptops, offering total data privacy and zero-latency performance.",
     "source": "generated",
     "recorded_at": "2026-11-01T07:02:28"
+  },
+  {
+    "date": "2026-11-02",
+    "kind": "weekday",
+    "topic_id": "space-based-solar",
+    "title": "Orbital Solar Stations & Microwave Beaming to Earth",
+    "summary": "Alex Mercer and Dr. Elena Vance explore how collecting uninterrupted sunlight in geostationary orbit and beaming it to Earth via microwaves could provide 24/7 clean baseload power, driven by rapidly plummeting launch costs.",
+    "source": "generated",
+    "recorded_at": "2026-11-02T07:01:01"
   }
 ]

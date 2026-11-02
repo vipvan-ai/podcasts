@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261102',
+            number: 'NOVEMBER 02, 2026',
+            date: 'November 02, 2026',
+            title: 'Orbital Solar Stations & Microwave Beaming to Earth',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how collecting uninterrupted sunlight in geostationary orbit and beaming it to Earth via microwaves could provide 24/7 clean baseload power, driven by rapidly plummeting launch costs.',
+            duration: '09:58',
+            durationSeconds: 598,
+            audioUrl: 'audio/future_human_20261102.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 02, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how collecting uninterrupted sunlight in geostationary orbit and beaming it to Earth via microwaves could provide 24/7 clean baseload power, driven by rapidly plummeting launch costs.</p>
+            `
+        },
+
+        {
             id: 'ep-weekend-sun-20261101',
             number: 'WEEKEND RECAP',
             date: 'November 01, 2026',
