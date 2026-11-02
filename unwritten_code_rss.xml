@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261029 -->
+    <item>
+      <title>The Front Seat Myth &amp; Rideshare Small-Talk Panic</title>
+      <itunes:title>The Front Seat Myth &amp; Rideshare Small-Talk Panic</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya and Julian breakdown the subtle social horrors of rideshare transit, from accidental front-seat entrances to greasy food smells and quiet ride awkwardness.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>The Front Seat Myth &amp; Rideshare Small-Talk Panic</strong></p>
+        <p>Maya and Julian breakdown the subtle social horrors of rideshare transit, from accidental front-seat entrances to greasy food smells and quiet ride awkwardness.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261029.mp3" length="3761208" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261029</guid>
+      <pubDate>Mon, 02 Nov 2026 06:05:06 +0000</pubDate>
+      <itunes:duration>07:51</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261023 -->
     <item>
       <title>Movie Theater Screen Glow &amp; Popcorn Shuffling Crimes</title>
