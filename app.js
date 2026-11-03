@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261103',
+            number: 'NOVEMBER 03, 2026',
+            date: 'November 03, 2026',
+            title: 'Plastic-Eating Enzymes & Infinite Recycling',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how engineered enzymes can disassemble PET plastic into raw chemical building blocks, opening the door to infinite recycling without quality loss.',
+            duration: '09:55',
+            durationSeconds: 595,
+            audioUrl: 'audio/future_human_20261103.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 03, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how engineered enzymes can disassemble PET plastic into raw chemical building blocks, opening the door to infinite recycling without quality loss.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261102',
             number: 'NOVEMBER 02, 2026',
             date: 'November 02, 2026',

@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261103 -->
+    <item>
+      <title>Plastic-Eating Enzymes &amp; Infinite Recycling</title>
+      <itunes:title>Plastic-Eating Enzymes &amp; Infinite Recycling</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how engineered enzymes can disassemble PET plastic into raw chemical building blocks, opening the door to infinite recycling without quality loss.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how engineered enzymes can disassemble PET plastic into raw chemical building blocks, opening the door to infinite recycling without quality loss.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261103.mp3" length="5024784" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261103</guid>
+      <pubDate>Tue, 03 Nov 2026 07:05:15 +0000</pubDate>
+      <itunes:duration>09:55</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261102 -->
     <item>
       <title>Orbital Solar Stations &amp; Microwave Beaming to Earth</title>
