@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261104',
+            number: 'NOVEMBER 04, 2026',
+            date: 'November 04, 2026',
+            title: 'Powered Exoskeletons & Restoring Human Mobility',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how powered exoskeletons read biological signals to help stroke survivors walk again and protect industrial workers from severe physical strain.',
+            duration: '08:41',
+            durationSeconds: 521,
+            audioUrl: 'audio/future_human_20261104.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 04, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how powered exoskeletons read biological signals to help stroke survivors walk again and protect industrial workers from severe physical strain.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261103',
             number: 'NOVEMBER 03, 2026',
             date: 'November 03, 2026',
