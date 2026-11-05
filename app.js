@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261105',
+            number: 'NOVEMBER 05, 2026',
+            date: 'November 05, 2026',
+            title: 'Superhot Rock Geothermal & Drilling With Plasma',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how high-power millimeter-wave energy beams could drill twenty kilometers into Earth\'s crust to tap limitless superhot geothermal energy anywhere on the planet.',
+            duration: '08:49',
+            durationSeconds: 529,
+            audioUrl: 'audio/future_human_20261105.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 05, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how high-power millimeter-wave energy beams could drill twenty kilometers into Earth\'s crust to tap limitless superhot geothermal energy anywhere on the planet.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261104',
             number: 'NOVEMBER 04, 2026',
             date: 'November 04, 2026',

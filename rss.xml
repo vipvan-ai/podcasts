@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261105 -->
+    <item>
+      <title>Superhot Rock Geothermal &amp; Drilling With Plasma</title>
+      <itunes:title>Superhot Rock Geothermal &amp; Drilling With Plasma</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how high-power millimeter-wave energy beams could drill twenty kilometers into Earth&#x27;s crust to tap limitless superhot geothermal energy anywhere on the planet.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how high-power millimeter-wave energy beams could drill twenty kilometers into Earth's crust to tap limitless superhot geothermal energy anywhere on the planet.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261105.mp3" length="4479432" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261105</guid>
+      <pubDate>Thu, 05 Nov 2026 07:05:12 +0000</pubDate>
+      <itunes:duration>08:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261104 -->
     <item>
       <title>Powered Exoskeletons &amp; Restoring Human Mobility</title>
