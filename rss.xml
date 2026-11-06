@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261106 -->
+    <item>
+      <title>Smart Contact Lenses &amp; Displays on Your Eyeball</title>
+      <itunes:title>Smart Contact Lenses &amp; Displays on Your Eyeball</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore the engineering behind smart contact lenses, detailing how researchers squeeze micro-LEDs, wireless power coils, and biochemical sensors onto soft ocular polymer lenses.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore the engineering behind smart contact lenses, detailing how researchers squeeze micro-LEDs, wireless power coils, and biochemical sensors onto soft ocular polymer lenses.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261106.mp3" length="5076624" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261106</guid>
+      <pubDate>Fri, 06 Nov 2026 07:05:23 +0000</pubDate>
+      <itunes:duration>10:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261105 -->
     <item>
       <title>Superhot Rock Geothermal &amp; Drilling With Plasma</title>
