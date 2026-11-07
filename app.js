@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261107',
+            number: 'WEEKEND RECAP',
+            date: 'November 07, 2026',
+            title: 'Saturday Weekend Recap: Superhot Geothermal and Smart Contact Lenses',
+            subtitle: 'Veda and Rami recap a week of groundbreaking engineering, covering orbital solar power, plastic-eating enzymes, bio-assisted exoskeletons, plasma geothermal drilling, and smart contact lenses.',
+            duration: '09:34',
+            durationSeconds: 574,
+            audioUrl: 'audio/ep-weekend-sat-20261107.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap a week of groundbreaking engineering, covering orbital solar power, plastic-eating enzymes, bio-assisted exoskeletons, plasma geothermal drilling, and smart contact lenses.</p>
+            `
+        },
+        {
             id: 'fhd-20261106',
             number: 'NOVEMBER 06, 2026',
             date: 'November 06, 2026',

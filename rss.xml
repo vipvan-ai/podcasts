@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- WEEKEND RECAP: SATURDAY -->
+    <item>
+      <title>Saturday Weekend Recap: Superhot Geothermal and Smart Contact Lenses</title>
+      <itunes:title>Saturday Weekend Recap: Superhot Geothermal and Smart Contact Lenses</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda and Rami recap a week of groundbreaking engineering, covering orbital solar power, plastic-eating enzymes, bio-assisted exoskeletons, plasma geothermal drilling, and smart contact lenses.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda and Rami recap a week of groundbreaking engineering, covering orbital solar power, plastic-eating enzymes, bio-assisted exoskeletons, plasma geothermal drilling, and smart contact lenses.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261107.mp3" length="4775832" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sat-20261107</guid>
+      <pubDate>Sat, 07 Nov 2026 07:05:59 +0000</pubDate>
+      <itunes:duration>09:34</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261106 -->
     <item>
       <title>Smart Contact Lenses &amp; Displays on Your Eyeball</title>
@@ -135,25 +154,6 @@
       <guid isPermaLink="false">future-human-daily-weekend-sun-20261101</guid>
       <pubDate>Sun, 01 Nov 2026 07:05:22 +0000</pubDate>
       <itunes:duration>08:29</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-
-    <!-- WEEKEND RECAP: SATURDAY -->
-    <item>
-      <title>Saturday Weekend Recap: Organ Xenotransplantation &amp; Graphene Desalination</title>
-      <itunes:title>Saturday Weekend Recap: Organ Xenotransplantation &amp; Graphene Desalination</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda and Rami recap a powerful week on Future Human Daily, exploring breakthroughs in pig-to-human organ transplants, quantum error correction, graphene water desalination, precision fermentation dairy, and GLP-1 appetite rewiring.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261031.mp3" length="4100760" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-sat-20261031</guid>
-      <pubDate>Sat, 31 Oct 2026 07:06:46 +0000</pubDate>
-      <itunes:duration>08:15</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 
