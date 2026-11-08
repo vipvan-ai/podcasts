@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261108',
+            number: 'WEEKEND RECAP',
+            date: 'November 08, 2026',
+            title: 'Sunday AI Catchup: Robot Foundation Models & Teaching Machines General Skills',
+            subtitle: 'Veda and Rami unpack how robot foundation models are teaching physical machines general-purpose motor skills, moving robotics past rigid programming into adaptive home and industrial helpers.',
+            duration: '09:35',
+            durationSeconds: 575,
+            audioUrl: 'audio/ep-weekend-sun-20261108.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami unpack how robot foundation models are teaching physical machines general-purpose motor skills, moving robotics past rigid programming into adaptive home and industrial helpers.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261107',
             number: 'WEEKEND RECAP',
             date: 'November 07, 2026',

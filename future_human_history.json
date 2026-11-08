@@ -367,5 +367,14 @@
     "summary": "Veda and Rami recap a week of groundbreaking engineering, covering orbital solar power, plastic-eating enzymes, bio-assisted exoskeletons, plasma geothermal drilling, and smart contact lenses.",
     "source": "generated",
     "recorded_at": "2026-11-07T07:02:03"
+  },
+  {
+    "date": "2026-11-08",
+    "kind": "sunday",
+    "topic_id": "sun-robot-foundation-models",
+    "title": "Sunday AI Catchup: Robot Foundation Models & Teaching Machines General Skills",
+    "summary": "Veda and Rami unpack how robot foundation models are teaching physical machines general-purpose motor skills, moving robotics past rigid programming into adaptive home and industrial helpers.",
+    "source": "generated",
+    "recorded_at": "2026-11-08T07:02:44"
   }
 ]
