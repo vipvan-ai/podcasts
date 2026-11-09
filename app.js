@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261109',
+            number: 'NOVEMBER 09, 2026',
+            date: 'November 09, 2026',
+            title: 'Cultivated Meat & Growing Steak From Cells',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how cellular agriculture grows genuine animal muscle and fat inside bioreactors, dissecting the bio-scaffolding, fluid dynamics, cost barriers, and vascularization challenges standing between lab-grown steak and grocery store shelves.',
+            duration: '09:30',
+            durationSeconds: 570,
+            audioUrl: 'audio/future_human_20261109.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 09, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how cellular agriculture grows genuine animal muscle and fat inside bioreactors, dissecting the bio-scaffolding, fluid dynamics, cost barriers, and vascularization challenges standing between lab-grown steak and grocery store shelves.</p>
+            `
+        },
+
+        {
             id: 'ep-weekend-sun-20261108',
             number: 'WEEKEND RECAP',
             date: 'November 08, 2026',
