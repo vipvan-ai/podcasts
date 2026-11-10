@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261110 -->
+    <item>
+      <title>Synthetic Biology &amp; Cellular Logic Gates</title>
+      <itunes:title>Synthetic Biology &amp; Cellular Logic Gates</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Programming living cells like computer code to hunt down diseases, manufacture clean fuels, and heal human tissues with Dr. Elena Vance &amp; Alex Mercer.</itunes:summary>
+      <description><![CDATA[
+        <p>Programming living cells like computer code to hunt down diseases, manufacture clean fuels, and heal human tissues with Dr. Elena Vance & Alex Mercer.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261110.mp3" length="4725528" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261110</guid>
+      <pubDate>Tue, 10 Nov 2026 07:28:25 +0000</pubDate>
+      <itunes:duration>09:21</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261109 -->
     <item>
       <title>Cultivated Meat &amp; Growing Steak From Cells</title>

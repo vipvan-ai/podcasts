@@ -385,5 +385,14 @@
     "summary": "Alex Mercer and Dr. Elena Vance explore how cellular agriculture grows genuine animal muscle and fat inside bioreactors, dissecting the bio-scaffolding, fluid dynamics, cost barriers, and vascularization challenges standing between lab-grown steak and grocery store shelves.",
     "source": "generated",
     "recorded_at": "2026-11-09T07:07:04"
+  },
+  {
+    "date": "2026-11-10",
+    "kind": "weekday",
+    "topic_id": "synthetic-biology-logic-gates",
+    "title": "Synthetic Biology & Cellular Logic Gates",
+    "summary": "Programming living cells like computer code to hunt down diseases, manufacture clean fuels, and heal human tissues with Dr. Elena Vance & Alex Mercer.",
+    "source": "backup-fixed-script",
+    "recorded_at": "2026-11-10T07:24:32"
   }
 ]

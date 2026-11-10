@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261110',
+            number: 'NOVEMBER 10, 2026',
+            date: 'November 10, 2026',
+            title: 'Synthetic Biology & Cellular Logic Gates',
+            subtitle: 'Programming living cells like computer code to hunt down diseases, manufacture clean fuels, and heal human tissues with Dr. Elena Vance & Alex Mercer.',
+            duration: '09:21',
+            durationSeconds: 561,
+            audioUrl: 'audio/future_human_20261110.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 10, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Programming living cells like computer code to hunt down diseases, manufacture clean fuels, and heal human tissues with Dr. Elena Vance & Alex Mercer.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261109',
             number: 'NOVEMBER 09, 2026',
             date: 'November 09, 2026',
