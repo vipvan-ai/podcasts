@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261105 -->
+    <item>
+      <title>Table Hogging at Trendy Bistros &amp; The 'Just One More Drink' Stall</title>
+      <itunes:title>Table Hogging at Trendy Bistros &amp; The 'Just One More Drink' Stall</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya and Julian take on the nightmare of bistro etiquette—from holding a six-person table while your friends are 45 minutes late, to splitting eight credit cards at fine dining establishments.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Table Hogging at Trendy Bistros &amp; The 'Just One More Drink' Stall</strong></p>
+        <p>Maya and Julian take on the nightmare of bistro etiquette—from holding a six-person table while your friends are 45 minutes late, to splitting eight credit cards at fine dining establishments.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261105.mp3" length="3893832" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261105</guid>
+      <pubDate>Tue, 10 Nov 2026 06:37:50 +0000</pubDate>
+      <itunes:duration>08:10</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261029 -->
     <item>
       <title>The Front Seat Myth &amp; Rideshare Small-Talk Panic</title>
