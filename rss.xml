@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261112 -->
+    <item>
+      <title>Regenerating Inner-Ear Hair Cells to Reverse Hearing Loss</title>
+      <itunes:title>Regenerating Inner-Ear Hair Cells to Reverse Hearing Loss</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how novel gene therapies and small-molecule drug cocktails are coaxing the cochlea to regrow sensory hair cells, offering a potential cure for permanent sensorineural hearing loss.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how novel gene therapies and small-molecule drug cocktails are coaxing the cochlea to regrow sensory hair cells, offering a potential cure for permanent sensorineural hearing loss.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261112.mp3" length="5628384" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261112</guid>
+      <pubDate>Thu, 12 Nov 2026 07:14:43 +0000</pubDate>
+      <itunes:duration>11:05</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261110 -->
     <item>
       <title>Synthetic Biology &amp; Cellular Logic Gates</title>

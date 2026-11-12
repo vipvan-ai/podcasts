@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261112',
+            number: 'NOVEMBER 12, 2026',
+            date: 'November 12, 2026',
+            title: 'Regenerating Inner-Ear Hair Cells to Reverse Hearing Loss',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how novel gene therapies and small-molecule drug cocktails are coaxing the cochlea to regrow sensory hair cells, offering a potential cure for permanent sensorineural hearing loss.',
+            duration: '11:05',
+            durationSeconds: 665,
+            audioUrl: 'audio/future_human_20261112.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 12, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how novel gene therapies and small-molecule drug cocktails are coaxing the cochlea to regrow sensory hair cells, offering a potential cure for permanent sensorineural hearing loss.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261110',
             number: 'NOVEMBER 10, 2026',
             date: 'November 10, 2026',

@@ -394,5 +394,14 @@
     "summary": "Programming living cells like computer code to hunt down diseases, manufacture clean fuels, and heal human tissues with Dr. Elena Vance & Alex Mercer.",
     "source": "backup-fixed-script",
     "recorded_at": "2026-11-10T07:24:32"
+  },
+  {
+    "date": "2026-11-12",
+    "kind": "weekday",
+    "topic_id": "inner-ear-regeneration",
+    "title": "Regenerating Inner-Ear Hair Cells to Reverse Hearing Loss",
+    "summary": "Alex Mercer and Dr. Elena Vance explore how novel gene therapies and small-molecule drug cocktails are coaxing the cochlea to regrow sensory hair cells, offering a potential cure for permanent sensorineural hearing loss.",
+    "source": "generated",
+    "recorded_at": "2026-11-12T07:11:23"
   }
 ]
