@@ -26,6 +26,26 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/unwritten_code_rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- THE UNWRITTEN CODE: 20261113 -->
+    <item>
+      <title>Dinner Party Host Hostages &amp; The BYOB Etiquette Trap</title>
+      <itunes:title>Dinner Party Host Hostages &amp; The BYOB Etiquette Trap</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Maya Lin &amp; Julian Cross</itunes:author>
+      <itunes:summary>Maya &amp; Julian break down dinner party politics: the horror of guests arriving thirty minutes early, bringing cheap two-buck chuck and drinking the host's expensive vintage wine, and the art of kicking out guests at midnight.</itunes:summary>
+      <description><![CDATA[
+        <p><strong>Dinner Party Host Hostages &amp; The BYOB Etiquette Trap</strong></p>
+        <p>Maya & Julian break down dinner party politics: the horror of guests arriving thirty minutes early, bringing cheap two-buck chuck and drinking the host's expensive vintage wine, and the art of kicking out guests at midnight.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/unwritten_code_20261113.mp3" length="4846848" type="audio/mpeg" />
+      <guid isPermaLink="false">unwritten-code-20261113</guid>
+      <pubDate>Fri, 13 Nov 2026 11:11:51 +0000</pubDate>
+      <itunes:duration>10:24</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- THE UNWRITTEN CODE: 20261110 -->
     <item>
       <title>Left-Lane Campers &amp; The Passive-Aggressive High-Beams</title>
