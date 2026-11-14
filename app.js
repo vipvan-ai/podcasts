@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261114',
+            number: 'WEEKEND RECAP',
+            date: 'November 14, 2026',
+            title: 'Saturday Weekend Recap: Cultivated Steaks & Inner-Ear Hair Cells',
+            subtitle: 'Veda and Rami recap a fascinating week of science, exploring lab-grown meats, biological computer logic, gene therapies for hearing restoration, and salt-based sodium-ion grid batteries.',
+            duration: '09:45',
+            durationSeconds: 585,
+            audioUrl: 'audio/ep-weekend-sat-20261114.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap a fascinating week of science, exploring lab-grown meats, biological computer logic, gene therapies for hearing restoration, and salt-based sodium-ion grid batteries.</p>
+            `
+        },
+        {
             id: 'fhd-20261113',
             number: 'NOVEMBER 13, 2026',
             date: 'November 13, 2026',
