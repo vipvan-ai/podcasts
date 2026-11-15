@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261115',
+            number: 'WEEKEND RECAP',
+            date: 'November 15, 2026',
+            title: 'Sunday AI Catchup: AI-Discovered Drugs Entering Clinical Trials',
+            subtitle: 'Veda and Rami explore how artificial intelligence is drastically compressing the decade-long pipeline for drug discovery and bringing the first generative biological molecules into human clinical trials.',
+            duration: '08:58',
+            durationSeconds: 538,
+            audioUrl: 'audio/ep-weekend-sun-20261115.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami explore how artificial intelligence is drastically compressing the decade-long pipeline for drug discovery and bringing the first generative biological molecules into human clinical trials.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261114',
             number: 'WEEKEND RECAP',
             date: 'November 14, 2026',

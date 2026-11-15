@@ -421,5 +421,14 @@
     "summary": "Veda and Rami recap a fascinating week of science, exploring lab-grown meats, biological computer logic, gene therapies for hearing restoration, and salt-based sodium-ion grid batteries.",
     "source": "generated",
     "recorded_at": "2026-11-14T07:02:15"
+  },
+  {
+    "date": "2026-11-15",
+    "kind": "sunday",
+    "topic_id": "sun-ai-drug-discovery",
+    "title": "Sunday AI Catchup: AI-Discovered Drugs Entering Clinical Trials",
+    "summary": "Veda and Rami explore how artificial intelligence is drastically compressing the decade-long pipeline for drug discovery and bringing the first generative biological molecules into human clinical trials.",
+    "source": "generated",
+    "recorded_at": "2026-11-15T07:02:42"
   }
 ]
