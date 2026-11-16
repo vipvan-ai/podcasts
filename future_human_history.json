@@ -430,5 +430,14 @@
     "summary": "Veda and Rami explore how artificial intelligence is drastically compressing the decade-long pipeline for drug discovery and bringing the first generative biological molecules into human clinical trials.",
     "source": "generated",
     "recorded_at": "2026-11-15T07:02:42"
+  },
+  {
+    "date": "2026-11-16",
+    "kind": "weekday",
+    "topic_id": "ai-protein-design",
+    "title": "AI Protein Design & Custom-Built Enzymes",
+    "summary": "Generative AI models are no longer just predicting natural proteins—they are designing brand-new molecular machines from scratch. Host Alex Mercer and Dr. Elena Vance explore how custom-built enzymes could revolutionize antivenoms, industrial carbon capture, and the future of bio-engineering.",
+    "source": "generated",
+    "recorded_at": "2026-11-16T07:03:00"
   }
 ]

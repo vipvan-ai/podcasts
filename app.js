@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261116',
+            number: 'NOVEMBER 16, 2026',
+            date: 'November 16, 2026',
+            title: 'AI Protein Design & Custom-Built Enzymes',
+            subtitle: 'Generative AI models are no longer just predicting natural proteins—they are designing brand-new molecular machines from scratch. Host Alex Mercer and Dr. Elena Vance explore how custom-built enzymes could revolutionize antivenoms, industrial carbon capture, and the future of bio-engineering.',
+            duration: '09:11',
+            durationSeconds: 551,
+            audioUrl: 'audio/future_human_20261116.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 16, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Generative AI models are no longer just predicting natural proteins—they are designing brand-new molecular machines from scratch. Host Alex Mercer and Dr. Elena Vance explore how custom-built enzymes could revolutionize antivenoms, industrial carbon capture, and the future of bio-engineering.</p>
+            `
+        },
+
+        {
             id: 'ep-weekend-sun-20261115',
             number: 'WEEKEND RECAP',
             date: 'November 15, 2026',
