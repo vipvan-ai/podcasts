@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261118',
+            number: 'NOVEMBER 18, 2026',
+            date: 'November 18, 2026',
+            title: 'Lunar Ice Mining & Making Rocket Fuel on the Moon',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how harvesting water ice from permanently shadowed lunar craters and splitting it into hydrogen and oxygen could transform the Moon into a deep-space gas station.',
+            duration: '08:39',
+            durationSeconds: 519,
+            audioUrl: 'audio/future_human_20261118.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 18, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how harvesting water ice from permanently shadowed lunar craters and splitting it into hydrogen and oxygen could transform the Moon into a deep-space gas station.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261116',
             number: 'NOVEMBER 16, 2026',
             date: 'November 16, 2026',

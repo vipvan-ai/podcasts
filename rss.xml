@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261118 -->
+    <item>
+      <title>Lunar Ice Mining &amp; Making Rocket Fuel on the Moon</title>
+      <itunes:title>Lunar Ice Mining &amp; Making Rocket Fuel on the Moon</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how harvesting water ice from permanently shadowed lunar craters and splitting it into hydrogen and oxygen could transform the Moon into a deep-space gas station.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how harvesting water ice from permanently shadowed lunar craters and splitting it into hydrogen and oxygen could transform the Moon into a deep-space gas station.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261118.mp3" length="4374312" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261118</guid>
+      <pubDate>Wed, 18 Nov 2026 07:25:02 +0000</pubDate>
+      <itunes:duration>08:39</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261116 -->
     <item>
       <title>AI Protein Design &amp; Custom-Built Enzymes</title>
