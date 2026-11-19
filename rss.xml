@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261119 -->
+    <item>
+      <title>Self-Healing Concrete &amp; Living Building Materials</title>
+      <itunes:title>Self-Healing Concrete &amp; Living Building Materials</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex and Elena explore self-healing concrete and living building materials, discovering how dormant bacterial spores encapsulated in cement wake up upon cracking to produce limestone and repair structures from within.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex and Elena explore self-healing concrete and living building materials, discovering how dormant bacterial spores encapsulated in cement wake up upon cracking to produce limestone and repair structures from within.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261119.mp3" length="4629840" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261119</guid>
+      <pubDate>Thu, 19 Nov 2026 07:08:39 +0000</pubDate>
+      <itunes:duration>09:05</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261118 -->
     <item>
       <title>Lunar Ice Mining &amp; Making Rocket Fuel on the Moon</title>

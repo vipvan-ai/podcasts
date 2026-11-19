@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261119',
+            number: 'NOVEMBER 19, 2026',
+            date: 'November 19, 2026',
+            title: 'Self-Healing Concrete & Living Building Materials',
+            subtitle: 'Alex and Elena explore self-healing concrete and living building materials, discovering how dormant bacterial spores encapsulated in cement wake up upon cracking to produce limestone and repair structures from within.',
+            duration: '09:05',
+            durationSeconds: 545,
+            audioUrl: 'audio/future_human_20261119.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 19, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex and Elena explore self-healing concrete and living building materials, discovering how dormant bacterial spores encapsulated in cement wake up upon cracking to produce limestone and repair structures from within.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261118',
             number: 'NOVEMBER 18, 2026',
             date: 'November 18, 2026',
