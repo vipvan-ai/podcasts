@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261121',
+            number: 'WEEKEND RECAP',
+            date: 'November 21, 2026',
+            title: 'Saturday Weekend Recap: Designer Proteins and Lunar Fuel',
+            subtitle: 'Veda and Rami recap an exciting week covering AI protein design, lunar ice mining for rocket fuel, and self-healing bacterial concrete.',
+            duration: '08:42',
+            durationSeconds: 522,
+            audioUrl: 'audio/ep-weekend-sat-20261121.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap an exciting week covering AI protein design, lunar ice mining for rocket fuel, and self-healing bacterial concrete.</p>
+            `
+        },
+        {
             id: 'fhd-20261119',
             number: 'NOVEMBER 19, 2026',
             date: 'November 19, 2026',
