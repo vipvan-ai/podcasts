@@ -466,5 +466,14 @@
     "summary": "Veda and Rami recap an exciting week covering AI protein design, lunar ice mining for rocket fuel, and self-healing bacterial concrete.",
     "source": "generated",
     "recorded_at": "2026-11-21T07:02:10"
+  },
+  {
+    "date": "2026-11-22",
+    "kind": "sunday",
+    "topic_id": "sun-deepfake-watermarking",
+    "title": "Sunday AI Catchup: AI Video, Deepfake Detection & Invisible Watermarks",
+    "summary": "Veda and Rami explore the ongoing arms race between ultra-realistic AI video generation and the invisible watermarks and content credentials designed to keep visual truth intact.",
+    "source": "generated",
+    "recorded_at": "2026-11-22T07:02:08"
   }
 ]

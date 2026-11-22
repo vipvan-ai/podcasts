@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- WEEKEND RECAP: SUNDAY -->
+    <item>
+      <title>Sunday AI Catchup: AI Video, Deepfake Detection &amp; Invisible Watermarks</title>
+      <itunes:title>Sunday AI Catchup: AI Video, Deepfake Detection &amp; Invisible Watermarks</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda and Rami explore the ongoing arms race between ultra-realistic AI video generation and the invisible watermarks and content credentials designed to keep visual truth intact.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda and Rami explore the ongoing arms race between ultra-realistic AI video generation and the invisible watermarks and content credentials designed to keep visual truth intact.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261122.mp3" length="4744008" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sun-20261122</guid>
+      <pubDate>Sun, 22 Nov 2026 07:05:25 +0000</pubDate>
+      <itunes:duration>09:30</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SATURDAY -->
     <item>
       <title>Saturday Weekend Recap: Designer Proteins and Lunar Fuel</title>
@@ -97,25 +116,6 @@
       <guid isPermaLink="false">future-human-daily-20261116</guid>
       <pubDate>Mon, 16 Nov 2026 07:05:44 +0000</pubDate>
       <itunes:duration>09:11</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-
-    <!-- WEEKEND RECAP: SUNDAY -->
-    <item>
-      <title>Sunday AI Catchup: AI-Discovered Drugs Entering Clinical Trials</title>
-      <itunes:title>Sunday AI Catchup: AI-Discovered Drugs Entering Clinical Trials</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda and Rami explore how artificial intelligence is drastically compressing the decade-long pipeline for drug discovery and bringing the first generative biological molecules into human clinical trials.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda and Rami explore how artificial intelligence is drastically compressing the decade-long pipeline for drug discovery and bringing the first generative biological molecules into human clinical trials.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sun-20261115.mp3" length="4476024" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-sun-20261115</guid>
-      <pubDate>Sun, 15 Nov 2026 07:05:54 +0000</pubDate>
-      <itunes:duration>08:58</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 

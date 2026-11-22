@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sun-20261122',
+            number: 'WEEKEND RECAP',
+            date: 'November 22, 2026',
+            title: 'Sunday AI Catchup: AI Video, Deepfake Detection & Invisible Watermarks',
+            subtitle: 'Veda and Rami explore the ongoing arms race between ultra-realistic AI video generation and the invisible watermarks and content credentials designed to keep visual truth intact.',
+            duration: '09:30',
+            durationSeconds: 570,
+            audioUrl: 'audio/ep-weekend-sun-20261122.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Sunday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Sunday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami explore the ongoing arms race between ultra-realistic AI video generation and the invisible watermarks and content credentials designed to keep visual truth intact.</p>
+            `
+        },
+        {
             id: 'ep-weekend-sat-20261121',
             number: 'WEEKEND RECAP',
             date: 'November 21, 2026',
