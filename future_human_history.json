@@ -475,5 +475,14 @@
     "summary": "Veda and Rami explore the ongoing arms race between ultra-realistic AI video generation and the invisible watermarks and content credentials designed to keep visual truth intact.",
     "source": "generated",
     "recorded_at": "2026-11-22T07:02:08"
+  },
+  {
+    "date": "2026-11-23",
+    "kind": "weekday",
+    "topic_id": "small-modular-reactors",
+    "title": "Small Modular Nuclear Reactors & Factory-Built Power Plants",
+    "summary": "Alex Mercer and Dr. Elena Vance explore how small modular nuclear reactors (SMRs) built on factory assembly lines could revolutionize clean power for data centers, remote towns, and heavy industry through passive safety physics.",
+    "source": "generated",
+    "recorded_at": "2026-11-23T07:16:44"
   }
 ]

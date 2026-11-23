@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261123 -->
+    <item>
+      <title>Small Modular Nuclear Reactors &amp; Factory-Built Power Plants</title>
+      <itunes:title>Small Modular Nuclear Reactors &amp; Factory-Built Power Plants</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how small modular nuclear reactors (SMRs) built on factory assembly lines could revolutionize clean power for data centers, remote towns, and heavy industry through passive safety physics.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how small modular nuclear reactors (SMRs) built on factory assembly lines could revolutionize clean power for data centers, remote towns, and heavy industry through passive safety physics.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261123.mp3" length="4704864" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261123</guid>
+      <pubDate>Mon, 23 Nov 2026 07:19:32 +0000</pubDate>
+      <itunes:duration>09:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
     <!-- WEEKEND RECAP: SUNDAY -->
     <item>
       <title>Sunday AI Catchup: AI Video, Deepfake Detection &amp; Invisible Watermarks</title>
