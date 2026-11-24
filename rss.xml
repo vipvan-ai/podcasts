@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261124 -->
+    <item>
+      <title>Optical Atomic Clocks &amp; Redefining the Second</title>
+      <itunes:title>Optical Atomic Clocks &amp; Redefining the Second</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore optical atomic clocks—timekeepers so precise they would not lose a second over fourteen billion years—and how their sensitivity to gravitational time dilation is turning timekeeping into a tool for mapping Earth and deep space.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore optical atomic clocks—timekeepers so precise they would not lose a second over fourteen billion years—and how their sensitivity to gravitational time dilation is turning timekeeping into a tool for mapping Earth and deep space.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261124.mp3" length="4753416" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261124</guid>
+      <pubDate>Tue, 24 Nov 2026 07:09:50 +0000</pubDate>
+      <itunes:duration>09:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261123 -->
     <item>
       <title>Small Modular Nuclear Reactors &amp; Factory-Built Power Plants</title>

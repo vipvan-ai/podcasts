@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261124',
+            number: 'NOVEMBER 24, 2026',
+            date: 'November 24, 2026',
+            title: 'Optical Atomic Clocks & Redefining the Second',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore optical atomic clocks—timekeepers so precise they would not lose a second over fourteen billion years—and how their sensitivity to gravitational time dilation is turning timekeeping into a tool for mapping Earth and deep space.',
+            duration: '09:23',
+            durationSeconds: 563,
+            audioUrl: 'audio/future_human_20261124.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 24, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore optical atomic clocks—timekeepers so precise they would not lose a second over fourteen billion years—and how their sensitivity to gravitational time dilation is turning timekeeping into a tool for mapping Earth and deep space.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261123',
             number: 'NOVEMBER 23, 2026',
             date: 'November 23, 2026',
