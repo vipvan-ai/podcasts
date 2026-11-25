@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261125',
+            number: 'NOVEMBER 25, 2026',
+            date: 'November 25, 2026',
+            title: 'The Glymphatic System & How Sleep Washes the Brain',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore the glymphatic system—the nightly biological rinse that flushes metabolic waste and toxic proteins from the brain during deep sleep—and its critical role in preventing Alzheimer\'s disease.',
+            duration: '09:48',
+            durationSeconds: 588,
+            audioUrl: 'audio/future_human_20261125.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 25, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore the glymphatic system—the nightly biological rinse that flushes metabolic waste and toxic proteins from the brain during deep sleep—and its critical role in preventing Alzheimer\'s disease.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261124',
             number: 'NOVEMBER 24, 2026',
             date: 'November 24, 2026',

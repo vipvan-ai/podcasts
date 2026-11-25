@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261125 -->
+    <item>
+      <title>The Glymphatic System &amp; How Sleep Washes the Brain</title>
+      <itunes:title>The Glymphatic System &amp; How Sleep Washes the Brain</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore the glymphatic system—the nightly biological rinse that flushes metabolic waste and toxic proteins from the brain during deep sleep—and its critical role in preventing Alzheimer&#x27;s disease.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore the glymphatic system—the nightly biological rinse that flushes metabolic waste and toxic proteins from the brain during deep sleep—and its critical role in preventing Alzheimer's disease.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261125.mp3" length="5069736" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261125</guid>
+      <pubDate>Wed, 25 Nov 2026 07:05:04 +0000</pubDate>
+      <itunes:duration>09:48</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261124 -->
     <item>
       <title>Optical Atomic Clocks &amp; Redefining the Second</title>
