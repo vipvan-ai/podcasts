@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261126 -->
+    <item>
+      <title>Green Hydrogen Electrolyzers &amp; Decarbonizing Steel</title>
+      <itunes:title>Green Hydrogen Electrolyzers &amp; Decarbonizing Steel</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore how green hydrogen electrolyzers split water to replace coal in steelmaking, tackling one of heavy industry&#x27;s largest sources of carbon emissions.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore how green hydrogen electrolyzers split water to replace coal in steelmaking, tackling one of heavy industry's largest sources of carbon emissions.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261126.mp3" length="4801488" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261126</guid>
+      <pubDate>Thu, 26 Nov 2026 07:10:29 +0000</pubDate>
+      <itunes:duration>09:25</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261125 -->
     <item>
       <title>The Glymphatic System &amp; How Sleep Washes the Brain</title>

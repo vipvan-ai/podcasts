@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261126',
+            number: 'NOVEMBER 26, 2026',
+            date: 'November 26, 2026',
+            title: 'Green Hydrogen Electrolyzers & Decarbonizing Steel',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore how green hydrogen electrolyzers split water to replace coal in steelmaking, tackling one of heavy industry\'s largest sources of carbon emissions.',
+            duration: '09:25',
+            durationSeconds: 565,
+            audioUrl: 'audio/future_human_20261126.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 26, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore how green hydrogen electrolyzers split water to replace coal in steelmaking, tackling one of heavy industry\'s largest sources of carbon emissions.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261125',
             number: 'NOVEMBER 25, 2026',
             date: 'November 25, 2026',
