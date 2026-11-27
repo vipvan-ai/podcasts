@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+<!-- FUTURE HUMAN DAILY: 20261127 -->
+    <item>
+      <title>Metamaterials &amp; Bending Light Around Objects</title>
+      <itunes:title>Metamaterials &amp; Bending Light Around Objects</itunes:title>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Alex Mercer &amp; Dr. Elena Vance</itunes:author>
+      <itunes:summary>Alex Mercer and Dr. Elena Vance explore metamaterials—engineered structures smaller than a wavelength that can bend light, sound, and radio waves in ways nature never intended, opening the door to flat lenses and wave-cloaking technology.</itunes:summary>
+      <description><![CDATA[
+        <p>Alex Mercer and Dr. Elena Vance explore metamaterials—engineered structures smaller than a wavelength that can bend light, sound, and radio waves in ways nature never intended, opening the door to flat lenses and wave-cloaking technology.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/future_human_20261127.mp3" length="4626696" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-20261127</guid>
+      <pubDate>Fri, 27 Nov 2026 07:03:57 +0000</pubDate>
+      <itunes:duration>09:05</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261126 -->
     <item>
       <title>Green Hydrogen Electrolyzers &amp; Decarbonizing Steel</title>

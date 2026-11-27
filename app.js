@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'fhd-20261127',
+            number: 'NOVEMBER 27, 2026',
+            date: 'November 27, 2026',
+            title: 'Metamaterials & Bending Light Around Objects',
+            subtitle: 'Alex Mercer and Dr. Elena Vance explore metamaterials—engineered structures smaller than a wavelength that can bend light, sound, and radio waves in ways nature never intended, opening the door to flat lenses and wave-cloaking technology.',
+            duration: '09:05',
+            durationSeconds: 545,
+            audioUrl: 'audio/future_human_20261127.mp3',
+            tags: ['Future Human Daily', 'Alex & Elena', 'Bio-Computing', 'Emerging Tech'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'I am your host Alex Mercer with Dr. Elena Vance, and today is November 27, 2026, and you\'re listening to Future Human Daily.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Alex Mercer and Dr. Elena Vance explore metamaterials—engineered structures smaller than a wavelength that can bend light, sound, and radio waves in ways nature never intended, opening the door to flat lenses and wave-cloaking technology.</p>
+            `
+        },
+
+        {
             id: 'fhd-20261126',
             number: 'NOVEMBER 26, 2026',
             date: 'November 26, 2026',
