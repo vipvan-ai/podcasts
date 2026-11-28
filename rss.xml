@@ -25,6 +25,25 @@
     
     <atom:link href="https://vipvan-ai.github.io/podcasts/rss.xml" rel="self" type="application/rss+xml" />
 
+    <!-- WEEKEND RECAP: SATURDAY -->
+    <item>
+      <title>Saturday Weekend Recap: Optical Atomic Clocks and Brain Washing Sleep</title>
+      <itunes:title>Saturday Weekend Recap: Optical Atomic Clocks and Brain Washing Sleep</itunes:title>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <itunes:author>Veda &amp; Rami</itunes:author>
+      <itunes:summary>Veda and Rami recap a week of breakthroughs on Future Human Daily, covering small modular reactors, ultra-precise atomic clocks, the brain&#x27;s glymphatic system, green steel, and wave-bending metamaterials.</itunes:summary>
+      <description><![CDATA[
+        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
+        <p>Veda and Rami recap a week of breakthroughs on Future Human Daily, covering small modular reactors, ultra-precise atomic clocks, the brain's glymphatic system, green steel, and wave-bending metamaterials.</p>
+      ]]></description>
+      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261128.mp3" length="4665912" type="audio/mpeg" />
+      <guid isPermaLink="false">future-human-daily-weekend-sat-20261128</guid>
+      <pubDate>Sat, 28 Nov 2026 07:04:48 +0000</pubDate>
+      <itunes:duration>09:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+
+
 <!-- FUTURE HUMAN DAILY: 20261127 -->
     <item>
       <title>Metamaterials &amp; Bending Light Around Objects</title>
@@ -135,25 +154,6 @@
       <guid isPermaLink="false">future-human-daily-weekend-sun-20261122</guid>
       <pubDate>Sun, 22 Nov 2026 07:05:25 +0000</pubDate>
       <itunes:duration>09:30</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-    </item>
-
-
-    <!-- WEEKEND RECAP: SATURDAY -->
-    <item>
-      <title>Saturday Weekend Recap: Designer Proteins and Lunar Fuel</title>
-      <itunes:title>Saturday Weekend Recap: Designer Proteins and Lunar Fuel</itunes:title>
-      <itunes:episodeType>bonus</itunes:episodeType>
-      <itunes:author>Veda &amp; Rami</itunes:author>
-      <itunes:summary>Veda and Rami recap an exciting week covering AI protein design, lunar ice mining for rocket fuel, and self-healing bacterial concrete.</itunes:summary>
-      <description><![CDATA[
-        <p>Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami!</p>
-        <p>Veda and Rami recap an exciting week covering AI protein design, lunar ice mining for rocket fuel, and self-healing bacterial concrete.</p>
-      ]]></description>
-      <enclosure url="https://vipvan-ai.github.io/podcasts/audio/ep-weekend-sat-20261121.mp3" length="4327104" type="audio/mpeg" />
-      <guid isPermaLink="false">future-human-daily-weekend-sat-20261121</guid>
-      <pubDate>Sat, 21 Nov 2026 07:05:14 +0000</pubDate>
-      <itunes:duration>08:42</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
     </item>
 

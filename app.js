@@ -3,6 +3,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Episode Database ---
     const episodes = [
         {
+            id: 'ep-weekend-sat-20261128',
+            number: 'WEEKEND RECAP',
+            date: 'November 28, 2026',
+            title: 'Saturday Weekend Recap: Optical Atomic Clocks and Brain Washing Sleep',
+            subtitle: 'Veda and Rami recap a week of breakthroughs on Future Human Daily, covering small modular reactors, ultra-precise atomic clocks, the brain's glymphatic system, green steel, and wave-bending metamaterials.',
+            duration: '09:15',
+            durationSeconds: 555,
+            audioUrl: 'audio/ep-weekend-sat-20261128.mp3',
+            tags: ['Weekend Recap', 'Veda & Rami', 'Saturday Recap'],
+            script: [
+                { time: '0:00', label: '[Intro]', text: 'Happy Saturday! Welcome to the Future Human Daily Weekend Recap hosted by Veda and Rami.' }
+            ],
+            notes: `
+                <h4>Episode Summary:</h4>
+                <p>Veda and Rami recap a week of breakthroughs on Future Human Daily, covering small modular reactors, ultra-precise atomic clocks, the brain's glymphatic system, green steel, and wave-bending metamaterials.</p>
+            `
+        },
+        {
             id: 'fhd-20261127',
             number: 'NOVEMBER 27, 2026',
             date: 'November 27, 2026',
